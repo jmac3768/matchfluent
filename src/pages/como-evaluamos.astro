@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+
+const crumbs = [
+  { name: "Inicio", path: "/" },
+  { name: "Cómo Evaluamos", path: "/como-evaluamos" },
+];
+---
+
+<BaseLayout
+  lang="es"
+  title="Cómo Evaluamos las Herramientas de Inglés — MatchFluent"
+  description="Los cinco criterios detrás de cada recomendación de MatchFluent: práctica de habla, currículum, audio real, precios honestos y acceso."
+  path="/como-evaluamos"
+>
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-6">Cómo Evaluamos</h1>
+
+    <article class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg text-navy-700">
+        Cada herramienta que MatchFluent recomienda — o desaconseja — se evalúa con los mismos cinco
+        criterios, ponderados hacia el único resultado que importa: ¿puede el estudiante realmente
+        hablar inglés después de usarla?
+      </p>
+
+      <ol class="list-decimal pl-5 space-y-4">
+        <li>
+          <strong class="text-navy-700">Calidad de la práctica de habla (mayor peso).</strong>
+          ¿La herramienta te hace producir inglés hablado, y te da retroalimentación sobre lo que
+          dijiste? Los minutos de habla del estudiante por sesión y la presencia de corrección de
+          pronunciación separan las herramientas de habla de los ejercicios de reconocimiento.
+        </li>
+        <li>
+          <strong class="text-navy-700">Estructura del currículum.</strong> ¿Existe una ruta
+          progresiva que decide qué sigue y programa los repasos — o una biblioteca suelta que deja
+          la secuencia en manos del estudiante?
+        </li>
+        <li>
+          <strong class="text-navy-700">Autenticidad del audio.</strong> Conversación real de
+          hablantes nativos a velocidad natural, contra fragmentos sintetizados y efectos de sonido
+          gamificados.
+        </li>
+        <li>
+          <strong class="text-navy-700">Honestidad de precios.</strong> Costo total en un plazo
+          realista de aprendizaje (12–18 meses), no el precio gancho. Las suscripciones se comparan
+          con las compras únicas en los plazos que los estudiantes realmente necesitan.
+        </li>
+        <li>
+          <strong class="text-navy-700">Acceso y portabilidad.</strong> Uso offline, cobertura de
+          dispositivos, y si conservas el acceso a lo que pagaste si haces una pausa.
+        </li>
+      </ol>
+
+      <p>
+        Probamos las herramientas directamente con estos criterios y revisamos las reseñas cuando los
+        productos cambian de forma sustancial. No aceptamos pagos por posiciones en los rankings y
+        ningún proveedor ve una reseña antes de publicarse. Algunos enlaces en las páginas de reseña
+        son enlaces de afiliado — divulgados en cada página donde aparecen y explicados en nuestra
+        <a href="/affiliate-disclosure/" class="text-teal-700 underline">divulgación de afiliados</a>.
+        Las comisiones nunca cambian un veredicto: varias de nuestras recomendaciones principales
+        (Duolingo, BBC Learning English, Anki) no nos generan nada.
+      </p>
+
+      <p>
+        Cuando publicamos cifras específicas — precios, horas, plazos — reflejan los precios del
+        proveedor y la investigación publicada al momento de escribir, con matices honestos donde no
+        hay certeza. ¿Encontraste algo desactualizado? Queremos saberlo.
+      </p>
+    </article>
+  </main>
+</BaseLayout>

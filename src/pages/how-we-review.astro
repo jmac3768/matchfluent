@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "How We Review", path: "/how-we-review" },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="How We Review English Learning Tools — MatchFluent"
+  description="The five criteria behind every MatchFluent recommendation: speaking practice, curriculum, audio authenticity, pricing honesty, and access."
+  path="/how-we-review"
+>
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-6">How We Review</h1>
+
+    <article class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg text-navy-700">
+        Every tool MatchFluent recommends — or recommends against — is evaluated on the same five
+        criteria, weighted toward the one outcome that matters: can a learner actually speak English
+        after using it?
+      </p>
+
+      <ol class="list-decimal pl-5 space-y-4">
+        <li>
+          <strong class="text-navy-700">Speaking practice quality (highest weight).</strong> Does the
+          tool make you produce spoken English, and does it give feedback on what you said? Minutes
+          of learner speech per session and the presence of pronunciation feedback separate speaking
+          tools from recognition drills.
+        </li>
+        <li>
+          <strong class="text-navy-700">Curriculum structure.</strong> Is there a progressive path
+          that decides what comes next and schedules review — or a loose content library that leaves
+          sequencing to the learner?
+        </li>
+        <li>
+          <strong class="text-navy-700">Audio authenticity.</strong> Real native-speaker
+          conversation at natural (or deliberately staged) speed versus synthesized snippets and
+          gamified sound effects.
+        </li>
+        <li>
+          <strong class="text-navy-700">Pricing honesty.</strong> Total cost over a realistic
+          learning timeline (12–18 months), not the teaser price. Subscriptions are compared against
+          one-time purchases at the durations learners actually need.
+        </li>
+        <li>
+          <strong class="text-navy-700">Access and portability.</strong> Offline use, device
+          coverage, and whether you keep access to what you paid for if you pause.
+        </li>
+      </ol>
+
+      <p>
+        We test tools hands-on against these criteria and revisit reviews when products change
+        materially. We do not accept payment for placement in rankings, and no vendor sees a review
+        before publication. Some links on review pages are affiliate links — disclosed on every page
+        where they appear and explained in full in our
+        <a href="/affiliate-disclosure/" class="text-teal-700 underline">affiliate disclosure</a>.
+        Commissions never change a verdict: several of our top recommendations (Duolingo, BBC
+        Learning English, Anki) earn us nothing.
+      </p>
+
+      <p>
+        Where we publish specific figures — prices, hours, timelines — they reflect vendor pricing
+        and published research at the time of writing, hedged honestly where certainty isn't
+        available. Found something outdated? We want to know.
+      </p>
+    </article>
+  </main>
+</BaseLayout>

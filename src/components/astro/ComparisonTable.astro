@@ -1,0 +1,47 @@
+---
+/**
+ * Static comparison table (free apps vs Rocket English) — the SEO-visible
+ * twin of the table the Quiz island shows in its results. Data comes from
+ * COMPARISON_TABLE in src/config/site.js. Includes the one-sentence prose
+ * takeaway below the table per docs/geo-formatting.md §5 (caller passes it).
+ */
+import { COMPARISON_TABLE } from "../../config/site.js";
+
+const { lang = "en", takeaway } = Astro.props;
+const h = COMPARISON_TABLE.headers;
+const caption =
+  lang === "es"
+    ? "Apps gratuitas vs Rocket English de un vistazo"
+    : "Free apps vs Rocket English at a glance";
+---
+
+<div class="my-8 overflow-x-auto rounded-xl border border-border shadow-card">
+  <table class="w-full text-sm text-left">
+    <caption class="sr-only">{caption}</caption>
+    <thead>
+      <tr class="bg-navy-700 text-white">
+        <th scope="col" class="px-4 py-3 font-semibold">{lang === "es" ? h.feature_es : h.feature_en}</th>
+        <th scope="col" class="px-4 py-3 font-semibold">{lang === "es" ? h.freeApps_es : h.freeApps_en}</th>
+        <th scope="col" class="px-4 py-3 font-semibold border-l-2 border-teal-400">
+          {lang === "es" ? h.rocket_es : h.rocket_en}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        COMPARISON_TABLE.rows.map((row, i) => (
+          <tr class={i % 2 === 0 ? "bg-surface" : "bg-background"}>
+            <th scope="row" class="px-4 py-3 font-medium text-navy-700">
+              {lang === "es" ? row.feature_es : row.feature_en}
+            </th>
+            <td class="px-4 py-3 text-text-secondary">{lang === "es" ? row.freeApps_es : row.freeApps}</td>
+            <td class="px-4 py-3 text-navy-700 border-l-2 border-teal-100">
+              {lang === "es" ? row.rocket_es : row.rocket}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+{takeaway && <p class="text-navy-700 font-medium -mt-4 mb-8">{takeaway}</p>}

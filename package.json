@@ -1,0 +1,26 @@
+{
+  "name": "matchfluent",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/generate-llms.mjs && astro build",
+    "preview": "npm run build && wrangler dev",
+    "astro": "astro",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "11",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "wrangler": "^4.107.1"
+  }
+}

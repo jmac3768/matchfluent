@@ -1,0 +1,27 @@
+---
+/**
+ * Mid-page affiliate intercept per docs/conversion-rules.md §5:
+ * acknowledges what the current method does well, names the gap,
+ * positions Rocket Languages, includes a CTA.
+ */
+import { buildAffiliateUrl } from "../../config/site.js";
+
+const { text, source = "intercept", lang = "en", ctaLabel } = Astro.props;
+
+const defaultCta =
+  lang === "es"
+    ? "Empieza Mi Lección Gratis de Rocket English →"
+    : "Start My Free Rocket English Lesson →";
+---
+
+<aside class="my-10 rounded-xl border-l-4 border-teal-500 bg-gold-50 p-6">
+  <blockquote class="font-medium italic text-navy-700 text-lg leading-relaxed" set:html={text} />
+  <a
+    href={buildAffiliateUrl(source)}
+    rel="nofollow sponsored noopener"
+    target="_blank"
+    class="inline-block mt-4 text-teal-700 font-semibold hover:text-teal-600"
+  >
+    {ctaLabel || defaultCta}
+  </a>
+</aside>

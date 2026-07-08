@@ -1,0 +1,88 @@
+---
+/**
+ * Template for ESP job lessons and career lessons. Per GEO rules the
+ * QuickAnswer block is skipped (the phrase list IS the answer);
+ * self-contained-chunk and specificity rules still apply. Injects
+ * Article JSON-LD.
+ */
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+import AffiliateDisclosure from "../components/astro/AffiliateDisclosure.astro";
+import AuthorByline from "../components/astro/AuthorByline.astro";
+import AffiliateIntercept from "../components/astro/AffiliateIntercept.astro";
+import AffiliateCTA from "../components/astro/AffiliateCTA.astro";
+import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import { SITE_URL, lastUpdatedLabel } from "../lib/data.js";
+
+const {
+  lang,
+  title,
+  description,
+  path,
+  h1,
+  crumbs,
+  intro,
+  closing,
+  intercept,
+  relatedLinks = [],
+  page = {},
+} = Astro.props;
+
+const updated = lastUpdatedLabel(page, lang);
+const updatedLabel = lang === "es" ? "Actualizado" : "Last updated";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: h1,
+  description,
+  url: `${SITE_URL}${path}/`,
+  publisher: {
+    "@type": "Organization",
+    name: "MatchFluent",
+    url: SITE_URL,
+  },
+  inLanguage: lang,
+  about: { "@type": "Thing", name: "English Language Learning" },
+};
+---
+
+<BaseLayout {lang} {title} {description} {path} schemas={[articleSchema]}>
+  <main class="max-w-3xl mx-auto px-6 py-8">
+    <Breadcrumbs {crumbs} />
+    <p class="text-sm text-text-muted mb-2">{updatedLabel}: {updated}</p>
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy-700 leading-tight mb-2">
+      {h1}
+    </h1>
+
+    <AffiliateDisclosure {lang} />
+    <AuthorByline {lang} />
+
+    <article class="mt-6">
+      <p class="text-lg text-navy-700 leading-relaxed mb-8">{intro}</p>
+
+      <slot />
+
+      {intercept && <AffiliateIntercept {lang} text={intercept} source="lesson-intercept" />}
+
+      {closing && <p class="text-text-secondary leading-relaxed my-8">{closing}</p>}
+
+      <AffiliateCTA
+        {lang}
+        source="lesson-footer"
+        label={
+          lang === "es"
+            ? "Empieza Mi Lección Gratis de Rocket English →"
+            : "Start My Free Rocket English Lesson →"
+        }
+        sub={
+          lang === "es"
+            ? "Audio interactivo con reconocimiento de voz — practica sin público."
+            : "Interactive audio with voice recognition — practice with no audience."
+        }
+      />
+    </article>
+
+    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+  </main>
+</BaseLayout>

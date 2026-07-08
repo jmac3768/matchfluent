@@ -1,0 +1,31 @@
+export default {
+  quickAnswerLabel: "Quick answer",
+  lastUpdated: "Last updated",
+  faqHeading: "Frequently asked questions",
+  relatedHeading: "Keep exploring",
+  disclosureShort:
+    "Some links on this page are affiliate links. If you buy through them, MatchFluent earns a commission at no extra cost to you. This never changes what we recommend.",
+  disclosureLink: "Full disclosure",
+  methodologyLink: "How we review",
+  writtenBy: "Written by",
+  breadcrumbHome: "Home",
+  navSpanishHub: "Aprender Inglés",
+  navEnglishHub: "Learning English",
+  navLessons: "Lessons",
+  navQuiz: "Take the Quiz",
+  footerAbout: "About MatchFluent",
+  footerMethodology: "How We Review",
+  footerDisclosure: "Affiliate Disclosure",
+  footerTagline: "Find your path to fluent English.",
+  practiceHeading: "Practice these phrases out loud",
+  practiceSub:
+    "Tap the speaker to hear each phrase, then say it out loud. Speaking from day one is what separates fast learners from stuck ones.",
+  glossaryHeading: "Key terms, defined",
+  tableCaption: "Free apps vs Rocket English at a glance",
+  quizTeaser: "Not sure where to start?",
+  quizTeaserSub: "Answer 2 questions and get a recommendation matched to how you learn.",
+  quizTeaserCta: "Get My Personalized Plan →",
+  notFoundTitle: "Page not found",
+  notFoundBody:
+    "The page you were looking for doesn't exist or has moved. Start from one of our learning hubs instead.",
+};

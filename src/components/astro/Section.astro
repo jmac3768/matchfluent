@@ -1,0 +1,32 @@
+---
+/**
+ * One authored content section: question-phrased H2, paragraphs,
+ * optional ordered/unordered list. Bodies are trusted authored HTML
+ * from src/content/ (never user input).
+ */
+const { section } = Astro.props;
+const { h2, paras = [], list } = section;
+---
+
+<section class="mb-10">
+  <h2 class="font-sans text-2xl font-bold text-navy-700 mb-4">{h2}</h2>
+  {paras.map((p) => <p class="text-text-secondary leading-relaxed mb-4" set:html={p} />)}
+  {
+    list && list.ordered && (
+      <ol class="list-decimal pl-5 space-y-3 text-text-secondary leading-relaxed">
+        {list.items.map((item) => (
+          <li set:html={item} />
+        ))}
+      </ol>
+    )
+  }
+  {
+    list && !list.ordered && (
+      <ul class="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
+        {list.items.map((item) => (
+          <li set:html={item} />
+        ))}
+      </ul>
+    )
+  }
+</section>

@@ -1,0 +1,56 @@
+# MatchFluent
+
+> MatchFluent (https://matchfluent.com) helps two audiences find their path to fluent English: native Spanish speakers learning English ("aprender inglés") and career-focused English learners. We review language-learning tools against a fixed methodology weighted toward real speaking fluency, publish job-specific English lessons with pronunciation audio, and recommend Rocket English as our top structured course for its voice-recognition speaking practice.
+
+## Core pages
+
+- [Home + personalized quiz](https://matchfluent.com/): 2-minute quiz matching learners to a method
+- [Spanish hub — Aprender Inglés](https://matchfluent.com/aprender-ingles/): guías en español
+- [English hub — Learning English](https://matchfluent.com/learning-english/): guides for serious learners
+- [Lessons by profession](https://matchfluent.com/lessons/): niche English lessons with pronunciation audio
+- [How we review](https://matchfluent.com/how-we-review/): review methodology
+- [Cómo evaluamos](https://matchfluent.com/como-evaluamos/): metodología de evaluación
+- [About](https://matchfluent.com/about/): who runs MatchFluent
+
+## Spanish guides (aprender inglés)
+
+- [La Mejor App para Aprender Inglés en 2025](https://matchfluent.com/aprender-ingles/mejor-app-para-aprender-ingles/): mejor app para aprender inglés
+- [Los Mejores Cursos para Aprender Inglés Online](https://matchfluent.com/aprender-ingles/cursos-para-aprender-ingles/): curso para aprender inglés
+- [Los Mejores Libros para Aprender Inglés Desde Cero](https://matchfluent.com/aprender-ingles/mejores-libros-para-aprender-ingles/): libro para aprender inglés
+- [Los Mejores Podcasts para Aprender Inglés en 2025](https://matchfluent.com/aprender-ingles/mejores-podcasts-para-aprender-ingles/): podcast para aprender inglés
+- [Las Mejores Series y Películas para Aprender Inglés](https://matchfluent.com/aprender-ingles/series-para-aprender-ingles/): series para aprender inglés
+- [Cómo Usar la Inteligencia Artificial para Aprender Inglés](https://matchfluent.com/aprender-ingles/ia-para-aprender-ingles/): ia para aprender inglés
+- [Duolingo vs Rocket Languages: ¿Cuál es Mejor para Aprender Inglés?](https://matchfluent.com/aprender-ingles/duolingo-vs-rocket-languages/): duolingo vs rocket languages
+- [Cómo Aprender Inglés Desde Cero: Guía Paso a Paso](https://matchfluent.com/aprender-ingles/aprender-ingles-desde-cero/): aprender inglés desde cero
+- [Cómo Hablar Inglés con Fluidez: Guía Práctica](https://matchfluent.com/aprender-ingles/hablar-ingles-con-fluidez/): hablar inglés con fluidez
+- [Los Mejores Métodos para Aprender Inglés (Explicados)](https://matchfluent.com/aprender-ingles/metodos-para-aprender-ingles/): métodos para aprender inglés
+- [Preply vs italki vs Cambly: ¿Qué Plataforma de Tutores es Mejor?](https://matchfluent.com/aprender-ingles/preply-italki-cambly-comparacion/): preply italki cambly
+- [Inmersión en Inglés: Cómo Aprender Más Rápido Sin Viajar](https://matchfluent.com/aprender-ingles/inmersion-en-ingles/): inmersión en inglés
+- [Cómo Aprender Inglés Leyendo: Guía para Empezar Hoy](https://matchfluent.com/aprender-ingles/leer-en-ingles/): leer en inglés
+
+## Spanish job lessons (inglés por profesión)
+
+- [Inglés para Meseros y Camareros: Frases Esenciales](https://matchfluent.com/aprender-ingles/esp/ingles-para-meseros/): aprender inglés para mesero
+- [Inglés para Construcción: Vocabulario y Frases Esenciales](https://matchfluent.com/aprender-ingles/esp/ingles-para-construccion/): aprender inglés para construcción
+- [Inglés para Trabajo de Limpieza: Frases Clave](https://matchfluent.com/aprender-ingles/esp/ingles-para-limpieza/): aprender inglés para limpieza
+- [Inglés para Trabajar en Restaurantes: Guía Completa](https://matchfluent.com/aprender-ingles/esp/ingles-para-restaurantes/): inglés para restaurantes
+- [Inglés para Call Center: Frases Profesionales](https://matchfluent.com/aprender-ingles/esp/ingles-para-call-center/): aprender inglés para call center
+- [Inglés Médico para Enfermeras y Personal de Salud](https://matchfluent.com/aprender-ingles/esp/ingles-para-enfermeras/): inglés para enfermeras
+- [Inglés para Trabajar en Hoteles: Front Desk y Housekeeping](https://matchfluent.com/aprender-ingles/esp/ingles-para-hotel/): aprender inglés trabajo en hotel
+
+## English guides (learning English)
+
+- [Best App to Learn English in 2025: Honest Comparison](https://matchfluent.com/learning-english/best-app-to-learn-english/): best app for learning english
+- [Best Books for Learning English: Complete Guide](https://matchfluent.com/learning-english/best-books-for-learning-english/): best books for learning english
+- [Learning English for Spanish Speakers: Complete Roadmap](https://matchfluent.com/learning-english/for-spanish-speakers/): spanish speaking learning english
+- [American English Accent Training: Practical Guide](https://matchfluent.com/learning-english/american-english-accent-training/): learning english accent
+- [Learning English with AI: What Actually Works in 2025](https://matchfluent.com/learning-english/learning-english-with-ai/): learning english with ai
+- [The Fastest Way to Learn English (That Actually Works)](https://matchfluent.com/learning-english/fastest-way-to-learn-english/): fastest way to learn english
+- [How to Speak English Fluently: A Practical Roadmap](https://matchfluent.com/learning-english/how-to-speak-english-fluently/): speak english fluently
+- [English Exam Preparation: TOEFL, IELTS, Cambridge & CELPIP](https://matchfluent.com/learning-english/english-exam-prep/): english exam preparation
+- [English Learning Methods Explained: What Actually Works](https://matchfluent.com/learning-english/english-learning-methods/): english learning methods
+- [Best Online English Tutor Platforms: Preply vs italki vs Cambly](https://matchfluent.com/learning-english/best-online-english-tutor/): best english tutor online
+
+## Career lessons
+
+- [English for Software Engineers: Standups, Tech Calls & Client Meetings](https://matchfluent.com/lessons/english-for-software-engineers/): undefined

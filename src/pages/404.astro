@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  lang="en"
+  title="Page not found — MatchFluent"
+  description="The page you were looking for doesn't exist. Start from one of our English learning hubs."
+  path="/404"
+>
+  <main class="max-w-3xl mx-auto px-6 py-24 text-center">
+    <p class="font-mono text-teal-600 mb-3">404</p>
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-4">Page not found</h1>
+    <p class="text-text-secondary mb-2">
+      The page you were looking for doesn't exist or has moved.
+    </p>
+    <p class="text-text-secondary mb-8">La página que buscas no existe o cambió de lugar.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a
+        href="/aprender-ingles/"
+        class="px-6 py-3 rounded-xl border border-border bg-surface shadow-card font-medium text-navy-700 hover:shadow-card-hover"
+        >Aprender Inglés</a
+      >
+      <a
+        href="/learning-english/"
+        class="px-6 py-3 rounded-xl border border-border bg-surface shadow-card font-medium text-navy-700 hover:shadow-card-hover"
+        >Learning English</a
+      >
+      <a
+        href="/"
+        class="px-6 py-3 rounded-xl bg-gradient-cta text-white font-medium shadow-cta hover:shadow-cta-hover"
+        >Home</a
+      >
+    </div>
+  </main>
+</BaseLayout>

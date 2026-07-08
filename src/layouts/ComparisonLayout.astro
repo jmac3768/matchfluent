@@ -1,0 +1,103 @@
+---
+/**
+ * Template for "vs" comparison pages. Same conversion template as
+ * ClusterLayout but the comparison table leads — right after the
+ * entity paragraph — and a methodology link closes the page.
+ */
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+import QuickAnswer from "../components/astro/QuickAnswer.astro";
+import AffiliateDisclosure from "../components/astro/AffiliateDisclosure.astro";
+import AuthorByline from "../components/astro/AuthorByline.astro";
+import AffiliateIntercept from "../components/astro/AffiliateIntercept.astro";
+import ComparisonTable from "../components/astro/ComparisonTable.astro";
+import TrustBar from "../components/astro/TrustBar.astro";
+import FAQSection from "../components/astro/FAQSection.astro";
+import AffiliateCTA from "../components/astro/AffiliateCTA.astro";
+import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import Section from "../components/astro/Section.astro";
+import Quiz from "../components/react/Quiz.jsx";
+import { lastUpdatedLabel } from "../lib/data.js";
+
+const {
+  lang,
+  title,
+  description,
+  path,
+  h1,
+  crumbs,
+  copy,
+  intercept,
+  relatedLinks = [],
+  page = {},
+} = Astro.props;
+
+const updated = lastUpdatedLabel(page, lang);
+const updatedLabel = lang === "es" ? "Actualizado" : "Last updated";
+const sections = copy.sections || [];
+const firstSection = sections.slice(0, 1);
+const restSections = sections.slice(1);
+const quizHeading = lang === "es" ? "¿No sabes por dónde empezar?" : "Not sure where to start?";
+const quizSub =
+  lang === "es"
+    ? "Responde 2 preguntas y recibe una recomendación según tu forma de aprender."
+    : "Answer 2 questions and get a recommendation matched to how you learn.";
+const methodologyText =
+  lang === "es"
+    ? "¿Cómo llegamos a este veredicto? Lee nuestra metodología de evaluación."
+    : "How did we reach this verdict? Read our review methodology.";
+const methodologyHref = lang === "es" ? "/como-evaluamos/" : "/how-we-review/";
+---
+
+<BaseLayout {lang} {title} {description} {path}>
+  <main class="max-w-3xl mx-auto px-6 py-8">
+    <Breadcrumbs {crumbs} />
+    <p class="text-sm text-text-muted mb-2">{updatedLabel}: {updated}</p>
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy-700 leading-tight mb-2">
+      {h1}
+    </h1>
+
+    <QuickAnswer {lang} html={copy.quickAnswer} />
+    <AffiliateDisclosure {lang} />
+    <AuthorByline {lang} />
+
+    <article class="mt-6">
+      {copy.entity && <p class="text-lg text-navy-700 leading-relaxed mb-8">{copy.entity}</p>}
+
+      {firstSection.map((section) => <Section {section} />)}
+
+      <ComparisonTable {lang} takeaway={copy.tableTakeaway} />
+
+      {restSections.map((section) => <Section {section} />)}
+
+      {intercept && <AffiliateIntercept {lang} text={intercept} source="comparison-intercept" />}
+
+      <TrustBar {lang} />
+
+      <section class="my-10" id="quiz">
+        <h2 class="font-sans text-2xl font-bold text-navy-700 mb-2">{quizHeading}</h2>
+        <p class="text-text-secondary mb-4">{quizSub}</p>
+        <Quiz client:visible {lang} compact={true} />
+      </section>
+
+      <FAQSection {lang} faq={copy.faq} />
+
+      <AffiliateCTA
+        {lang}
+        source="comparison-footer"
+        label={lang === "es" ? "Prueba Rocket English Gratis →" : "Try Rocket English Free →"}
+        sub={
+          lang === "es"
+            ? "Pago único, acceso de por vida, garantía de 60 días."
+            : "One-time payment, lifetime access, 60-day guarantee."
+        }
+      />
+
+      <p class="text-sm text-text-muted my-8">
+        <a href={methodologyHref} class="underline hover:text-teal-600">{methodologyText}</a>
+      </p>
+    </article>
+
+    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+  </main>
+</BaseLayout>

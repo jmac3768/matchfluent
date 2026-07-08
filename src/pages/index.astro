@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TrustBar from "../components/astro/TrustBar.astro";
+import Quiz from "../components/react/Quiz.jsx";
+import { SITE_URL } from "../lib/data.js";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "MatchFluent",
+  url: SITE_URL,
+  description:
+    "Personalized English learning recommendations for native Spanish speakers and career-focused English learners.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${SITE_URL}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const silos = [
+  {
+    href: "/aprender-ingles/",
+    title: "Aprender Inglés",
+    desc: "Guías en español: apps, cursos, métodos, y lecciones de inglés por profesión — meseros, construcción, enfermería y más.",
+    cta: "Explorar las guías →",
+  },
+  {
+    href: "/learning-english/",
+    title: "Learning English",
+    desc: "English-language guides for serious learners: the best apps, exam prep, accent training, tutors, and AI tools compared.",
+    cta: "Browse the guides →",
+  },
+  {
+    href: "/lessons/",
+    title: "Lessons by Profession",
+    desc: "Free niche lessons with pronunciation audio — starting with English for Software Engineers: standups, tech calls, client meetings.",
+    cta: "Start a free lesson →",
+  },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="MatchFluent — Find Your Path to Fluent English"
+  description="Take our 2-minute quiz to get a personalized English learning plan. Trusted by learners in 30+ countries."
+  path="/"
+  schemas={[websiteSchema]}
+>
+  <main>
+    <section class="bg-gradient-hero text-white">
+      <div class="max-w-container mx-auto px-6 py-14 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="font-display text-4xl sm:text-5xl font-bold leading-tight mb-4">
+            Find your path to fluent English.
+          </h1>
+          <p class="text-lg text-white/85 mb-2">
+            Encuentra tu camino al inglés fluido.
+          </p>
+          <p class="text-white/75 leading-relaxed max-w-xl">
+            Most learners don't fail because English is hard — they fail because they started with
+            the wrong method for how they learn. Answer 4 quick questions and get a plan matched to
+            your roadblock, your language, and your goals.
+          </p>
+        </div>
+        <div id="quiz">
+          <Quiz client:visible lang="en" />
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-container mx-auto px-6">
+      <TrustBar lang="en" />
+    </div>
+
+    <section class="max-w-container mx-auto px-6 py-10">
+      <h2 class="font-sans text-2xl font-bold text-navy-700 mb-6 text-center">
+        Choose where to start
+      </h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {
+          silos.map((silo) => (
+            <a
+              href={silo.href}
+              class="block rounded-xl border border-border bg-surface p-7 shadow-card hover:shadow-card-hover transition-shadow"
+            >
+              <h3 class="font-sans text-xl font-bold text-navy-700 mb-2">{silo.title}</h3>
+              <p class="text-text-secondary text-sm leading-relaxed mb-4">{silo.desc}</p>
+              <span class="font-semibold text-teal-700">{silo.cta}</span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

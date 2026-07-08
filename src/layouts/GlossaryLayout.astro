@@ -1,0 +1,84 @@
+---
+/**
+ * Template for methods/glossary hub pages — authority content per the
+ * content-mix discipline: light on conversion elements. ONE contextual
+ * CTA maximum, NO intercepts, no quiz embed. DefinedTerm schema via
+ * GlossaryList.
+ */
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+import QuickAnswer from "../components/astro/QuickAnswer.astro";
+import AffiliateDisclosure from "../components/astro/AffiliateDisclosure.astro";
+import AuthorByline from "../components/astro/AuthorByline.astro";
+import GlossaryList from "../components/astro/GlossaryList.astro";
+import FAQSection from "../components/astro/FAQSection.astro";
+import Section from "../components/astro/Section.astro";
+import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import { buildAffiliateUrl } from "../config/site.js";
+import { lastUpdatedLabel } from "../lib/data.js";
+
+const {
+  lang,
+  title,
+  description,
+  path,
+  h1,
+  crumbs,
+  copy,
+  glossaryTerms = [],
+  relatedLinks = [],
+  page = {},
+} = Astro.props;
+
+const updated = lastUpdatedLabel(page, lang);
+const updatedLabel = lang === "es" ? "Actualizado" : "Last updated";
+const contextualCta =
+  lang === "es"
+    ? {
+        text: "Cada método aquí funciona. El problema es coserlos tú solo: un curso estructurado como Rocket English ya combina input comprensible, repetición espaciada y práctica de habla en una sola ruta.",
+        label: "Prueba Rocket English Gratis →",
+      }
+    : {
+        text: "Every method here works. The hard part is stitching them together yourself: a structured course like Rocket English already combines comprehensible input, spaced repetition, and speaking practice into one path.",
+        label: "Try Rocket English Free →",
+      };
+---
+
+<BaseLayout {lang} {title} {description} {path}>
+  <main class="max-w-3xl mx-auto px-6 py-8">
+    <Breadcrumbs {crumbs} />
+    <p class="text-sm text-text-muted mb-2">{updatedLabel}: {updated}</p>
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy-700 leading-tight mb-2">
+      {h1}
+    </h1>
+
+    <QuickAnswer {lang} html={copy.quickAnswer} />
+    <AffiliateDisclosure {lang} />
+    <AuthorByline {lang} />
+
+    <article class="mt-6">
+      {copy.entity && <p class="text-lg text-navy-700 leading-relaxed mb-8">{copy.entity}</p>}
+
+      {(copy.sections || []).map((section) => <Section {section} />)}
+
+      <GlossaryList {lang} terms={glossaryTerms} pagePath={path} />
+
+      {/* The single contextual CTA this page type allows. */}
+      <aside class="my-10 rounded-xl border border-border bg-surface p-6 shadow-card">
+        <p class="text-text-secondary leading-relaxed mb-4">{contextualCta.text}</p>
+        <a
+          href={buildAffiliateUrl("glossary-contextual")}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="font-semibold text-teal-700 hover:text-teal-600"
+        >
+          {contextualCta.label}
+        </a>
+      </aside>
+
+      <FAQSection {lang} faq={copy.faq} />
+    </article>
+
+    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+  </main>
+</BaseLayout>

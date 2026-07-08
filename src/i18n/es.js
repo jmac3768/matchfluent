@@ -1,0 +1,31 @@
+export default {
+  quickAnswerLabel: "Respuesta rápida",
+  lastUpdated: "Actualizado",
+  faqHeading: "Preguntas frecuentes",
+  relatedHeading: "Sigue explorando",
+  disclosureShort:
+    "Algunos enlaces de esta página son enlaces de afiliado. Si compras a través de ellos, MatchFluent recibe una comisión sin costo extra para ti. Esto nunca cambia lo que recomendamos.",
+  disclosureLink: "Divulgación completa",
+  methodologyLink: "Cómo evaluamos",
+  writtenBy: "Escrito por",
+  breadcrumbHome: "Inicio",
+  navSpanishHub: "Aprender Inglés",
+  navEnglishHub: "Learning English",
+  navLessons: "Lecciones",
+  navQuiz: "Haz el Quiz",
+  footerAbout: "Sobre MatchFluent",
+  footerMethodology: "Cómo Evaluamos",
+  footerDisclosure: "Divulgación de Afiliados",
+  footerTagline: "Encuentra tu camino al inglés fluido.",
+  practiceHeading: "Practica estas frases en voz alta",
+  practiceSub:
+    "Toca el altavoz para escuchar cada frase y repítela en voz alta. Hablar desde el primer día es lo que separa a quienes avanzan rápido de quienes se quedan estancados.",
+  glossaryHeading: "Términos clave, explicados",
+  tableCaption: "Apps gratuitas vs Rocket English de un vistazo",
+  quizTeaser: "¿No sabes por dónde empezar?",
+  quizTeaserSub: "Responde 2 preguntas y recibe una recomendación según tu forma de aprender.",
+  quizTeaserCta: "Ver Mi Plan Personalizado →",
+  notFoundTitle: "Página no encontrada",
+  notFoundBody:
+    "La página que buscas no existe o cambió de lugar. Empieza desde uno de nuestros centros de aprendizaje.",
+};

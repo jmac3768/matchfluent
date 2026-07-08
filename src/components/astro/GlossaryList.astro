@@ -1,0 +1,39 @@
+---
+/**
+ * Glossary term list for methods hubs + DefinedTerm JSON-LD.
+ * Each definition is self-contained per docs/geo-formatting.md §7.
+ */
+import { SITE_URL } from "../../lib/data.js";
+
+const { lang = "en", terms = [], pagePath = "" } = Astro.props;
+const heading = lang === "es" ? "Términos clave, explicados" : "Key terms, defined";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  name: heading,
+  url: `${SITE_URL}${pagePath}/`,
+  hasDefinedTerm: terms.map((t) => ({
+    "@type": "DefinedTerm",
+    name: t.term,
+    description: t.definition,
+  })),
+};
+---
+
+{
+  terms.length > 0 && (
+    <section class="my-12">
+      <h2 class="font-sans text-2xl font-bold text-navy-700 mb-6">{heading}</h2>
+      <dl class="grid gap-4 sm:grid-cols-2">
+        {terms.map((t) => (
+          <div class="rounded-xl border border-border bg-surface p-5 shadow-card">
+            <dt class="font-mono font-semibold text-teal-700 mb-2">{t.term}</dt>
+            <dd class="text-text-secondary text-sm leading-relaxed">{t.definition}</dd>
+          </div>
+        ))}
+      </dl>
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    </section>
+  )
+}

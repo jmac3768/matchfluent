@@ -1,0 +1,93 @@
+---
+/**
+ * Career lesson pages (currently: english-for-software-engineers),
+ * generated from the lessons array in keyword-clusters.json.
+ * PronounceButton appears next to each phrase and each vocab example
+ * per the pronunciation placement rules.
+ */
+import LessonLayout from "../../layouts/LessonLayout.astro";
+import LessonPhraseList from "../../components/astro/LessonPhraseList.astro";
+import CertificateMockup from "../../components/astro/CertificateMockup.astro";
+import PronounceButton from "../../components/react/PronounceButton.jsx";
+import { careerLessons, internalLinks, makeTitle } from "../../lib/data.js";
+import { lessonIntros } from "../../content/copy-en.js";
+
+export function getStaticPaths() {
+  return careerLessons.map((lesson) => ({
+    params: { slug: lesson.slug.replace("/lessons/", "") },
+    props: { lesson },
+  }));
+}
+
+const { lesson } = Astro.props;
+const intro = lessonIntros[lesson.id];
+
+if (!intro) {
+  throw new Error(`Missing authored intro for lesson: ${lesson.slug}`);
+}
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Lessons", path: "/lessons" },
+  { name: lesson.h1, path: lesson.slug },
+];
+
+const title = makeTitle(lesson.h1, " | MatchFluent Lesson");
+const phrases = lesson.phrases.map((p) => ({ en: p.phrase, context: p.context }));
+const intercept =
+  "General courses teach you to order coffee. Your standup needs 'blocked', 'take it offline', and pushback that lands politely — profession-specific fluency comes from structured conversational practice, not vocabulary lists.";
+---
+
+<LessonLayout
+  lang="en"
+  {title}
+  description={intro.description}
+  path={lesson.slug}
+  h1={lesson.h1}
+  {crumbs}
+  intro={intro.intro}
+  closing={intro.closing}
+  {intercept}
+  relatedLinks={internalLinks.en}
+  page={lesson}
+>
+  <h2 class="font-sans text-2xl font-bold text-navy-700 mb-2">{intro.phrasesHeading}</h2>
+  <LessonPhraseList {phrases} lang="en" />
+
+  <h2 class="font-sans text-2xl font-bold text-navy-700 mb-4 mt-12">{intro.vocabHeading}</h2>
+  <div class="overflow-x-auto rounded-xl border border-border shadow-card mb-8">
+    <table class="w-full text-sm text-left">
+      <thead>
+        <tr class="bg-navy-700 text-white">
+          <th scope="col" class="px-4 py-3 font-semibold">Term</th>
+          <th scope="col" class="px-4 py-3 font-semibold">Meaning</th>
+          <th scope="col" class="px-4 py-3 font-semibold">Hear it in a sentence</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          lesson.vocabMatrix.map((row, i) => (
+            <tr class={i % 2 === 0 ? "bg-surface" : "bg-background"}>
+              <th scope="row" class="px-4 py-3 font-mono font-medium text-teal-700 whitespace-nowrap">
+                {row.term}
+              </th>
+              <td class="px-4 py-3 text-text-secondary">{row.definition}</td>
+              <td class="px-4 py-3 text-navy-700">
+                <span class="flex items-start gap-2">
+                  <span class="flex-1 italic">"{row.example}"</span>
+                  <PronounceButton client:visible text={row.example} />
+                </span>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <CertificateMockup
+    title={lesson.certificateTitle}
+    subtitle={lesson.certificateSubtitle}
+    track={lesson.track}
+  />
+</LessonLayout>

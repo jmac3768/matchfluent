@@ -1,0 +1,39 @@
+---
+/** Visible breadcrumbs + BreadcrumbList JSON-LD. */
+import { SITE_URL } from "../../lib/data.js";
+
+const { crumbs = [] } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: crumbs.map((crumb, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: crumb.name,
+    item: `${SITE_URL}${crumb.path === "/" ? "" : crumb.path}/`.replace(/\/\/$/, "/"),
+  })),
+};
+---
+
+<nav aria-label="Breadcrumb" class="text-sm text-text-muted mb-4 overflow-x-auto">
+  <ol class="flex items-center gap-1 whitespace-nowrap">
+    {
+      crumbs.map((crumb, i) => (
+        <li class="flex items-center gap-1">
+          {i > 0 && <span aria-hidden="true">›</span>}
+          {i === crumbs.length - 1 ? (
+            <span aria-current="page" class="text-navy-500">
+              {crumb.name}
+            </span>
+          ) : (
+            <a href={crumb.path === "/" ? "/" : `${crumb.path}/`} class="hover:text-teal-600">
+              {crumb.name}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

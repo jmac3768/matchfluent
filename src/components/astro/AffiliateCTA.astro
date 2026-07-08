@@ -1,0 +1,25 @@
+---
+/**
+ * The affiliate CTA button. Copy must be action-specific per
+ * docs/conversion-rules.md §1 — callers pass approved pattern text,
+ * and the URL always resolves through buildAffiliateUrl(source).
+ */
+import { buildAffiliateUrl } from "../../config/site.js";
+
+const { source = "generic", lang = "en", label, sub } = Astro.props;
+
+const defaultLabel =
+  lang === "es" ? "Prueba Rocket English Gratis →" : "Try Rocket English Free →";
+---
+
+<div class="my-8 text-center">
+  <a
+    href={buildAffiliateUrl(source)}
+    rel="nofollow sponsored noopener"
+    target="_blank"
+    class="inline-block w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-cta text-gold-50 font-semibold text-lg shadow-cta hover:shadow-cta-hover transition-shadow"
+  >
+    {label || defaultLabel}
+  </a>
+  {sub && <p class="mt-2 text-sm text-text-muted">{sub}</p>}
+</div>

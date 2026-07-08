@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/astro/Breadcrumbs.astro";
+import { careerLessons, espLessons } from "../../lib/data.js";
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Lessons", path: "/lessons" },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="Free English Lessons by Profession — MatchFluent"
+  description="Free niche English lessons with pronunciation audio: software engineering, hospitality, healthcare, and more."
+  path="/lessons"
+>
+  <main class="max-w-container mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-3">
+      Free English Lessons by Profession
+    </h1>
+    <p class="text-lg text-text-secondary max-w-2xl mb-10">
+      General English courses skip the phrases your job actually runs on. These free lessons cover
+      profession-specific English — each phrase with pronunciation audio you can play and repeat.
+    </p>
+
+    <section class="mb-12">
+      <h2 class="font-sans text-2xl font-bold text-navy-700 mb-5">Career tracks (English)</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {
+          careerLessons.map((lesson) => (
+            <a
+              href={`${lesson.slug}/`}
+              class="block rounded-xl border border-border bg-surface p-6 shadow-card hover:shadow-card-hover transition-shadow"
+            >
+              <p class="text-xs font-mono text-teal-700 mb-1">{lesson.track}</p>
+              <h3 class="font-semibold text-navy-700 leading-snug">{lesson.h1}</h3>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <h2 class="font-sans text-2xl font-bold text-navy-700 mb-2">
+        Lecciones por profesión (en español)
+      </h2>
+      <p class="text-text-secondary mb-5">
+        Job-specific English lessons taught in Spanish, for Spanish-speaking workers in the US.
+      </p>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          espLessons.map((lesson) => (
+            <a
+              href={`${lesson.slug}/`}
+              class="block rounded-xl border border-border bg-surface p-5 shadow-card hover:shadow-card-hover transition-shadow"
+            >
+              <h3 class="font-semibold text-navy-700 leading-snug">{lesson.h1}</h3>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,363 @@
+{
+  "_meta": {
+    "package": "MatchFluent Layer 2b — Gap Coverage Expansion",
+    "purpose": "Closes the highest-value gaps found across the English-seed and Spanish-seed fanout analyses. Strictly additive to the existing site.",
+    "buildsOn": "keyword-clusters.json (Layer 1 + Layer 2). Do not modify existing entries — these are new pages only.",
+    "newPageCount": 11
+  },
+  "es": [
+    {
+      "id": "hablar-ingles-fluidez",
+      "slug": "/aprender-ingles/hablar-ingles-con-fluidez",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Cómo Hablar Inglés con Fluidez: Guía Práctica",
+      "primaryKeyword": "hablar inglés con fluidez",
+      "secondaryKeywords": [
+        "mejor curso para hablar inglés",
+        "mejorar inglés hablado",
+        "práctica de conversación en inglés",
+        "cómo hablar inglés sin miedo",
+        "perder el miedo a hablar inglés"
+      ],
+      "estimatedVolume": 1800,
+      "avgSD": 22,
+      "avgCPC": 1.95,
+      "copyAngle": "El bloqueo al hablar es el problema #1 de los estudiantes de inglés — y no se resuelve estudiando más gramática. Se resuelve hablando. Esta página aborda el miedo directamente y posiciona el reconocimiento de voz de Rocket Languages como la forma de practicar sin la vergüenza de hablar frente a otra persona.",
+      "comparisonFocus": "speaking practice with private feedback vs silent study",
+      "affiliateIntercept": "El error más grande al aprender inglés es estudiar en silencio. Necesitas hablar en voz alta desde el día uno — y Rocket Languages te da un lugar privado para hacerlo con retroalimentación instantánea.",
+      "hasPronunciation": true,
+      "practicePhrases": [
+        { "en": "Could you repeat that, please?", "es": "¿Podría repetir eso, por favor?", "context": "Cuando no entiendes algo" },
+        { "en": "I'm still learning, so please speak slowly.", "es": "Todavía estoy aprendiendo, por favor habla despacio.", "context": "Pedir paciencia" },
+        { "en": "What do you mean by that?", "es": "¿Qué quieres decir con eso?", "context": "Pedir aclaración" },
+        { "en": "Let me think about that for a second.", "es": "Déjame pensarlo un momento.", "context": "Ganar tiempo sin quedarte en silencio" },
+        { "en": "How do you say this in English?", "es": "¿Cómo se dice esto en inglés?", "context": "Cuando te falta una palabra" }
+      ],
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/perder-el-miedo-a-hablar-ingles",
+          "h1": "Cómo Perder el Miedo a Hablar Inglés",
+          "primaryKeyword": "perder el miedo a hablar inglés"
+        },
+        {
+          "slug": "/aprender-ingles/practica-de-conversacion-en-ingles",
+          "h1": "Práctica de Conversación en Inglés: Dónde y Cómo",
+          "primaryKeyword": "práctica de conversación en inglés"
+        }
+      ]
+    },
+    {
+      "id": "metodos-aprender-ingles",
+      "slug": "/aprender-ingles/metodos-para-aprender-ingles",
+      "type": "glossary-hub",
+      "lang": "es",
+      "h1": "Los Mejores Métodos para Aprender Inglés (Explicados)",
+      "primaryKeyword": "métodos para aprender inglés",
+      "secondaryKeywords": [
+        "input comprensible en inglés",
+        "shadowing inglés",
+        "repetición espaciada",
+        "inmersión lingüística",
+        "adquisición de idiomas",
+        "fluidez en inglés",
+        "qué es el nivel CEFR"
+      ],
+      "estimatedVolume": 900,
+      "avgSD": 15,
+      "avgCPC": 0.85,
+      "copyAngle": "Página de autoridad temática (GEO). Explica cada método de forma clara y honesta: input comprensible (Krashen), shadowing, repetición espaciada, inmersión, niveles CEFR. Este contenido educa y construye autoridad para motores de IA. Rocket Languages aparece como el método que combina varios de estos enfoques en un solo curso estructurado.",
+      "comparisonFocus": "methods explained, structured course combines the best of them",
+      "affiliateIntercept": "Cada método tiene su lugar, pero saltar entre técnicas sueltas es agotador. Un curso estructurado como Rocket Languages combina input comprensible, repetición espaciada y práctica de habla en una sola ruta.",
+      "hasPronunciation": false,
+      "glossaryTerms": [
+        { "term": "Input comprensible", "definition": "Exponerte a inglés que entiendes en un 80-90% — ni tan fácil que te aburras, ni tan difícil que te frustres. Es la base de la teoría de adquisición de Stephen Krashen." },
+        { "term": "Shadowing", "definition": "Escuchar audio en inglés y repetirlo simultáneamente, imitando el ritmo y la entonación. Excelente para pronunciación y fluidez." },
+        { "term": "Repetición espaciada", "definition": "Repasar vocabulario en intervalos crecientes justo antes de olvidarlo. Es como funcionan apps como Anki." },
+        { "term": "Inmersión", "definition": "Rodearte de inglés en tu vida diaria — cambiar el idioma del teléfono, ver series sin subtítulos, pensar en inglés." },
+        { "term": "Niveles CEFR", "definition": "El Marco Común Europeo clasifica tu nivel de A1 (principiante) a C2 (dominio nativo). La mayoría de los trabajos piden B1-B2." },
+        { "term": "Fluidez", "definition": "No significa hablar perfecto — significa comunicarte con naturalidad sin traducir mentalmente cada palabra." }
+      ],
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/que-es-el-input-comprensible",
+          "h1": "Qué es el Input Comprensible y Cómo Usarlo",
+          "primaryKeyword": "input comprensible en inglés"
+        },
+        {
+          "slug": "/aprender-ingles/niveles-de-ingles-cefr",
+          "h1": "Los Niveles de Inglés CEFR Explicados (A1 a C2)",
+          "primaryKeyword": "niveles de inglés cefr"
+        }
+      ]
+    },
+    {
+      "id": "tutores-online-es",
+      "slug": "/aprender-ingles/preply-italki-cambly-comparacion",
+      "type": "comparison",
+      "lang": "es",
+      "h1": "Preply vs italki vs Cambly: ¿Qué Plataforma de Tutores es Mejor?",
+      "primaryKeyword": "preply italki cambly",
+      "secondaryKeywords": [
+        "preply inglés",
+        "italki inglés",
+        "cambly inglés",
+        "mejor plataforma de tutores de inglés",
+        "clases de inglés con profesor particular"
+      ],
+      "estimatedVolume": 700,
+      "avgSD": 24,
+      "avgCPC": 2.30,
+      "copyAngle": "Comparación honesta de plataformas de tutoría 1-a-1. Cada una tiene su fortaleza (Preply estructura, italki flexibilidad, Cambly nativos on-demand). El punto de conversión: los tutores cuestan $15-30 por hora y necesitas una base antes de aprovecharlos. Rocket Languages construye esa base a una fracción del costo, y luego los tutores tienen más sentido.",
+      "comparisonFocus": "per-hour tutoring cost vs one-time structured course foundation",
+      "affiliateIntercept": "Los tutores particulares son geniales — cuando ya tienes una base. Pagar $20 la hora para aprender lo básico sale carísimo. Construye la base primero con un curso estructurado, y luego el tutor te pulirá.",
+      "hasPronunciation": false,
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/clases-de-ingles-con-profesor-particular",
+          "h1": "Clases de Inglés con Profesor Particular: ¿Valen la Pena?",
+          "primaryKeyword": "clases de inglés con profesor particular"
+        }
+      ]
+    },
+    {
+      "id": "inmersion-ingles",
+      "slug": "/aprender-ingles/inmersion-en-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Inmersión en Inglés: Cómo Aprender Más Rápido Sin Viajar",
+      "primaryKeyword": "inmersión en inglés",
+      "secondaryKeywords": [
+        "curso intensivo de inglés",
+        "aprender inglés rápido con inmersión",
+        "inmersión total en inglés en casa",
+        "cómo crear un ambiente de inglés"
+      ],
+      "estimatedVolume": 800,
+      "avgSD": 19,
+      "avgCPC": 1.70,
+      "copyAngle": "La inmersión es la forma más rápida de aprender — pero no necesitas mudarte a otro país. Guía práctica para crear inmersión en casa: cambiar dispositivos al inglés, consumo de media, pensar en inglés. Rocket Languages como el ancla estructurada que le da dirección a la inmersión.",
+      "comparisonFocus": "structured immersion vs passive exposure",
+      "affiliateIntercept": "La inmersión sin estructura es solo ruido de fondo. Necesitas un currículum que te diga qué practicar mientras te rodeas de inglés — ahí entra Rocket Languages.",
+      "hasPronunciation": false,
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/curso-intensivo-de-ingles",
+          "h1": "Curso Intensivo de Inglés: ¿Funcionan de Verdad?",
+          "primaryKeyword": "curso intensivo de inglés"
+        }
+      ]
+    },
+    {
+      "id": "leer-en-ingles",
+      "slug": "/aprender-ingles/leer-en-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Cómo Aprender Inglés Leyendo: Guía para Empezar Hoy",
+      "primaryKeyword": "leer en inglés",
+      "secondaryKeywords": [
+        "leer en inglés para principiantes",
+        "cómo empezar a leer en inglés",
+        "libros fáciles para leer en inglés",
+        "lectura en inglés para mejorar vocabulario"
+      ],
+      "estimatedVolume": 1100,
+      "avgSD": 16,
+      "avgCPC": 0.90,
+      "copyAngle": "Leer es una de las formas más subestimadas de aprender inglés — pero mucha gente empieza con material demasiado difícil y se rinde. Guía para elegir lecturas por nivel. Contrasta con el hecho de que leer no te enseña a hablar ni pronunciar — ahí entra el audio de Rocket Languages.",
+      "comparisonFocus": "reading builds vocabulary but not speaking/pronunciation",
+      "affiliateIntercept": "Leer construye tu vocabulario a una velocidad impresionante. Pero leer no te enseña cómo suenan las palabras. Combina la lectura con audio interactivo para no aprender pronunciaciones incorrectas.",
+      "hasPronunciation": false,
+      "fanouts": []
+    }
+  ],
+  "en": [
+    {
+      "id": "fastest-way-en",
+      "slug": "/learning-english/fastest-way-to-learn-english",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "The Fastest Way to Learn English (That Actually Works)",
+      "primaryKeyword": "fastest way to learn english",
+      "secondaryKeywords": [
+        "how to learn english quickly",
+        "learn english in 30 days",
+        "accelerate english fluency",
+        "intensive english course",
+        "how to learn english fast"
+      ],
+      "estimatedVolume": 4200,
+      "avgSD": 41,
+      "avgCPC": 2.15,
+      "copyAngle": "This is a SEED term — build it as a flagship page. Honest answer: there's no magic, but there IS a fastest path, and it depends on your specific roadblock. This page is the natural home for the quiz. Frame speed as a function of daily speaking practice + structured curriculum + immersion, not gimmicks. Debunk '30 days to fluent' myths while still serving the intent.",
+      "comparisonFocus": "structured daily speaking practice vs scattered free resources",
+      "affiliateIntercept": "The fastest learners aren't the ones with the most resources — they're the ones who speak out loud every single day from day one. That's exactly what Rocket English is built around.",
+      "hasPronunciation": true,
+      "practicePhrases": [
+        { "phrase": "Let me make sure I understand correctly.", "context": "Confirming comprehension in conversation" },
+        { "phrase": "I'd say it a little differently.", "context": "Politely offering an alternative" },
+        { "phrase": "That's a good point, but I see it differently.", "context": "Disagreeing naturally" },
+        { "phrase": "Can you give me an example?", "context": "Asking for clarification" }
+      ],
+      "fanouts": [
+        {
+          "slug": "/learning-english/learn-english-in-30-days",
+          "h1": "Can You Really Learn English in 30 Days?",
+          "primaryKeyword": "learn english in 30 days"
+        },
+        {
+          "slug": "/learning-english/how-to-learn-english-quickly",
+          "h1": "How to Learn English Quickly: A Realistic Plan",
+          "primaryKeyword": "how to learn english quickly"
+        }
+      ]
+    },
+    {
+      "id": "speak-fluently-en",
+      "slug": "/learning-english/how-to-speak-english-fluently",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "How to Speak English Fluently: A Practical Roadmap",
+      "primaryKeyword": "speak english fluently",
+      "secondaryKeywords": [
+        "best english speaking course",
+        "improve spoken english",
+        "english conversation practice",
+        "how to speak english confidently",
+        "stop translating in your head"
+      ],
+      "estimatedVolume": 3600,
+      "avgSD": 44,
+      "avgCPC": 2.80,
+      "copyAngle": "Speaking is the #1 roadblock from the quiz. Own it. The core insight: fluency isn't about knowing more words, it's about retrieval speed and confidence. Address the 'translating in my head' problem directly. Rocket English's speech recognition lets learners practice speaking privately, which is where confidence actually builds.",
+      "comparisonFocus": "active speaking practice vs passive input",
+      "affiliateIntercept": "You'll never speak fluently by studying silently. Fluency comes from your mouth making the shapes over and over — Rocket English gives you a private space to do exactly that, with instant feedback.",
+      "hasPronunciation": true,
+      "practicePhrases": [
+        { "phrase": "To be honest, I'm not sure.", "context": "Natural filler that buys thinking time" },
+        { "phrase": "It depends on the situation.", "context": "A flexible, native-sounding response" },
+        { "phrase": "That reminds me of something.", "context": "Keeping conversation flowing" },
+        { "phrase": "Now that you mention it...", "context": "Building on what someone said" },
+        { "phrase": "I couldn't agree more.", "context": "Strong agreement, sounds fluent" }
+      ],
+      "fanouts": [
+        {
+          "slug": "/learning-english/best-english-speaking-course",
+          "h1": "Best English Speaking Courses Compared",
+          "primaryKeyword": "best english speaking course"
+        },
+        {
+          "slug": "/learning-english/improve-spoken-english",
+          "h1": "How to Improve Your Spoken English",
+          "primaryKeyword": "improve spoken english"
+        }
+      ]
+    },
+    {
+      "id": "exam-prep-en",
+      "slug": "/learning-english/english-exam-prep",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "English Exam Preparation: TOEFL, IELTS, Cambridge & CELPIP",
+      "primaryKeyword": "english exam preparation",
+      "secondaryKeywords": [
+        "TOEFL preparation",
+        "IELTS English course",
+        "Cambridge English preparation",
+        "CELPIP English",
+        "best course for IELTS preparation"
+      ],
+      "estimatedVolume": 2900,
+      "avgSD": 48,
+      "avgCPC": 4.10,
+      "copyAngle": "Highest-CPC cluster in the whole niche — exam takers pay. Compare the major exams (what each is for, who needs which). Be honest: Rocket English is a general fluency course, not a dedicated test-prep product, but a strong speaking/listening foundation is what most test-takers actually lack. Position it as foundation-building before exam-specific drilling.",
+      "comparisonFocus": "general fluency foundation vs exam-specific cramming",
+      "affiliateIntercept": "Most people fail these exams on the speaking and listening sections, not the grammar. Build a real spoken foundation first — Rocket English — then drill the exam-specific format.",
+      "hasPronunciation": false,
+      "fanouts": [
+        {
+          "slug": "/learning-english/toefl-preparation-guide",
+          "h1": "TOEFL Preparation: Where to Start",
+          "primaryKeyword": "toefl preparation"
+        },
+        {
+          "slug": "/learning-english/ielts-preparation-guide",
+          "h1": "IELTS Preparation: A Complete Beginner's Guide",
+          "primaryKeyword": "ielts english course"
+        }
+      ]
+    },
+    {
+      "id": "methods-hub-en",
+      "slug": "/learning-english/english-learning-methods",
+      "type": "glossary-hub",
+      "lang": "en",
+      "h1": "English Learning Methods Explained: What Actually Works",
+      "primaryKeyword": "english learning methods",
+      "secondaryKeywords": [
+        "comprehensible input english",
+        "shadowing english",
+        "spaced repetition",
+        "active recall",
+        "language exchange",
+        "what is CEFR"
+      ],
+      "estimatedVolume": 1400,
+      "avgSD": 29,
+      "avgCPC": 1.10,
+      "copyAngle": "GEO authority page. Explain each method clearly and honestly — comprehensible input (Krashen), shadowing, spaced repetition, active recall, language exchange, immersion, CEFR levels. This is the kind of content AI search engines cite. Rocket English positioned as combining multiple methods into one structured path.",
+      "comparisonFocus": "methods explained, structured course combines the best",
+      "affiliateIntercept": "Every method here works. The problem is stitching them together yourself. A structured course like Rocket English already combines comprehensible input, spaced repetition, and speaking practice into one path.",
+      "hasPronunciation": false,
+      "glossaryTerms": [
+        { "term": "Comprehensible Input", "definition": "Exposure to English you understand about 80-90% of — challenging but not overwhelming. The foundation of Stephen Krashen's acquisition theory." },
+        { "term": "Shadowing", "definition": "Listening to English audio and repeating it in real time, mimicking rhythm and intonation. Excellent for pronunciation and flow." },
+        { "term": "Spaced Repetition", "definition": "Reviewing vocabulary at increasing intervals right before you'd forget it. The engine behind apps like Anki." },
+        { "term": "Active Recall", "definition": "Testing yourself instead of re-reading — pulling information out of memory strengthens it far more than passive review." },
+        { "term": "Language Exchange", "definition": "Trading conversation practice with a native speaker who wants to learn your language. Free, but requires you to already have a base." },
+        { "term": "CEFR Levels", "definition": "The Common European Framework rates you from A1 (beginner) to C2 (near-native). Most jobs want B1-B2." }
+      ],
+      "fanouts": [
+        {
+          "slug": "/learning-english/what-is-comprehensible-input",
+          "h1": "What Is Comprehensible Input? (And How to Use It)",
+          "primaryKeyword": "comprehensible input english"
+        },
+        {
+          "slug": "/learning-english/cefr-levels-explained",
+          "h1": "CEFR Levels Explained: A1 to C2",
+          "primaryKeyword": "what is cefr"
+        }
+      ]
+    },
+    {
+      "id": "tutors-en",
+      "slug": "/learning-english/best-online-english-tutor",
+      "type": "comparison",
+      "lang": "en",
+      "h1": "Best Online English Tutor Platforms: Preply vs italki vs Cambly",
+      "primaryKeyword": "best english tutor online",
+      "secondaryKeywords": [
+        "preply english",
+        "italki english",
+        "cambly english",
+        "best online english tutor",
+        "english tutor vs course"
+      ],
+      "estimatedVolume": 1600,
+      "avgSD": 38,
+      "avgCPC": 3.20,
+      "copyAngle": "Honest comparison of 1-on-1 tutor marketplaces. Each has a strength (Preply structure, italki flexibility, Cambly on-demand natives). Conversion angle: tutors cost $15-30/hour and you need a foundation to use them efficiently. Rocket English builds that foundation cheaply, making tutor time far more valuable later.",
+      "comparisonFocus": "per-hour tutoring cost vs one-time structured foundation",
+      "affiliateIntercept": "Tutors are worth every penny — once you have a base. Paying $20 an hour to learn the basics is a waste. Build the foundation with a structured course first, then let a tutor polish you.",
+      "hasPronunciation": false,
+      "fanouts": [
+        {
+          "slug": "/learning-english/english-tutor-vs-course",
+          "h1": "English Tutor vs Course: Which Should You Choose?",
+          "primaryKeyword": "english tutor vs course"
+        }
+      ]
+    }
+  ]
+}

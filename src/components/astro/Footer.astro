@@ -1,0 +1,66 @@
+---
+import { BRAND } from "../../config/site.js";
+
+const { lang = "en" } = Astro.props;
+const t =
+  lang === "es"
+    ? {
+        tagline: BRAND.tagline_es,
+        about: "Sobre MatchFluent",
+        aboutHref: "/sobre-nosotros/",
+        methodology: "Cómo Evaluamos",
+        methodologyHref: "/como-evaluamos/",
+        disclosure: "Divulgación de Afiliados",
+        silosHeading: "Aprende",
+        legalHeading: "MatchFluent",
+        lessons: "Lecciones por profesión",
+      }
+    : {
+        tagline: BRAND.tagline_en,
+        about: "About MatchFluent",
+        aboutHref: "/about/",
+        methodology: "How We Review",
+        methodologyHref: "/how-we-review/",
+        disclosure: "Affiliate Disclosure",
+        silosHeading: "Learn",
+        legalHeading: "MatchFluent",
+        lessons: "Lessons by profession",
+      };
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-navy-700 text-navy-100 mt-20">
+  <div class="max-w-container mx-auto px-6 py-12 grid gap-10 sm:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span
+          class="w-8 h-8 rounded-lg bg-white/10 text-white font-display font-bold text-xs flex items-center justify-center"
+          >MF</span
+        >
+        <span class="font-semibold text-white">MatchFluent</span>
+      </div>
+      <p class="text-sm text-navy-100/80">{t.tagline}</p>
+    </div>
+    <nav aria-label={t.silosHeading}>
+      <h2 class="text-sm font-semibold text-white mb-3 uppercase tracking-wide">{t.silosHeading}</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/aprender-ingles/" class="hover:text-white">Aprender Inglés</a></li>
+        <li><a href="/learning-english/" class="hover:text-white">Learning English</a></li>
+        <li><a href="/lessons/" class="hover:text-white">{t.lessons}</a></li>
+      </ul>
+    </nav>
+    <nav aria-label={t.legalHeading}>
+      <h2 class="text-sm font-semibold text-white mb-3 uppercase tracking-wide">{t.legalHeading}</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href={t.aboutHref} class="hover:text-white">{t.about}</a></li>
+        <li><a href={t.methodologyHref} class="hover:text-white">{t.methodology}</a></li>
+        <li><a href="/affiliate-disclosure/" class="hover:text-white">{t.disclosure}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="max-w-container mx-auto px-6 py-4 text-xs text-navy-100/60">
+      © {year} MatchFluent · matchfluent.com
+    </p>
+  </div>
+</footer>

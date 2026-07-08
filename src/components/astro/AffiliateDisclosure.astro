@@ -1,0 +1,19 @@
+---
+/**
+ * Short, honest affiliate disclosure shown near the top of every page
+ * that contains affiliate links (FTC + Awin requirement), linking to
+ * the full /affiliate-disclosure page.
+ */
+const { lang = "en" } = Astro.props;
+
+const text =
+  lang === "es"
+    ? "Algunos enlaces de esta página son enlaces de afiliado: si compras a través de ellos, MatchFluent recibe una comisión sin costo extra para ti. Esto nunca cambia lo que recomendamos."
+    : "Some links on this page are affiliate links: if you buy through them, MatchFluent earns a commission at no extra cost to you. This never changes what we recommend.";
+const linkLabel = lang === "es" ? "Divulgación completa" : "Full disclosure";
+---
+
+<p class="text-xs text-text-muted bg-surfaceAlt border border-border rounded-lg px-4 py-3 my-4">
+  {text}
+  <a href="/affiliate-disclosure/" class="underline hover:text-teal-600">{linkLabel}</a>.
+</p>

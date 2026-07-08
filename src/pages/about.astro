@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="About MatchFluent — Who We Are and Why"
+  description="Who runs MatchFluent, why it exists, and how we review English learning tools. Honest recommendations for serious learners."
+  path="/about"
+>
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-6">About MatchFluent</h1>
+
+    <article class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg text-navy-700">
+        MatchFluent exists because most English-learning advice answers the wrong question. The
+        question isn't "what's the best app?" — it's "what's the best method for how <em>you</em>
+        learn and where <em>you're</em> stuck?"
+      </p>
+      <p>
+        We serve two audiences that mainstream review sites treat as an afterthought: native Spanish
+        speakers learning English — including the workers who need job-specific English for
+        restaurants, construction, healthcare, and hotels — and career-focused learners preparing
+        for interviews, exams, and international teams.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">What we believe</h2>
+      <p>
+        Fluency comes from speaking out loud every day, not from streaks. Free tools are genuinely
+        useful and we say so. Paid tools earn a recommendation only when they fill a gap free tools
+        can't — for us, that gap is speaking practice with feedback, which is why Rocket Languages
+        appears across our reviews. When a tool is the wrong fit for a use case, we say that too.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">How we review</h2>
+      <p>
+        Every recommendation follows the criteria in our
+        <a href="/how-we-review/" class="text-teal-700 underline">review methodology</a>: speaking
+        practice quality, curriculum structure, audio authenticity, pricing honesty, and offline
+        access. We disclose our affiliate relationships on
+        <a href="/affiliate-disclosure/" class="text-teal-700 underline">every page that has them</a>.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">Who writes MatchFluent</h2>
+      <div class="rounded-xl border border-border bg-surface p-6 shadow-card">
+        <p class="font-semibold text-navy-700 mb-2">Alex Rivera — Language-learning tools analyst</p>
+        <p class="text-sm">
+          [TODO: real author bio + photo. Replace this placeholder with the author's real name,
+          credentials, language-learning background, and a photo. Also update AuthorByline.astro.]
+        </p>
+      </div>
+    </article>
+  </main>
+</BaseLayout>

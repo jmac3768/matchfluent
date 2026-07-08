@@ -1,0 +1,69 @@
+---
+/**
+ * Generates every Spanish cluster, comparison, glossary-hub, and
+ * fanout page at build time from the merged keyword-cluster data.
+ * One template per page type — no hand-written page files.
+ */
+import ClusterLayout from "../../layouts/ClusterLayout.astro";
+import ComparisonLayout from "../../layouts/ComparisonLayout.astro";
+import GlossaryLayout from "../../layouts/GlossaryLayout.astro";
+import { esRoutes, internalLinks, makeTitle } from "../../lib/data.js";
+import { mainCopy } from "../../content/copy-es.js";
+import { fanoutCopy } from "../../content/fanouts-es.js";
+
+export function getStaticPaths() {
+  return esRoutes();
+}
+
+const { kind, page, parent } = Astro.props;
+const lang = "es";
+const hub = { name: "Aprender Inglés", path: "/aprender-ingles" };
+
+const isFanout = kind === "fanout";
+const source = isFanout ? parent : page;
+const copy = isFanout ? fanoutCopy[page.slug] : mainCopy[page.id];
+
+if (!copy) {
+  throw new Error(`Missing authored copy for ES page: ${page.slug}`);
+}
+
+const crumbs = [
+  { name: "Inicio", path: "/" },
+  hub,
+  ...(isFanout ? [{ name: parent.h1, path: parent.slug }] : []),
+  { name: page.h1, path: page.slug },
+];
+
+const title = makeTitle(page.h1);
+const intercept = source.affiliateIntercept;
+const practicePhrases =
+  !isFanout && page.hasPronunciation && page.practicePhrases
+    ? page.practicePhrases.map((p) => ({ en: p.en || p.phrase, es: p.es, context: p.context }))
+    : [];
+const relatedLinks = internalLinks.es;
+
+const layoutProps = {
+  lang,
+  title,
+  description: copy.description,
+  path: page.slug,
+  h1: page.h1,
+  crumbs,
+  copy,
+  intercept,
+  relatedLinks,
+  page,
+};
+
+const pageType = isFanout ? "cluster" : page.type;
+---
+
+{
+  pageType === "comparison" ? (
+    <ComparisonLayout {...layoutProps} />
+  ) : pageType === "glossary-hub" ? (
+    <GlossaryLayout {...layoutProps} glossaryTerms={page.glossaryTerms || []} />
+  ) : (
+    <ClusterLayout {...layoutProps} practicePhrases={practicePhrases} />
+  )
+}

@@ -1,0 +1,659 @@
+{
+  "es": [
+    {
+      "id": "mejor-app",
+      "slug": "/aprender-ingles/mejor-app-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "La Mejor App para Aprender Inglés en 2025",
+      "primaryKeyword": "mejor app para aprender inglés",
+      "secondaryKeywords": [
+        "aplicaciones para aprender inglés",
+        "app para aprender inglés gratis",
+        "aplicación gratis para aprender inglés",
+        "mejor aplicación para aprender inglés",
+        "aplicaciones para aprender inglés gratis"
+      ],
+      "estimatedVolume": 5100,
+      "avgSD": 27,
+      "avgCPC": 2.10,
+      "copyAngle": "Ranked comparison of learning apps. Duolingo wins on gamification, Rocket Languages wins on speaking practice and real audio interaction. Lead with the question: ¿quieres entretenerte o realmente hablar inglés?",
+      "comparisonFocus": "speech recognition and interactive audio",
+      "affiliateIntercept": "La mayoría de las apps te enseñan a reconocer palabras. Rocket Languages te enseña a hablar.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/aplicaciones-para-aprender-ingles-gratis",
+          "h1": "Aplicaciones Gratis para Aprender Inglés",
+          "primaryKeyword": "aplicaciones para aprender inglés gratis"
+        },
+        {
+          "slug": "/aprender-ingles/mejor-aplicacion-para-aprender-ingles-android",
+          "h1": "Mejor Aplicación para Aprender Inglés en Android",
+          "primaryKeyword": "mejor aplicación para aprender inglés android"
+        },
+        {
+          "slug": "/aprender-ingles/app-para-aprender-ingles-sin-internet",
+          "h1": "Apps para Aprender Inglés Sin Internet",
+          "primaryKeyword": "app para aprender inglés sin internet"
+        }
+      ]
+    },
+    {
+      "id": "cursos-clases",
+      "slug": "/aprender-ingles/cursos-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Los Mejores Cursos para Aprender Inglés Online",
+      "primaryKeyword": "curso para aprender inglés",
+      "secondaryKeywords": [
+        "clases para aprender inglés",
+        "escuelas para aprender inglés",
+        "escuelas para aprender inglés cerca de mi",
+        "cursos para aprender inglés gratis",
+        "cursos gratis para aprender inglés"
+      ],
+      "estimatedVolume": 5210,
+      "avgSD": 24,
+      "avgCPC": 2.45,
+      "copyAngle": "Online vs. presencial. El online gana en precio, flexibilidad y acceso a profesores nativos. Rocket Languages como opción online recomendada — acceso de por vida, sin horarios fijos.",
+      "comparisonFocus": "flexibility, lifetime access, no fixed schedule",
+      "affiliateIntercept": "Las clases presenciales cuestan 3x más y no puedes practicar a las 11pm. Rocket Languages sí.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/clases-de-ingles-online-gratis",
+          "h1": "Clases de Inglés Online Gratis",
+          "primaryKeyword": "clases de inglés online gratis"
+        },
+        {
+          "slug": "/aprender-ingles/escuelas-de-ingles-cerca-de-mi",
+          "h1": "Escuelas de Inglés Cerca de Mí",
+          "primaryKeyword": "escuelas para aprender inglés cerca de mi"
+        },
+        {
+          "slug": "/aprender-ingles/cursos-de-ingles-gratis-con-certificado",
+          "h1": "Cursos de Inglés Gratis con Certificado",
+          "primaryKeyword": "cursos gratis para aprender inglés con certificado"
+        }
+      ]
+    },
+    {
+      "id": "libros-audiolibros",
+      "slug": "/aprender-ingles/mejores-libros-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Los Mejores Libros para Aprender Inglés Desde Cero",
+      "primaryKeyword": "libro para aprender inglés",
+      "secondaryKeywords": [
+        "libros para aprender inglés pdf gratis",
+        "audiolibro para aprender inglés",
+        "libros para aprender inglés desde cero",
+        "libros para aprender inglés pdf",
+        "libros para aprender inglés gratis"
+      ],
+      "estimatedVolume": 5760,
+      "avgSD": 29,
+      "avgCPC": 1.38,
+      "copyAngle": "Los libros son pasivos — lees, pero no practicas el habla. Contrasta con el audio interactivo de Rocket Languages. Para quienes aprenden bien escuchando, hay algo mejor que un audiolibro.",
+      "comparisonFocus": "passive vs active learning, speaking practice gap",
+      "affiliateIntercept": "Un libro te enseña gramática. Rocket Languages te enseña a usarla cuando alguien te está hablando.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/audiolibros-para-aprender-ingles-gratis",
+          "h1": "Audiolibros para Aprender Inglés Gratis",
+          "primaryKeyword": "audiolibros gratis para aprender inglés"
+        },
+        {
+          "slug": "/aprender-ingles/libros-para-aprender-ingles-desde-cero-pdf",
+          "h1": "Libros para Aprender Inglés Desde Cero PDF",
+          "primaryKeyword": "libros para aprender inglés desde cero pdf gratis"
+        },
+        {
+          "slug": "/aprender-ingles/aprender-ingles-escuchando",
+          "h1": "Aprender Inglés Escuchando: La Guía Completa",
+          "primaryKeyword": "aprender inglés escuchando"
+        }
+      ]
+    },
+    {
+      "id": "podcast-audio",
+      "slug": "/aprender-ingles/mejores-podcasts-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Los Mejores Podcasts para Aprender Inglés en 2025",
+      "primaryKeyword": "podcast para aprender inglés",
+      "secondaryKeywords": [
+        "mejores podcast para aprender inglés",
+        "podcast para aprender inglés gratis",
+        "audiolibros gratis para aprender inglés",
+        "podcast para aprender inglés spotify",
+        "audios para aprender inglés gratis"
+      ],
+      "estimatedVolume": 2070,
+      "avgSD": 17,
+      "avgCPC": 1.55,
+      "copyAngle": "Los podcasts mejoran el listening pero no te enseñan a hablar. Roundup de los 7 mejores podcasts con Rocket Languages posicionado como el upgrade estructurado — del escuchar al hablar.",
+      "comparisonFocus": "passive listening vs structured speaking practice",
+      "affiliateIntercept": "Los podcasts son perfectos para entrenar el oído. Para entrenar la boca, necesitas algo diferente.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/podcasts-para-aprender-ingles-spotify",
+          "h1": "Los Mejores Podcasts para Aprender Inglés en Spotify",
+          "primaryKeyword": "podcast para aprender inglés spotify"
+        },
+        {
+          "slug": "/aprender-ingles/audios-para-aprender-ingles-gratis",
+          "h1": "Audios para Aprender Inglés Gratis",
+          "primaryKeyword": "audios para aprender inglés gratis"
+        },
+        {
+          "slug": "/aprender-ingles/aprender-ingles-mientras-duermes",
+          "h1": "Aprender Inglés Mientras Duermes: ¿Funciona?",
+          "primaryKeyword": "aprender inglés mientras duermes"
+        }
+      ]
+    },
+    {
+      "id": "media-series-peliculas",
+      "slug": "/aprender-ingles/series-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Las Mejores Series y Películas para Aprender Inglés",
+      "primaryKeyword": "series para aprender inglés",
+      "secondaryKeywords": [
+        "películas para aprender inglés",
+        "música para aprender inglés",
+        "canciones para aprender inglés",
+        "canciones para aprender inglés subtituladas",
+        "series de netflix para aprender inglés"
+      ],
+      "estimatedVolume": 2470,
+      "avgSD": 8,
+      "avgCPC": 1.45,
+      "copyAngle": "El consumo de media en inglés es exposición, no instrucción. Funciona mejor cuando ya tienes una base — contrasta con Rocket Languages que construye esa base primero. No compiten: se complementan.",
+      "comparisonFocus": "exposure vs structured foundation",
+      "affiliateIntercept": "Ver series en inglés acelera el aprendizaje cuando ya tienes las bases. Rocket Languages te da esas bases.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/peliculas-para-aprender-ingles-netflix",
+          "h1": "Las Mejores Películas en Netflix para Aprender Inglés",
+          "primaryKeyword": "películas para aprender inglés netflix"
+        },
+        {
+          "slug": "/aprender-ingles/canciones-para-aprender-ingles-subtituladas",
+          "h1": "Canciones para Aprender Inglés con Subtítulos",
+          "primaryKeyword": "canciones para aprender inglés subtituladas"
+        },
+        {
+          "slug": "/aprender-ingles/musica-para-aprender-ingles",
+          "h1": "Música para Aprender Inglés: Guía Completa",
+          "primaryKeyword": "música para aprender inglés"
+        },
+        {
+          "slug": "/aprender-ingles/series-de-netflix-para-aprender-ingles",
+          "h1": "Las Mejores Series de Netflix para Aprender Inglés",
+          "primaryKeyword": "series de netflix para aprender inglés"
+        }
+      ]
+    },
+    {
+      "id": "ia-tools",
+      "slug": "/aprender-ingles/ia-para-aprender-ingles",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Cómo Usar la Inteligencia Artificial para Aprender Inglés",
+      "primaryKeyword": "ia para aprender inglés",
+      "secondaryKeywords": [
+        "inteligencia artificial para aprender inglés",
+        "aprender inglés con ia gratis",
+        "aprender inglés con ChatGPT",
+        "mejor ia para aprender inglés gratis",
+        "inteligencia artificial para aprender inglés gratis"
+      ],
+      "estimatedVolume": 910,
+      "avgSD": 28,
+      "avgCPC": 1.85,
+      "copyAngle": "La IA es excelente para práctica de conversación pero carece de currículum estructurado. Rocket Languages + IA es la combinación ganadora. Posiciona Rocket como el currículum y la IA como el campo de práctica.",
+      "comparisonFocus": "structured curriculum vs unstructured AI conversation",
+      "affiliateIntercept": "ChatGPT puede ser tu compañero de práctica. Rocket Languages es tu profesor. Los dos juntos son imbatibles.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/aprender-ingles-con-chatgpt",
+          "h1": "Cómo Aprender Inglés con ChatGPT",
+          "primaryKeyword": "aprender inglés con chatgpt"
+        },
+        {
+          "slug": "/aprender-ingles/mejor-ia-para-aprender-ingles-gratis",
+          "h1": "La Mejor IA para Aprender Inglés Gratis",
+          "primaryKeyword": "mejor ia para aprender inglés gratis"
+        }
+      ]
+    },
+    {
+      "id": "duolingo-vs",
+      "slug": "/aprender-ingles/duolingo-vs-rocket-languages",
+      "type": "comparison",
+      "lang": "es",
+      "h1": "Duolingo vs Rocket Languages: ¿Cuál es Mejor para Aprender Inglés?",
+      "primaryKeyword": "duolingo vs rocket languages",
+      "secondaryKeywords": [
+        "duolingo para aprender inglés",
+        "aprender inglés con duolingo",
+        "aprender inglés duolingo",
+        "duolingo sirve para aprender inglés",
+        "alternativas a duolingo para aprender inglés"
+      ],
+      "estimatedVolume": 190,
+      "avgSD": 13,
+      "avgCPC": 1.17,
+      "copyAngle": "Comparación directa y honesta. Duolingo gana en gamificación y consistencia diaria. Rocket Languages gana en habla, pronunciación y conversaciones reales. No descredites Duolingo — muestra el límite de techo que tiene.",
+      "comparisonFocus": "gamification ceiling vs speaking proficiency",
+      "affiliateIntercept": "Duolingo es donde empiezas. Rocket Languages es donde llegas.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/alternativas-a-duolingo-para-aprender-ingles",
+          "h1": "Las Mejores Alternativas a Duolingo para Aprender Inglés",
+          "primaryKeyword": "alternativas a duolingo para aprender inglés"
+        },
+        {
+          "slug": "/aprender-ingles/duolingo-sirve-para-aprender-ingles",
+          "h1": "¿Duolingo Sirve Realmente para Aprender Inglés?",
+          "primaryKeyword": "duolingo sirve para aprender inglés"
+        }
+      ]
+    },
+    {
+      "id": "desde-cero",
+      "slug": "/aprender-ingles/aprender-ingles-desde-cero",
+      "type": "cluster",
+      "lang": "es",
+      "h1": "Cómo Aprender Inglés Desde Cero: Guía Paso a Paso",
+      "primaryKeyword": "aprender inglés desde cero",
+      "secondaryKeywords": [
+        "como aprender inglés desde cero",
+        "aprender inglés básico",
+        "aprender inglés para adultos principiantes",
+        "aprender inglés gratis desde cero",
+        "cómo aprender inglés básico",
+        "aprender inglés desde cero paso a paso"
+      ],
+      "estimatedVolume": 3120,
+      "avgSD": 28,
+      "avgCPC": 1.62,
+      "copyAngle": "Hoja de ruta completa para principiantes absolutos. El quiz de MatchFluent es perfecto aquí — embed del quiz de 2 pasos. El mensaje: el primer paso no es encontrar contenido, es encontrar el método correcto para ti.",
+      "comparisonFocus": "method-first vs content-first approach",
+      "affiliateIntercept": "El error más común al aprender inglés desde cero es empezar con el contenido equivocado para tu estilo de aprendizaje.",
+      "fanouts": [
+        {
+          "slug": "/aprender-ingles/aprender-ingles-basico-gratis",
+          "h1": "Aprender Inglés Básico Gratis: Por Dónde Empezar",
+          "primaryKeyword": "aprender inglés básico gratis"
+        },
+        {
+          "slug": "/aprender-ingles/aprender-ingles-para-adultos-principiantes",
+          "h1": "Aprender Inglés para Adultos Principiantes",
+          "primaryKeyword": "aprender inglés para adultos principiantes"
+        },
+        {
+          "slug": "/aprender-ingles/aprender-ingles-desde-cero-paso-a-paso",
+          "h1": "Aprender Inglés Desde Cero: Paso a Paso",
+          "primaryKeyword": "aprender inglés desde cero paso a paso"
+        }
+      ]
+    },
+    {
+      "id": "esp-meseros",
+      "slug": "/aprender-ingles/esp/ingles-para-meseros",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Meseros y Camareros: Frases Esenciales",
+      "primaryKeyword": "aprender inglés para mesero",
+      "secondaryKeywords": [
+        "inglés para meseros",
+        "aprender inglés para mesera",
+        "inglés para restaurantes",
+        "aprender inglés trabajo restaurante"
+      ],
+      "estimatedVolume": 200,
+      "avgSD": 5,
+      "avgCPC": 1.40,
+      "copyAngle": "Mini lección práctica. 8 frases reales usadas en mesas de restaurante en EEUU — tomar la orden, recomendar platos, manejar quejas, pedir la cuenta. Pronunciación incluida.",
+      "lessonPhrases": [
+        { "en": "Are you ready to order?", "es": "¿Están listos para ordenar?", "context": "Para preguntar si los clientes quieren pedir" },
+        { "en": "I'll give you a few more minutes.", "es": "Les doy unos minutos más.", "context": "Cuando necesitan más tiempo para decidir" },
+        { "en": "What can I get for you today?", "es": "¿Qué les traigo hoy?", "context": "Apertura casual al tomar la orden" },
+        { "en": "That comes with a choice of sides.", "es": "Eso viene con opción de acompañamientos.", "context": "Para platillos con guarnición" },
+        { "en": "How would you like that cooked?", "es": "¿Cómo lo prefieren?", "context": "Para carnes con punto de cocción" },
+        { "en": "I'll have that right out for you.", "es": "Se los traigo en seguida.", "context": "Confirmación al recibir la orden" },
+        { "en": "Is everything tasting okay?", "es": "¿Todo está de su agrado?", "context": "Check-in durante la comida" },
+        { "en": "I'll take care of that right away.", "es": "Lo resuelvo de inmediato.", "context": "Respuesta a quejas o pedidos especiales" }
+      ],
+      "affiliateIntercept": "Estas frases son el punto de partida. Para hablar con fluidez cuando el cliente responde algo inesperado, necesitas práctica real de conversación.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-construccion",
+      "slug": "/aprender-ingles/esp/ingles-para-construccion",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Construcción: Vocabulario y Frases Esenciales",
+      "primaryKeyword": "aprender inglés para construcción",
+      "secondaryKeywords": [
+        "inglés para construcción",
+        "aprender inglés para trabajar en construcción",
+        "inglés técnico de mantenimiento"
+      ],
+      "estimatedVolume": 140,
+      "avgSD": 5,
+      "avgCPC": 1.20,
+      "copyAngle": "Frases reales de obra: seguridad, herramientas, instrucciones del supervisor, comunicación con inspectores. Enfoque en el inglés que literalmente puede prevenir accidentes.",
+      "lessonPhrases": [
+        { "en": "Watch your step.", "es": "Cuidado donde pisas.", "context": "Advertencia de seguridad básica" },
+        { "en": "I need a hand over here.", "es": "Necesito ayuda aquí.", "context": "Pedir asistencia" },
+        { "en": "Is the site inspection today or tomorrow?", "es": "¿La inspección es hoy o mañana?", "context": "Coordinar con supervisores" },
+        { "en": "The blueprint shows it goes on the left side.", "es": "El plano dice que va del lado izquierdo.", "context": "Interpretar instrucciones técnicas" },
+        { "en": "We're running behind schedule.", "es": "Vamos atrasados.", "context": "Reportar progreso" },
+        { "en": "Do we have enough material to finish this section?", "es": "¿Tenemos suficiente material para terminar esta sección?", "context": "Gestión de materiales" }
+      ],
+      "affiliateIntercept": "El inglés técnico de construcción puede abrirte puertas a supervisión y mejores salarios. Un curso estructurado acelera ese camino.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-limpieza",
+      "slug": "/aprender-ingles/esp/ingles-para-limpieza",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Trabajo de Limpieza: Frases Clave",
+      "primaryKeyword": "aprender inglés para limpieza",
+      "secondaryKeywords": [
+        "inglés para limpieza",
+        "aprender inglés básico para limpieza",
+        "inglés para housekeeping"
+      ],
+      "estimatedVolume": 120,
+      "avgSD": 5,
+      "avgCPC": 1.15,
+      "copyAngle": "Frases para hoteles, oficinas y casas particulares — comunicación con supervisores, clientes, y manejo de situaciones cotidianas como pedir suministros o reportar daños.",
+      "lessonPhrases": [
+        { "en": "The room is ready for check-in.", "es": "El cuarto está listo para el check-in.", "context": "Reporte de habitación en hotel" },
+        { "en": "We're running low on supplies.", "es": "Se están acabando los suministros.", "context": "Pedir insumos" },
+        { "en": "There's a stain that won't come out.", "es": "Hay una mancha que no sale.", "context": "Reportar problema" },
+        { "en": "Please don't disturb — I'm still cleaning.", "es": "Por favor no interrumpan — estoy limpiando.", "context": "Comunicación con huéspedes" },
+        { "en": "I found something left behind in the room.", "es": "Encontré algo olvidado en la habitación.", "context": "Reportar objetos olvidados" }
+      ],
+      "affiliateIntercept": "Comunicarte con confianza en inglés puede llevar tu carrera de limpieza a supervisión hotelera o contratos corporativos mejor pagados.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-restaurantes",
+      "slug": "/aprender-ingles/esp/ingles-para-restaurantes",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Trabajar en Restaurantes: Guía Completa",
+      "primaryKeyword": "inglés para restaurantes",
+      "secondaryKeywords": [
+        "aprender inglés para restaurantes",
+        "aprender inglés trabajo en restaurante",
+        "inglés básico para restaurante"
+      ],
+      "estimatedVolume": 150,
+      "avgSD": 5,
+      "avgCPC": 1.30,
+      "copyAngle": "Cubre cocina, bar, servicio y gerencia — no solo meseros. Las frases que necesitas en cada rol del restaurante.",
+      "lessonPhrases": [
+        { "en": "Table for two? Right this way.", "es": "¿Mesa para dos? Por aquí.", "context": "Recepción de clientes" },
+        { "en": "The kitchen is backed up about 15 minutes.", "es": "La cocina tiene unos 15 minutos de retraso.", "context": "Comunicar tiempos de espera" },
+        { "en": "We're 86 on the salmon tonight.", "es": "El salmón está agotado esta noche.", "context": "Jerga de restaurante: producto agotado" },
+        { "en": "Can I box that up for you?", "es": "¿Le pongo eso para llevar?", "context": "Ofrecer para llevar" },
+        { "en": "Split the check or all together?", "es": "¿Cuentas separadas o todo junto?", "context": "Manejo de la cuenta" }
+      ],
+      "affiliateIntercept": "En la industria restaurantera de EEUU, el inglés fluido puede duplicar tus propinas y abrirte puertas a gerencia.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-call-center",
+      "slug": "/aprender-ingles/esp/ingles-para-call-center",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Call Center: Frases Profesionales",
+      "primaryKeyword": "aprender inglés para call center",
+      "secondaryKeywords": [
+        "inglés para call center",
+        "inglés profesional para atención al cliente"
+      ],
+      "estimatedVolume": 100,
+      "avgSD": 5,
+      "avgCPC": 1.50,
+      "copyAngle": "Fórmulas profesionales para atención al cliente en inglés — apertura, transferencias, manejo de quejas, cierre de llamada. El inglés de call center tiene patrones muy específicos.",
+      "lessonPhrases": [
+        { "en": "Thank you for calling [Company]. My name is [Name]. How can I assist you today?", "es": "Gracias por llamar a [Empresa]. Mi nombre es [Nombre]. ¿En qué puedo ayudarle hoy?", "context": "Apertura estándar de llamada" },
+        { "en": "I completely understand your frustration.", "es": "Entiendo perfectamente su frustración.", "context": "Empatía con cliente molesto" },
+        { "en": "Let me place you on a brief hold while I look into that.", "es": "Le pongo en espera un momento mientras reviso.", "context": "Poner en espera de forma cortés" },
+        { "en": "I'd like to transfer you to our specialist team.", "es": "Voy a transferirle con nuestro equipo especializado.", "context": "Transferir llamada" },
+        { "en": "Is there anything else I can help you with today?", "es": "¿Hay algo más en lo que pueda ayudarle hoy?", "context": "Cierre de llamada" }
+      ],
+      "affiliateIntercept": "Los agentes de call center que hablan inglés con acento neutro y vocabulario profesional escalan más rápido a team lead y QA.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-enfermeras",
+      "slug": "/aprender-ingles/esp/ingles-para-enfermeras",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés Médico para Enfermeras y Personal de Salud",
+      "primaryKeyword": "inglés para enfermeras",
+      "secondaryKeywords": [
+        "aprender inglés médico",
+        "inglés para personal de salud",
+        "inglés para enfermería"
+      ],
+      "estimatedVolume": 100,
+      "avgSD": 5,
+      "avgCPC": 1.80,
+      "copyAngle": "El inglés médico es de alto riesgo — una palabra mal entendida puede tener consecuencias graves. Frases para triaje, comunicación con pacientes, coordinación con médicos.",
+      "lessonPhrases": [
+        { "en": "Can you describe your pain on a scale of 1 to 10?", "es": "¿Puede describir su dolor en una escala del 1 al 10?", "context": "Evaluación de dolor" },
+        { "en": "Are you allergic to any medications?", "es": "¿Es alérgico a algún medicamento?", "context": "Historial médico básico" },
+        { "en": "I'm going to take your blood pressure.", "es": "Le voy a tomar la presión.", "context": "Procedimientos de rutina" },
+        { "en": "The doctor will be with you shortly.", "es": "El médico estará con usted en breve.", "context": "Gestión de espera" },
+        { "en": "You need to fast for 8 hours before the procedure.", "es": "Necesita ayunar 8 horas antes del procedimiento.", "context": "Instrucciones pre-procedimiento" },
+        { "en": "Please press the call button if you need anything.", "es": "Presione el botón de llamada si necesita algo.", "context": "Instrucciones de alta o post-procedimiento" }
+      ],
+      "affiliateIntercept": "En el campo médico, la precisión en el inglés no es opcional. Un curso estructurado con audio interactivo acelera la confianza clínica.",
+      "fanouts": []
+    },
+    {
+      "id": "esp-hotel",
+      "slug": "/aprender-ingles/esp/ingles-para-hotel",
+      "type": "esp-lesson",
+      "lang": "es",
+      "h1": "Inglés para Trabajar en Hoteles: Front Desk y Housekeeping",
+      "primaryKeyword": "aprender inglés trabajo en hotel",
+      "secondaryKeywords": [
+        "inglés para hotel",
+        "inglés para front desk",
+        "inglés para housekeeping hotel"
+      ],
+      "estimatedVolume": 80,
+      "avgSD": 5,
+      "avgCPC": 1.20,
+      "copyAngle": "Frases para front desk, concierge, housekeeping y restaurant del hotel. El inglés hotelero tiene un tono formal específico que los clientes internacionales esperan.",
+      "lessonPhrases": [
+        { "en": "Welcome to [Hotel Name]. Do you have a reservation?", "es": "Bienvenido a [Hotel]. ¿Tiene una reservación?", "context": "Recepción de huéspedes" },
+        { "en": "Your room won't be ready until 3 PM. Would you like to store your luggage?", "es": "Su habitación no estará lista hasta las 3 PM. ¿Desea guardar su equipaje?", "context": "Gestión de check-in anticipado" },
+        { "en": "The breakfast buffet is open from 6:30 to 10:30 AM.", "es": "El bufet de desayuno está abierto de 6:30 a 10:30 AM.", "context": "Información de servicios" },
+        { "en": "I'll send someone up to fix that right away.", "es": "Mando a alguien a repararlo de inmediato.", "context": "Respuesta a queja de habitación" },
+        { "en": "Is there anything I can do to make your stay more comfortable?", "es": "¿Hay algo que pueda hacer para que su estancia sea más cómoda?", "context": "Servicio proactivo" }
+      ],
+      "affiliateIntercept": "El inglés hotelero de nivel profesional puede llevarte de housekeeping a supervisión o front desk en propiedades de mayor categoría.",
+      "fanouts": []
+    }
+  ],
+  "en": [
+    {
+      "id": "best-app-en",
+      "slug": "/learning-english/best-app-to-learn-english",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "Best App to Learn English in 2025: Honest Comparison",
+      "primaryKeyword": "best app for learning english",
+      "secondaryKeywords": [
+        "free app for learning english",
+        "best free app for learning english",
+        "best apps for learning english",
+        "learning english app free"
+      ],
+      "estimatedVolume": 3230,
+      "avgSD": 53,
+      "avgCPC": 2.35,
+      "copyAngle": "Honest ranked comparison. Most apps optimize for engagement metrics, not fluency. Rocket Languages wins on speaking practice and real audio interaction — the gap that most apps leave unfilled.",
+      "comparisonFocus": "engagement metrics vs actual speaking fluency",
+      "affiliateIntercept": "Most apps teach you to recognize English. Rocket Languages teaches you to speak it.",
+      "fanouts": [
+        {
+          "slug": "/learning-english/best-free-english-learning-app",
+          "h1": "Best Free English Learning Apps",
+          "primaryKeyword": "free app for learning english"
+        },
+        {
+          "slug": "/learning-english/learning-english-with-ai",
+          "h1": "Learning English with AI: What Actually Works",
+          "primaryKeyword": "learning english with ai"
+        }
+      ]
+    },
+    {
+      "id": "best-books-en",
+      "slug": "/learning-english/best-books-for-learning-english",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "Best Books for Learning English: Complete Guide",
+      "primaryKeyword": "best books for learning english",
+      "secondaryKeywords": [
+        "books to learning english",
+        "good book for learning english",
+        "top books for learning english",
+        "book learning english pdf",
+        "learning english audiobook"
+      ],
+      "estimatedVolume": 3210,
+      "avgSD": 35,
+      "avgCPC": 0.95,
+      "copyAngle": "Ranked list with honest annotations — grammar books, readers, vocabulary builders. Books are passive; position Rocket Languages as the speaking complement that makes reading stick.",
+      "comparisonFocus": "passive reading vs active speaking application",
+      "affiliateIntercept": "Books build your foundation. Rocket Languages teaches you to build sentences in real time, under pressure.",
+      "fanouts": [
+        {
+          "slug": "/learning-english/learning-english-audiobook",
+          "h1": "Best Audiobooks for Learning English",
+          "primaryKeyword": "learning english audiobook"
+        },
+        {
+          "slug": "/learning-english/learning-english-through-story",
+          "h1": "Learning English Through Stories: Does It Work?",
+          "primaryKeyword": "learning english through story"
+        }
+      ]
+    },
+    {
+      "id": "for-spanish-speakers",
+      "slug": "/learning-english/for-spanish-speakers",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "Learning English for Spanish Speakers: Complete Roadmap",
+      "primaryKeyword": "spanish speaking learning english",
+      "secondaryKeywords": [
+        "best books for learning english for spanish speakers",
+        "learning english for spanish speakers pdf",
+        "learning english from spanish"
+      ],
+      "estimatedVolume": 690,
+      "avgSD": 37,
+      "avgCPC": 2.02,
+      "copyAngle": "Crossover page — English-language URL for bilingual or US-based Spanish speakers searching in English. Acknowledge the unique advantages Spanish speakers have (cognates, similar sentence structure in many ways) then bridge to MatchFluent's Spanish silo and Rocket Languages.",
+      "comparisonFocus": "Spanish-speaker advantages and common stumbling blocks",
+      "affiliateIntercept": "Spanish speakers actually have a head start in English — thousands of shared words. The challenge is pronunciation and listening speed.",
+      "fanouts": []
+    },
+    {
+      "id": "accent-training",
+      "slug": "/learning-english/american-english-accent-training",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "American English Accent Training: Practical Guide",
+      "primaryKeyword": "learning english accent",
+      "secondaryKeywords": [
+        "learning english accents",
+        "learning english language speaking",
+        "learning english speaking fluently",
+        "learning english phonetics"
+      ],
+      "estimatedVolume": 2470,
+      "avgSD": 52,
+      "avgCPC": 4.29,
+      "copyAngle": "Pronunciation anxiety is the #1 fear for language learners. Address it directly — accent reduction vs accent clarity (you don't need to sound American, you need to be understood). Rocket Languages speech recognition as the tool that gives honest feedback without embarrassment.",
+      "comparisonFocus": "accent elimination myth vs clarity and confidence",
+      "affiliateIntercept": "You don't need a perfect American accent. You need to speak clearly enough that people stop asking you to repeat yourself.",
+      "fanouts": [
+        {
+          "slug": "/learning-english/learning-english-phonetics",
+          "h1": "English Phonetics for Beginners",
+          "primaryKeyword": "learning english phonetics"
+        },
+        {
+          "slug": "/learning-english/learning-english-speaking-fluently",
+          "h1": "How to Speak English Fluently: Practical Steps",
+          "primaryKeyword": "learning english speaking fluently"
+        }
+      ]
+    },
+    {
+      "id": "learning-english-ai",
+      "slug": "/learning-english/learning-english-with-ai",
+      "type": "cluster",
+      "lang": "en",
+      "h1": "Learning English with AI: What Actually Works in 2025",
+      "primaryKeyword": "learning english with ai",
+      "secondaryKeywords": [
+        "ai to learning english",
+        "artificial intelligence for learning english",
+        "best ai for learning english",
+        "learning english with ai free"
+      ],
+      "estimatedVolume": 330,
+      "avgSD": 17,
+      "avgCPC": 2.55,
+      "copyAngle": "AI is excellent for low-stakes conversation practice but has no structured curriculum. Rocket Languages + AI tools is the power combination. Practical guide to using ChatGPT, Claude, and speech tools alongside a structured course.",
+      "comparisonFocus": "unstructured AI conversation vs structured curriculum",
+      "affiliateIntercept": "AI gives you a practice partner available 24/7. Rocket Languages gives you the structured path that makes that practice count.",
+      "fanouts": []
+    }
+  ],
+  "lessons": [
+    {
+      "id": "english-for-software-engineers",
+      "slug": "/lessons/english-for-software-engineers",
+      "lang": "en",
+      "h1": "English for Software Engineers: Standups, Tech Calls & Client Meetings",
+      "track": "Software & Tech",
+      "certificateTitle": "English for Tech Professionals",
+      "certificateSubtitle": "MatchFluent Niche Language Track",
+      "phrases": [
+        { "phrase": "I'm blocked on this ticket — waiting on a dependency from the backend team.", "context": "Standup update when blocked" },
+        { "phrase": "Can we take this offline? It might need more discussion than we have time for here.", "context": "Redirecting scope creep in a meeting" },
+        { "phrase": "I'll push a hotfix and monitor the logs for the next hour.", "context": "Incident response communication" },
+        { "phrase": "The scope has changed — we should loop in the PM before we go further.", "context": "Escalating a scope change" },
+        { "phrase": "From a technical standpoint, that's feasible, but it'll add about two sprints.", "context": "Client-facing timeline estimate" },
+        { "phrase": "Let me pull up the repo and walk you through what I found.", "context": "Code review or pair debugging" },
+        { "phrase": "We shipped that feature behind a flag — it's not live to users yet.", "context": "Status update on feature release" },
+        { "phrase": "I'll document this in the wiki so the team has context.", "context": "Knowledge management communication" }
+      ],
+      "vocabMatrix": [
+        { "term": "blocked", "definition": "Unable to proceed due to an external dependency", "example": "I'm blocked waiting on the API spec." },
+        { "term": "take offline", "definition": "Move a discussion to a separate, smaller meeting", "example": "Let's take this offline — it's a bigger conversation." },
+        { "term": "loop in", "definition": "Include someone in a conversation or decision", "example": "We should loop in legal before we ship this." },
+        { "term": "behind a flag", "definition": "Feature exists in code but is not visible to users", "example": "It's live in production but behind a feature flag." },
+        { "term": "ETA", "definition": "Estimated Time of Arrival — when something will be done", "example": "What's the ETA on that PR?" }
+      ]
+    }
+  ]
+}

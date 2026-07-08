@@ -1,0 +1,32 @@
+---
+const { lang = "en" } = Astro.props;
+const quizLabel = lang === "es" ? "Haz el Quiz" : "Take the Quiz";
+---
+
+<header class="bg-surface border-b border-border sticky top-0 z-40">
+  <div class="max-w-container mx-auto px-6 h-16 flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 shrink-0" aria-label="MatchFluent home">
+      <span
+        class="w-9 h-9 rounded-xl bg-gradient-hero text-white font-display font-bold text-sm flex items-center justify-center"
+        >MF</span
+      >
+      <span class="font-semibold text-navy-700 text-lg tracking-tight">MatchFluent</span>
+    </a>
+    <nav class="flex items-center gap-1 sm:gap-4 text-sm font-medium text-navy-500 overflow-x-auto">
+      <a href="/aprender-ingles/" class="px-2 py-1 rounded hover:text-teal-600 whitespace-nowrap"
+        >Aprender Inglés</a
+      >
+      <a href="/learning-english/" class="px-2 py-1 rounded hover:text-teal-600 whitespace-nowrap"
+        >Learning English</a
+      >
+      <a href="/lessons/" class="px-2 py-1 rounded hover:text-teal-600 whitespace-nowrap hidden sm:inline"
+        >{lang === "es" ? "Lecciones" : "Lessons"}</a
+      >
+      <a
+        href="/#quiz"
+        class="ml-1 px-4 py-2 rounded-full bg-gradient-cta text-white shadow-cta hover:shadow-cta-hover transition-shadow whitespace-nowrap"
+        >{quizLabel}</a
+      >
+    </nav>
+  </div>
+</header>

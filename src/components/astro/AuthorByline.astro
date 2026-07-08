@@ -1,0 +1,43 @@
+---
+/**
+ * E-E-A-T author byline rendered on every cluster, comparison, and
+ * lesson page, with Person JSON-LD. Placeholder name is marked for
+ * replacement — see README E-E-A-T checklist.
+ */
+import { SITE_URL } from "../../lib/data.js";
+
+const { lang = "en" } = Astro.props;
+
+// [TODO: real author name — replace here and in /about]
+const AUTHOR_NAME = "Alex Rivera";
+
+const label = lang === "es" ? "Escrito por" : "Written by";
+const role =
+  lang === "es"
+    ? "Analista de herramientas de aprendizaje de idiomas"
+    : "Language-learning tools analyst";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: AUTHOR_NAME,
+  jobTitle: role,
+  url: `${SITE_URL}${lang === "es" ? "/sobre-nosotros" : "/about"}/`,
+  worksFor: { "@type": "Organization", name: "MatchFluent", url: SITE_URL },
+};
+---
+
+<div class="flex items-center gap-3 my-4 text-sm">
+  <span
+    class="w-9 h-9 rounded-full bg-navy-100 text-navy-700 font-semibold flex items-center justify-center shrink-0"
+    aria-hidden="true">{AUTHOR_NAME.charAt(0)}</span
+  >
+  <p class="text-text-secondary">
+    {label}
+    <a href={lang === "es" ? "/sobre-nosotros/" : "/about/"} class="font-semibold text-navy-700 hover:text-teal-600"
+      >{AUTHOR_NAME}</a
+    >
+    · {role}
+  </p>
+</div>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+
+const crumbs = [
+  { name: "Inicio", path: "/" },
+  { name: "Sobre Nosotros", path: "/sobre-nosotros" },
+];
+---
+
+<BaseLayout
+  lang="es"
+  title="Sobre MatchFluent — Quiénes Somos y Por Qué"
+  description="Quién está detrás de MatchFluent, por qué existe y cómo evaluamos las herramientas para aprender inglés. Recomendaciones honestas."
+  path="/sobre-nosotros"
+>
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-6">Sobre MatchFluent</h1>
+
+    <article class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg text-navy-700">
+        MatchFluent existe porque la mayoría de los consejos para aprender inglés responden la
+        pregunta equivocada. La pregunta no es "¿cuál es la mejor app?" — es "¿cuál es el mejor
+        método para cómo aprendes <em>tú</em> y dónde estás atascado <em>tú</em>?"
+      </p>
+      <p>
+        Servimos a dos audiencias que los sitios de reseñas tratan como nota al pie: hispanohablantes
+        que aprenden inglés — incluidos los trabajadores que necesitan inglés específico para
+        restaurantes, construcción, salud y hoteles — y estudiantes enfocados en su carrera que se
+        preparan para entrevistas, exámenes y equipos internacionales.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">Lo que creemos</h2>
+      <p>
+        La fluidez viene de hablar en voz alta todos los días, no de las rachas. Las herramientas
+        gratuitas son genuinamente útiles y lo decimos. Las de pago se ganan una recomendación solo
+        cuando llenan un vacío que lo gratuito no puede — para nosotros, ese vacío es la práctica de
+        habla con retroalimentación, y por eso Rocket Languages aparece en nuestras reseñas. Cuando
+        una herramienta no es la adecuada para un caso, también lo decimos.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">Cómo evaluamos</h2>
+      <p>
+        Cada recomendación sigue los criterios de nuestra
+        <a href="/como-evaluamos/" class="text-teal-700 underline">metodología de evaluación</a>:
+        calidad de la práctica de habla, estructura del currículum, autenticidad del audio, honestidad
+        de precios y acceso offline. Divulgamos nuestras relaciones de afiliado en
+        <a href="/affiliate-disclosure/" class="text-teal-700 underline">cada página que las tiene</a>.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-4">Quién escribe MatchFluent</h2>
+      <div class="rounded-xl border border-border bg-surface p-6 shadow-card">
+        <p class="font-semibold text-navy-700 mb-2">
+          Alex Rivera — Analista de herramientas de aprendizaje de idiomas
+        </p>
+        <p class="text-sm">
+          [TODO: real author bio + photo. Reemplaza este marcador con el nombre real del autor, sus
+          credenciales, su historia con los idiomas y una foto. Actualiza también AuthorByline.astro.]
+        </p>
+      </div>
+    </article>
+  </main>
+</BaseLayout>

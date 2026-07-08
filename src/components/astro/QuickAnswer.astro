@@ -1,0 +1,13 @@
+---
+/**
+ * Answer-first block per docs/geo-formatting.md §1 — rendered
+ * immediately after the H1/date stamp on cluster and comparison pages.
+ */
+const { lang = "en", html } = Astro.props;
+const label = lang === "es" ? "Respuesta rápida" : "Quick answer";
+---
+
+<aside class="my-6 rounded-xl border border-teal-100 bg-teal-50 p-5 sm:p-6">
+  <p class="text-xs font-semibold uppercase tracking-widest text-teal-700 mb-2">{label}</p>
+  <p class="text-navy-700 leading-relaxed" set:html={html} />
+</aside>

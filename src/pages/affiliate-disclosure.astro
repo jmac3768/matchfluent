@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/astro/Breadcrumbs.astro";
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Affiliate Disclosure", path: "/affiliate-disclosure" },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="Affiliate Disclosure — MatchFluent"
+  description="How MatchFluent makes money: which links are affiliate links, what we earn, and why commissions never change our recommendations."
+  path="/affiliate-disclosure"
+>
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-6">Affiliate Disclosure</h1>
+
+    <article class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg text-navy-700">
+        MatchFluent is reader-supported. Some links on this site are affiliate links: if you click
+        one and make a purchase, we earn a commission at no additional cost to you.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-2">Which links are affiliate links</h2>
+      <p>
+        Links to Rocket Languages (Rocket English) are affiliate links, operated through affiliate
+        networks such as Awin. When we add other partner programs (for example, tutoring platforms
+        or exam-prep tools), those links will be affiliate links too, and this page will list them.
+        Links to free resources — Duolingo, BBC Learning English, VOA Learning English, Anki,
+        LibriVox and similar — earn us nothing.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-2">
+        Why commissions don't change our recommendations
+      </h2>
+      <p>
+        Our reviews follow a fixed methodology — see
+        <a href="/how-we-review/" class="text-teal-700 underline">how we review</a> — applied before
+        any monetization question. We routinely recommend free tools over paid ones where they're the
+        better fit, state the limits of the products we earn from, and mark every affiliate CTA
+        clearly. A short disclosure appears near the top of every page containing affiliate links.
+      </p>
+
+      <h2 class="font-sans text-2xl font-bold text-navy-700 pt-2">FTC compliance</h2>
+      <p>
+        This disclosure is made in accordance with the U.S. Federal Trade Commission's guidelines on
+        endorsements and testimonials (16 CFR Part 255) and the terms of the affiliate networks we
+        participate in.
+      </p>
+
+      <p class="text-sm">
+        En español: algunos enlaces de MatchFluent son enlaces de afiliado — si compras a través de
+        ellos, recibimos una comisión sin costo extra para ti. Nuestras recomendaciones siguen una
+        <a href="/como-evaluamos/" class="text-teal-700 underline">metodología fija</a> que las
+        comisiones nunca alteran.
+      </p>
+    </article>
+  </main>
+</BaseLayout>

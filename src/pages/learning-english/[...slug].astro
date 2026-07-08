@@ -1,0 +1,70 @@
+---
+/**
+ * Generates every English cluster, comparison, glossary-hub, and
+ * fanout page at build time. Fanout slugs that collide with a main
+ * cluster (e.g. /learning-english/learning-english-with-ai) are
+ * deduped in favor of the main entry by buildSiloRoutes.
+ */
+import ClusterLayout from "../../layouts/ClusterLayout.astro";
+import ComparisonLayout from "../../layouts/ComparisonLayout.astro";
+import GlossaryLayout from "../../layouts/GlossaryLayout.astro";
+import { enRoutes, internalLinks, makeTitle } from "../../lib/data.js";
+import { mainCopy } from "../../content/copy-en.js";
+import { fanoutCopy } from "../../content/fanouts-en.js";
+
+export function getStaticPaths() {
+  return enRoutes();
+}
+
+const { kind, page, parent } = Astro.props;
+const lang = "en";
+const hub = { name: "Learning English", path: "/learning-english" };
+
+const isFanout = kind === "fanout";
+const source = isFanout ? parent : page;
+const copy = isFanout ? fanoutCopy[page.slug] : mainCopy[page.id];
+
+if (!copy) {
+  throw new Error(`Missing authored copy for EN page: ${page.slug}`);
+}
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  hub,
+  ...(isFanout ? [{ name: parent.h1, path: parent.slug }] : []),
+  { name: page.h1, path: page.slug },
+];
+
+const title = makeTitle(page.h1);
+const intercept = source.affiliateIntercept;
+const practicePhrases =
+  !isFanout && page.hasPronunciation && page.practicePhrases
+    ? page.practicePhrases.map((p) => ({ en: p.en || p.phrase, es: p.es, context: p.context }))
+    : [];
+const relatedLinks = internalLinks.en;
+
+const layoutProps = {
+  lang,
+  title,
+  description: copy.description,
+  path: page.slug,
+  h1: page.h1,
+  crumbs,
+  copy,
+  intercept,
+  relatedLinks,
+  page,
+};
+
+const pageType = isFanout ? "cluster" : page.type;
+---
+
+{
+  pageType === "comparison" ? (
+    <ComparisonLayout {...layoutProps} />
+  ) : pageType === "glossary-hub" ? (
+    <GlossaryLayout {...layoutProps} glossaryTerms={page.glossaryTerms || []} />
+  ) : (
+    <ClusterLayout {...layoutProps} practicePhrases={practicePhrases} />
+  )
+}

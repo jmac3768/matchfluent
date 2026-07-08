@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/astro/Breadcrumbs.astro";
+import TrustBar from "../../components/astro/TrustBar.astro";
+import { enMainPages } from "../../lib/data.js";
+
+const guides = enMainPages.filter((p) => p.type === "cluster");
+const comparisons = enMainPages.filter((p) => p.type === "comparison");
+const hubs = enMainPages.filter((p) => p.type === "glossary-hub");
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Learning English", path: "/learning-english" },
+];
+
+const groups = [
+  { heading: "Complete guides", items: guides },
+  { heading: "Honest comparisons", items: comparisons },
+  { heading: "Methods and concepts", items: hubs },
+];
+---
+
+<BaseLayout
+  lang="en"
+  title="Learning English: Guides and Resources — MatchFluent"
+  description="Everything you need to learn English — apps, courses, books, and AI tools. Guides for serious learners."
+  path="/learning-english"
+>
+  <main class="max-w-container mx-auto px-6 py-10">
+    <Breadcrumbs {crumbs} />
+    <h1 class="font-display text-4xl font-bold text-navy-700 mb-3">
+      Learning English: Guides, Tools and Resources
+    </h1>
+    <p class="text-lg text-text-secondary max-w-2xl mb-2">
+      Guides for serious English learners: which apps actually build speaking fluency, how to prep
+      for TOEFL and IELTS, what accent training really requires — everything judged by what it
+      produces, not what it promises.
+    </p>
+    <p class="text-text-secondary max-w-2xl mb-6">
+      Not sure where to start? <a href="/#quiz" class="font-semibold text-teal-700 underline"
+        >Take the 2-minute quiz</a
+      > and get a path matched to your roadblock.
+    </p>
+    <TrustBar lang="en" />
+
+    {
+      groups.map((group) => (
+        <section class="my-10">
+          <h2 class="font-sans text-2xl font-bold text-navy-700 mb-5">{group.heading}</h2>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {group.items.map((page) => (
+              <a
+                href={`${page.slug}/`}
+                class="block rounded-xl border border-border bg-surface p-5 shadow-card hover:shadow-card-hover transition-shadow"
+              >
+                <h3 class="font-semibold text-navy-700 mb-1 leading-snug">{page.h1}</h3>
+                <p class="text-xs font-mono text-text-muted">{page.primaryKeyword}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+/**
+ * Static phrase list for ESP lessons and Layer 2b practice phrases.
+ * Phrase text is plain HTML (crawlers see it); one PronounceButton
+ * island is slotted next to each ENGLISH phrase only — never next to
+ * translations or context notes.
+ */
+import PronounceButton from "../react/PronounceButton.jsx";
+
+// phrases: [{ en, es?, context? }] — `en` is the phrase being taught.
+const { phrases = [], lang = "en" } = Astro.props;
+const contextLabel = lang === "es" ? "Cuándo se usa" : "When to use it";
+---
+
+<ol class="space-y-4 my-8">
+  {
+    phrases.map((phrase, i) => (
+      <li class="rounded-xl border border-border bg-surface p-5 shadow-card">
+        <div class="flex items-start gap-3">
+          <span class="font-mono text-xs text-text-muted pt-1.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+          <div class="flex-1">
+            <p class="font-mono font-medium text-navy-700 text-lg leading-snug flex items-start gap-2">
+              <span class="flex-1">{phrase.en}</span>
+              <PronounceButton client:visible text={phrase.en} />
+            </p>
+            {phrase.es && <p class="mt-2 text-text-secondary">{phrase.es}</p>}
+            {phrase.context && (
+              <p class="mt-1 text-sm italic text-text-muted">
+                {contextLabel}: {phrase.context}
+              </p>
+            )}
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ol>
