@@ -321,7 +321,7 @@ export default function Quiz({ lang = "en", compact = false }) {
       </div>
 
       <a
-        href={buildAffiliateUrl("quiz-result")}
+        href={buildAffiliateUrl("quiz-result", resultLang)}
         rel="nofollow sponsored noopener"
         target="_blank"
         className="block text-center rounded-xl bg-gradient-cta text-gold-50 font-semibold text-lg py-4 shadow-cta hover:shadow-cta-hover transition-shadow"

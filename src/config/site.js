@@ -12,15 +12,16 @@
 
 // ---------------------------------------------------------------------------
 // AFFILIATE LINK
-// Replace with your real tracked link from Awin or ClickBank.
-// Do NOT use subdomain format (e.g. yourname.rocketlanguages.com) —
-// that format is not how Rocket Languages affiliate links are structured.
+// Direct Rocket Languages URLs until the real Awin tracked link is issued —
+// swap these two constants only; every CTA resolves through buildAffiliateUrl.
 // ---------------------------------------------------------------------------
-export const AFFILIATE_URL = "https://YOUR_AFFILIATE_LINK_HERE";
+export const ROCKET_URL_EN = "https://www.rocketlanguages.com/english?aff=radnamore";
+export const ROCKET_URL_ES = "https://www.rocketlanguages.com/ingles?aff=radnamore";
 
-// Optional: track which page/component the click came from
-export const buildAffiliateUrl = (source = "generic") => {
-  return `${AFFILIATE_URL}?utm_source=matchfluent&utm_medium=affiliate&utm_campaign=${source}`;
+// `source` is unused for now; call sites keep passing it so campaign tracking
+// (e.g. Awin clickref) can be re-enabled here when the real link arrives.
+export const buildAffiliateUrl = (source = "generic", lang = "en") => {
+  return lang === "es" ? ROCKET_URL_ES : ROCKET_URL_EN;
 };
 
 // ---------------------------------------------------------------------------

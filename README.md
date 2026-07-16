@@ -22,10 +22,11 @@ npm run preview    # serves dist/ — the exact HTML crawlers will see
 Edit `src/config/site.js`:
 
 ```js
-export const AFFILIATE_URL = "https://YOUR_AFFILIATE_LINK_HERE";
+export const ROCKET_URL_EN = "https://www.rocketlanguages.com/english";
+export const ROCKET_URL_ES = "https://www.rocketlanguages.com/ingles";
 ```
 
-Replace with your tracked Awin link (`https://www.awin1.com/cread.php?awinmid=XXXXX&awinaffid=YYYYYY`) or ClickBank hoplink. Every CTA on the site resolves through `buildAffiliateUrl(source)` — nothing is hardcoded, and each CTA passes a `source` for campaign tracking (`quiz-result`, `cluster-footer`, `intercept`, …).
+These currently point directly at Rocket Languages (EN for the English silo, ES for the Spanish silo). When your tracked Awin link (`https://www.awin1.com/cread.php?awinmid=XXXXX&awinaffid=YYYYYY`) or ClickBank hoplink arrives, swap these two constants. Every CTA on the site resolves through `buildAffiliateUrl(source, lang)` — nothing is hardcoded, and each CTA passes a `source` for campaign tracking (`quiz-result`, `cluster-footer`, `intercept`, …).
 
 ## 4. Connect the email stub
 
