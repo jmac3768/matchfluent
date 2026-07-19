@@ -19,14 +19,7 @@ npm run preview    # serves dist/ — the exact HTML crawlers will see
 
 ## 3. Swap in the real affiliate link
 
-Edit `src/config/site.js`:
-
-```js
-export const ROCKET_URL_EN = "https://www.rocketlanguages.com/english";
-export const ROCKET_URL_ES = "https://www.rocketlanguages.com/ingles";
-```
-
-These currently point directly at Rocket Languages (EN for the English silo, ES for the Spanish silo). When your tracked Awin link (`https://www.awin1.com/cread.php?awinmid=XXXXX&awinaffid=YYYYYY`) or ClickBank hoplink arrives, swap these two constants. Every CTA on the site resolves through `buildAffiliateUrl(source, lang)` — nothing is hardcoded, and each CTA passes a `source` for campaign tracking (`quiz-result`, `cluster-footer`, `intercept`, …).
+All CTAs point at internal redirect paths (`/go/rocket-en` for the English silo, `/go/rocket` for the Spanish silo), defined in `src/config/site.js` and resolved by `public/_redirects` on Cloudflare Pages. To change the tracked destination (e.g. a new ClickBank hoplink), edit `public/_redirects` only. Every CTA on the site resolves through `buildAffiliateUrl(source, lang)` — nothing is hardcoded, and each CTA passes a `source` for campaign tracking (`quiz-result`, `cluster-footer`, `intercept`, …).
 
 ## 4. Connect the email stub
 

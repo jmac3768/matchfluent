@@ -5,21 +5,21 @@
  * Never hardcode these values in components.
  *
  * BEFORE DEPLOYING:
- * 1. Replace AFFILIATE_URL with your real Awin or ClickBank tracked link
+ * 1. Keep public/_redirects pointing at your real ClickBank tracked link
  * 2. Replace EMAIL_ENDPOINT with your Loops or Beehiiv API endpoint
  * 3. Set PUBLIC_EMAIL_API_KEY in your .env file (never commit this)
  */
 
 // ---------------------------------------------------------------------------
 // AFFILIATE LINK
-// Direct Rocket Languages URLs until the real Awin tracked link is issued —
-// swap these two constants only; every CTA resolves through buildAffiliateUrl.
+// Internal redirect paths (see public/_redirects) — the actual tracked
+// destination lives there; swap it in one place without touching pages.
 // ---------------------------------------------------------------------------
-export const ROCKET_URL_EN = "https://www.rocketlanguages.com/english?aff=radnamore";
-export const ROCKET_URL_ES = "https://www.rocketlanguages.com/ingles?aff=radnamore";
+export const ROCKET_URL_EN = "/go/rocket-en";
+export const ROCKET_URL_ES = "/go/rocket";
 
 // `source` is unused for now; call sites keep passing it so campaign tracking
-// (e.g. Awin clickref) can be re-enabled here when the real link arrives.
+// can be re-enabled here if needed.
 export const buildAffiliateUrl = (source = "generic", lang = "en") => {
   return lang === "es" ? ROCKET_URL_ES : ROCKET_URL_EN;
 };
