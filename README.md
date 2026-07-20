@@ -21,22 +21,24 @@ npm run preview    # serves dist/ — the exact HTML crawlers will see
 
 All CTAs point at internal redirect paths (`/go/rocket-en` for the English silo, `/go/rocket` for the Spanish silo), defined in `src/config/site.js` and resolved by `public/_redirects` on Cloudflare Pages. To change the tracked destination (e.g. a new ClickBank hoplink), edit `public/_redirects` only. Every CTA on the site resolves through `buildAffiliateUrl(source, lang)` — nothing is hardcoded, and each CTA passes a `source` for campaign tracking (`quiz-result`, `cluster-footer`, `intercept`, …).
 
-## 4. Connect the email stub
+## 4. Email capture (SendFox)
 
-The quiz's optional email gate calls `submitEmail()` in `src/config/site.js` — a stub compatible with Loops, Beehiiv, or SendFox.
+The quiz shows an email capture form under its results. It POSTs to `/api/subscribe`, a Cloudflare Pages Function (`functions/api/subscribe.js`) that adds the contact to a SendFox list — Spanish silo → list 663144, English silo → list 663145. The silo comes from the user's step-2 language answer.
 
-1. Set your provider's API URL: `export const EMAIL_ENDPOINT = "..."` in `src/config/site.js`.
-2. Create `.env` (copy `.env.example`) with `PUBLIC_EMAIL_API_KEY=your_key`.
-   Astro exposes env vars via `import.meta.env`, and **client-exposed vars need the `PUBLIC_` prefix** — the quiz island runs in the browser, so the key must be `PUBLIC_`-prefixed. Never commit `.env`.
-3. Adjust the request body in `submitEmail()` to match your provider's API spec (Loops: `{ email, firstName, source }`; Beehiiv: `{ email, utm_source }`).
+The SendFox token lives **only** in the `SENDFOX_API_TOKEN` secret in the Cloudflare Pages project settings — never in the repo, never client-side.
 
-Until configured, submissions no-op with a console warning and the quiz still shows results.
+**Local dev:** plain `astro dev` does not execute Pages Functions, so the form will 404 locally. To test it:
+
+```bash
+npm run build
+SENDFOX_API_TOKEN=your_token npx wrangler pages dev dist
+```
 
 ## 5. Deployment
 
-**Cloudflare Pages (primary):** connect the repo → framework preset *Astro* → build command `npm run build` → output directory `dist` → add env var `PUBLIC_EMAIL_API_KEY`.
+**Cloudflare Pages (primary):** connect the repo → framework preset *Astro* → build command `npm run build` → output directory `dist` → add secret `SENDFOX_API_TOKEN`.
 
-**Netlify:** same — build command `npm run build`, publish directory `dist`, env var `PUBLIC_EMAIL_API_KEY`.
+**Netlify:** same build command/output, but `/api/subscribe` is a Cloudflare Pages Function and would need porting to a Netlify Function.
 
 ## 6. Page inventory
 
@@ -81,4 +83,4 @@ Search the project for `[TODO` and `[REPLACE`:
 - [ ] Add the real author bio + photo on `/about` and `/sobre-nosotros` (`[TODO: real author bio + photo]`)
 - [ ] Replace any testimonial placeholders (`[REPLACE WITH REAL REVIEW]`) before adding testimonial blocks
 - [ ] Replace `public/og-image.png` (currently a 1×1 placeholder) with a real 1200×630 OG image
-- [ ] Set the real `AFFILIATE_URL` and `EMAIL_ENDPOINT` (§3–4)
+- [ ] Set the real `AFFILIATE_URL` and the `SENDFOX_API_TOKEN` secret (§3–4)

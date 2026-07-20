@@ -6,8 +6,8 @@
  *
  * BEFORE DEPLOYING:
  * 1. Keep public/_redirects pointing at your real ClickBank tracked link
- * 2. Replace EMAIL_ENDPOINT with your Loops or Beehiiv API endpoint
- * 3. Set PUBLIC_EMAIL_API_KEY in your .env file (never commit this)
+ * 2. Set SENDFOX_API_TOKEN in the Cloudflare Pages project settings
+ *    (used by functions/api/subscribe.js, never exposed client-side)
  */
 
 // ---------------------------------------------------------------------------
@@ -22,56 +22,6 @@ export const ROCKET_URL_ES = "/go/rocket";
 // can be re-enabled here if needed.
 export const buildAffiliateUrl = (source = "generic", lang = "en") => {
   return lang === "es" ? ROCKET_URL_ES : ROCKET_URL_EN;
-};
-
-// ---------------------------------------------------------------------------
-// EMAIL COLLECTION
-// Compatible with Loops (https://loops.so) or Beehiiv (https://beehiiv.com)
-// Set EMAIL_ENDPOINT to your list's API URL.
-// Set the API key in .env as PUBLIC_EMAIL_API_KEY — Astro exposes env vars
-// via import.meta.env, and client-visible vars need the PUBLIC_ prefix
-// (the Quiz island calls submitEmail from the browser).
-// ---------------------------------------------------------------------------
-export const EMAIL_ENDPOINT = "https://YOUR_EMAIL_ENDPOINT_HERE";
-export const EMAIL_API_KEY = import.meta.env.PUBLIC_EMAIL_API_KEY || "";
-
-/**
- * Stub email submission function.
- * Replace the body and headers to match your provider's API spec.
- *
- * Loops example body: { email, firstName, source }
- * Beehiiv example body: { email, utm_source }
- */
-export const submitEmail = async ({ firstName, email, source = "quiz" }) => {
-  if (!EMAIL_ENDPOINT || EMAIL_ENDPOINT.includes("YOUR_")) {
-    console.warn("[MatchFluent] EMAIL_ENDPOINT not configured. Skipping submission.");
-    return { success: false, reason: "not_configured" };
-  }
-
-  try {
-    const response = await fetch(EMAIL_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${EMAIL_API_KEY}`,
-      },
-      body: JSON.stringify({
-        email,
-        firstName,
-        source,
-        tags: ["quiz-funnel", source],
-      }),
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    return { success: true };
-  } catch (err) {
-    console.error("[MatchFluent] Email submission failed:", err);
-    return { success: false, reason: err.message };
-  }
 };
 
 // ---------------------------------------------------------------------------
@@ -186,20 +136,6 @@ export const QUIZ_CONFIG = {
           icon: "✈️",
         },
       ],
-    },
-    {
-      id: "email",
-      isOptional: true,
-      headline_en: "Your personalized plan is ready.",
-      headline_es: "Tu plan personalizado está listo.",
-      subheadline_en:
-        "Get your full 3-day lesson plan + an exclusive Rocket Languages discount delivered to your inbox.",
-      subheadline_es:
-        "Recibe tu plan de 3 días + un código de descuento exclusivo para Rocket Languages.",
-      skipLabel_en: "Skip — show me my results",
-      skipLabel_es: "Omitir — ver mis resultados",
-      ctaLabel_en: "Send My Plan",
-      ctaLabel_es: "Enviar Mi Plan",
     },
   ],
 };

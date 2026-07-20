@@ -3,14 +3,14 @@ import {
   QUIZ_CONFIG,
   COMPARISON_TABLE,
   buildAffiliateUrl,
-  submitEmail,
 } from "../../config/site.js";
 
 /**
  * Quiz
  * ------------------------------------------------------------------
- * The full quiz state machine: 3 answer steps + optional email gate +
- * personalized results engine (docs/conversion-rules.md §6).
+ * The full quiz state machine: 3 answer steps + personalized results
+ * engine (docs/conversion-rules.md §6). Results are never gated; an
+ * optional email capture (SendFox via /api/subscribe) sits below them.
  *
  * Props:
  *   lang    "en" | "es" — UI language before the user answers Step 2.
@@ -79,13 +79,13 @@ const pick = (obj, lang, key) => obj[`${key}_${lang}`] ?? obj[key];
 export default function Quiz({ lang = "en", compact = false }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [phase, setPhase] = useState("questions"); // questions | email | results
-  const [emailState, setEmailState] = useState("idle"); // idle | sending | sent | skipped | error
+  const [phase, setPhase] = useState("questions"); // questions | results
+  const [emailState, setEmailState] = useState("idle"); // idle | sending | sent | error
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState(""); // honeypot — humans never see it
 
-  const answerSteps = QUIZ_CONFIG.steps.filter((s) => !s.isOptional);
-  const emailStep = QUIZ_CONFIG.steps.find((s) => s.isOptional);
+  const answerSteps = QUIZ_CONFIG.steps;
   const visibleSteps = compact ? answerSteps.slice(0, 2) : answerSteps;
 
   // Results language follows the Step 2 ANSWER (Spanish users see fully
@@ -116,21 +116,24 @@ export default function Quiz({ lang = "en", compact = false }) {
     if (stepIndex < visibleSteps.length - 1) {
       setStepIndex(stepIndex + 1);
     } else {
-      setPhase("email");
+      setPhase("results");
     }
   };
 
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
     setEmailState("sending");
-    const result = await submitEmail({ firstName, email, source: "quiz" });
-    setEmailState(result.success ? "sent" : "error");
-    setPhase("results");
-  };
-
-  const skipEmail = () => {
-    setEmailState("skipped");
-    setPhase("results");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, firstName, silo: resultLang, website }),
+      });
+      const data = await res.json();
+      setEmailState(data.ok ? "sent" : "error");
+    } catch {
+      setEmailState("error");
+    }
   };
 
   const t = (en, es) => (resultLang === "es" ? es : en);
@@ -141,7 +144,7 @@ export default function Quiz({ lang = "en", compact = false }) {
   // ------------------------------------------------------------------
   if (phase === "questions") {
     const step = visibleSteps[stepIndex];
-    const progress = ((stepIndex + 1) / (compact ? 2 : answerSteps.length + 1)) * 100;
+    const progress = ((stepIndex + 1) / visibleSteps.length) * 100;
     return (
       <div className="rounded-xl border border-border bg-background p-6 shadow-card animate-fade-in">
         <div className="h-1.5 rounded-full bg-navy-100 mb-5 overflow-hidden">
@@ -151,8 +154,7 @@ export default function Quiz({ lang = "en", compact = false }) {
           />
         </div>
         <p className="font-mono text-xs text-text-muted mb-2">
-          {uiLang === "es" ? "Paso" : "Step"} {stepIndex + 1} /{" "}
-          {compact ? 2 : answerSteps.length + 1}
+          {uiLang === "es" ? "Paso" : "Step"} {stepIndex + 1} / {visibleSteps.length}
         </p>
         <h3 className="text-xl font-bold text-navy-700 mb-4">
           {uiLang === "es" ? step.question_es : step.question_en}
@@ -179,76 +181,9 @@ export default function Quiz({ lang = "en", compact = false }) {
   }
 
   // ------------------------------------------------------------------
-  // Email gate (optional — clearly labeled, skippable)
-  // ------------------------------------------------------------------
-  const copy = RESULTS_COPY[answers.roadblock] || RESULTS_COPY.beginner;
-
-  if (phase === "email") {
-    return (
-      <div className="rounded-xl border border-border bg-background p-6 shadow-card animate-slide-up">
-        {/* Teaser of results above the form */}
-        <p className="text-xs font-semibold uppercase tracking-widest text-teal-700 mb-2">
-          {t("Your result", "Tu resultado")}
-        </p>
-        <h3 className="text-xl font-bold text-navy-700 mb-1">
-          {resultLang === "es" ? copy.headline_es : copy.headline_en}
-        </h3>
-        <p className="text-text-secondary text-sm mb-5">
-          {resultLang === "es" ? emailStep.headline_es : emailStep.headline_en}{" "}
-          {resultLang === "es" ? emailStep.subheadline_es : emailStep.subheadline_en}
-        </p>
-        <form onSubmit={handleEmailSubmit} className="grid gap-3 sm:grid-cols-2">
-          <label className="sr-only" htmlFor="quiz-firstname">
-            {t("First name", "Nombre")}
-          </label>
-          <input
-            id="quiz-firstname"
-            type="text"
-            required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder={t("First name", "Nombre")}
-            className="rounded-lg border border-border-strong px-4 py-3 text-navy-700 focus:border-teal-500 focus:outline-none"
-          />
-          <label className="sr-only" htmlFor="quiz-email">
-            Email
-          </label>
-          <input
-            id="quiz-email"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-            className="rounded-lg border border-border-strong px-4 py-3 text-navy-700 focus:border-teal-500 focus:outline-none"
-          />
-          <button
-            type="submit"
-            disabled={emailState === "sending"}
-            className="sm:col-span-2 rounded-xl bg-gradient-cta text-white font-semibold py-3 shadow-cta hover:shadow-cta-hover transition-shadow disabled:opacity-60"
-          >
-            {emailState === "sending"
-              ? t("Sending…", "Enviando…")
-              : resultLang === "es"
-                ? emailStep.ctaLabel_es
-                : emailStep.ctaLabel_en}
-          </button>
-        </form>
-        <button
-          type="button"
-          onClick={skipEmail}
-          className="mt-3 w-full text-sm text-text-muted underline hover:text-navy-500"
-        >
-          {resultLang === "es" ? emailStep.skipLabel_es : emailStep.skipLabel_en}
-        </button>
-      </div>
-    );
-  }
-
-  // ------------------------------------------------------------------
   // Results phase — personalized per Step 1 + Step 2 answers
   // ------------------------------------------------------------------
-  const condensed = emailState === "skipped";
+  const copy = RESULTS_COPY[answers.roadblock] || RESULTS_COPY.beginner;
   const trackNote = answers.track ? TRACK_NOTES[answers.track] : null;
   const h = COMPARISON_TABLE.headers;
 
@@ -260,28 +195,10 @@ export default function Quiz({ lang = "en", compact = false }) {
       <h3 className="text-xl font-bold text-navy-700 mb-3">
         {resultLang === "es" ? copy.headline_es : copy.headline_en}
       </h3>
-      {emailState === "sent" && (
-        <p className="text-sm text-success bg-success-light rounded-lg px-3 py-2 mb-3">
-          {t(
-            `Plan sent${firstName ? `, ${firstName}` : ""} — check your inbox.`,
-            `Plan enviado${firstName ? `, ${firstName}` : ""} — revisa tu correo.`
-          )}
-        </p>
-      )}
-      {emailState === "error" && (
-        <p className="text-sm text-warning bg-warning-light rounded-lg px-3 py-2 mb-3">
-          {t(
-            "We couldn't send the email right now — your results are below.",
-            "No pudimos enviar el correo en este momento — tus resultados están abajo."
-          )}
-        </p>
-      )}
-      {!condensed && (
-        <p className="text-text-secondary leading-relaxed mb-3">
-          {resultLang === "es" ? copy.body_es : copy.body_en}
-        </p>
-      )}
-      {!condensed && trackNote && (
+      <p className="text-text-secondary leading-relaxed mb-3">
+        {resultLang === "es" ? copy.body_es : copy.body_en}
+      </p>
+      {trackNote && (
         <p className="text-sm text-navy-500 italic mb-4">
           {resultLang === "es" ? trackNote.es : trackNote.en}
         </p>
@@ -328,6 +245,89 @@ export default function Quiz({ lang = "en", compact = false }) {
       >
         {t("Start My Free Rocket English Lesson →", "Empieza Mi Lección Gratis de Rocket English →")}
       </a>
+
+      {/* Email capture — results above are never gated on this */}
+      <div className="mt-6 rounded-xl border border-border bg-surface p-5">
+        {emailState === "sent" ? (
+          <p className="text-sm text-success bg-success-light rounded-lg px-3 py-2">
+            {t(
+              "Done. Check your inbox and confirm your subscription to get your plan.",
+              "Listo. Revisa tu correo y confirma tu suscripción para recibir tu plan."
+            )}
+          </p>
+        ) : (
+          <>
+            <h4 className="text-lg font-bold text-navy-700 mb-3">
+              {t(
+                "Want your personalized plan by email?",
+                "¿Quieres tu plan personalizado por correo?"
+              )}
+            </h4>
+            <form onSubmit={handleEmailSubmit} className="grid gap-3 sm:grid-cols-2">
+              <label className="sr-only" htmlFor="quiz-firstname">
+                {t("First name", "Nombre")}
+              </label>
+              <input
+                id="quiz-firstname"
+                type="text"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                placeholder={t("First name (optional)", "Nombre (opcional)")}
+                className="rounded-lg border border-border-strong px-4 py-3 text-navy-700 focus:border-teal-500 focus:outline-none"
+              />
+              <label className="sr-only" htmlFor="quiz-email">
+                Email
+              </label>
+              <input
+                id="quiz-email"
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+                className="rounded-lg border border-border-strong px-4 py-3 text-navy-700 focus:border-teal-500 focus:outline-none"
+              />
+              {/* Honeypot: off-screen (not display:none — some bots skip those) */}
+              <input
+                type="text"
+                name="website"
+                value={website}
+                onChange={(e) => setWebsite(e.target.value)}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px" }}
+              />
+              <button
+                type="submit"
+                disabled={emailState === "sending"}
+                className="sm:col-span-2 rounded-xl bg-gradient-cta text-white font-semibold py-3 shadow-cta hover:shadow-cta-hover transition-shadow disabled:opacity-60"
+              >
+                {emailState === "sending"
+                  ? t("Sending…", "Enviando…")
+                  : t("Send my plan", "Enviar mi plan")}
+              </button>
+            </form>
+            {emailState === "error" && (
+              <p className="text-sm text-warning bg-warning-light rounded-lg px-3 py-2 mt-3">
+                {t(
+                  "Something went wrong. Try again in a moment.",
+                  "Algo falló. Intenta de nuevo en un momento."
+                )}
+              </p>
+            )}
+            {/* TODO: /privacy-policy/ page does not exist yet — create it and confirm this URL */}
+            <p className="text-xs text-text-muted mt-3">
+              <a href="/privacy-policy/" className="underline hover:text-navy-500">
+                {t(
+                  "No spam. Unsubscribe anytime.",
+                  "Sin spam. Puedes darte de baja cuando quieras."
+                )}
+              </a>
+            </p>
+          </>
+        )}
+      </div>
     </div>
   );
 }
