@@ -20,5 +20,7 @@ export default defineConfig({
     }),
   ],
 
-  adapter: cloudflare()
+  // platformProxy makes locals.runtime.env work under `astro dev`
+  // (backed by wrangler's local bindings simulation).
+  adapter: cloudflare({ platformProxy: { enabled: true } })
 });

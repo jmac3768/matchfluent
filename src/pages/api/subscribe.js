@@ -1,8 +1,10 @@
 /**
- * POST /api/subscribe — Cloudflare Pages Function.
+ * POST /api/subscribe — Astro API route, served by the Cloudflare Worker.
  * Adds a contact to the SendFox list for the given silo ("es" | "en").
  * Token comes from the SENDFOX_API_TOKEN secret; never logged or returned.
  */
+
+export const prerender = false;
 
 const LIST_IDS = { es: 663144, en: 663145 };
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -16,9 +18,11 @@ const json = (body, status = 200) =>
     },
   });
 
-export async function onRequest(context) {
-  if (context.request.method !== "POST") {
-    return json({ ok: false, error: "method" }, 405);
+export async function POST(context) {
+  const token = context.locals.runtime?.env?.SENDFOX_API_TOKEN;
+  if (!token) {
+    console.error("[subscribe] SENDFOX_API_TOKEN is not set");
+    return json({ ok: false, error: "config" }, 500);
   }
 
   let body;
@@ -44,7 +48,7 @@ export async function onRequest(context) {
     const res = await fetch("https://api.sendfox.com/contacts", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${context.env.SENDFOX_API_TOKEN}`,
+        Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -57,10 +61,15 @@ export async function onRequest(context) {
       console.error(`[subscribe] SendFox responded ${res.status}`);
       return json({ ok: false, error: "upstream" }, 502);
     }
-  } catch (err) {
+  } catch {
     console.error("[subscribe] SendFox request failed");
     return json({ ok: false, error: "upstream" }, 502);
   }
 
   return json({ ok: true });
+}
+
+// Any non-POST method lands here (POST above takes precedence).
+export function ALL() {
+  return json({ ok: false, error: "method" }, 405);
 }

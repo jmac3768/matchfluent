@@ -23,16 +23,11 @@ All CTAs point at internal redirect paths (`/go/rocket-en` for the English silo,
 
 ## 4. Email capture (SendFox)
 
-The quiz shows an email capture form under its results. It POSTs to `/api/subscribe`, a Cloudflare Pages Function (`functions/api/subscribe.js`) that adds the contact to a SendFox list — Spanish silo → list 663144, English silo → list 663145. The silo comes from the user's step-2 language answer.
+The quiz shows an email capture form under its results. It POSTs to `/api/subscribe`, a server-rendered Astro API route (`src/pages/api/subscribe.js`, `prerender = false`) running in the Cloudflare Worker, which adds the contact to a SendFox list — Spanish silo → list 663144, English silo → list 663145. The silo comes from the user's step-2 language answer.
 
-The SendFox token lives **only** in the `SENDFOX_API_TOKEN` secret in the Cloudflare Pages project settings — never in the repo, never client-side.
+The SendFox token lives **only** in the `SENDFOX_API_TOKEN` secret in the Cloudflare project settings — never in the repo, never client-side. The route reads it via `locals.runtime.env`.
 
-**Local dev:** plain `astro dev` does not execute Pages Functions, so the form will 404 locally. To test it:
-
-```bash
-npm run build
-SENDFOX_API_TOKEN=your_token npx wrangler pages dev dist
-```
+**Local dev:** `astro dev` serves the route with local bindings via the adapter's `platformProxy`; put the token in a git-ignored `.dev.vars` file (`SENDFOX_API_TOKEN=your_token`) so wrangler picks it up.
 
 ## 5. Deployment
 
