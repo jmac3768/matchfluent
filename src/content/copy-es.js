@@ -26,7 +26,7 @@ export const mainCopy = {
           ordered: true,
           items: [
             "<strong>Rocket English</strong> — la mejor para hablar. Lecciones de audio interactivas de 20–30 minutos, reconocimiento de voz que califica tu pronunciación, y pago único (~$150 USD, con descuentos frecuentes a ~$100) con acceso de por vida.",
-            "<strong>Duolingo</strong> — la mejor gratuita. Perfecta para crear el hábito diario y las primeras 1,000 palabras, pero su práctica de habla es mínima.",
+            "<strong>Duolingo</strong> — la mejor gratuita. Perfecta para crear el hábito diario y las primeras 1,000 palabras, pero su práctica de habla es mínima; cuando llegas a ese techo hay <a href=\"/aprender-ingles/alternativas-a-duolingo-para-aprender-ingles/\">alternativas que sí te hacen hablar</a>.",
             "<strong>Babbel</strong> — buen currículum estructurado por suscripción (~$180 USD al año), aunque su retroalimentación de pronunciación es limitada.",
             "<strong>BBC Learning English</strong> — gratuita y excelente para comprensión auditiva con acentos británicos reales; no es un curso completo.",
           ],
@@ -36,7 +36,7 @@ export const mainCopy = {
         h2: "¿Por qué la mayoría de las apps no te enseñan a hablar?",
         paras: [
           "La mayoría de las apps de idiomas están optimizadas para retención de usuarios, no para fluidez: ejercicios de emparejar palabras, rachas y vidas mantienen la app abierta, pero no entrenan la boca. Hablar inglés es una habilidad motora y de recuperación rápida — se desarrolla diciendo frases en voz alta bajo presión de tiempo, algo que un ejercicio de opción múltiple nunca te pide.",
-          "Por eso alguien puede tener una racha de 500 días en Duolingo y congelarse cuando un cliente le habla en inglés. El problema no es la disciplina; es que la herramienta entrena reconocimiento, no producción.",
+          "Por eso alguien puede tener una racha de 500 días en Duolingo y <a href=\"/aprender-ingles/perder-el-miedo-a-hablar-ingles/\">congelarse cuando un cliente le habla en inglés</a>. El problema no es la disciplina; es que la herramienta entrena reconocimiento, no producción.",
         ],
       },
       {
@@ -86,7 +86,7 @@ export const mainCopy = {
       {
         h2: "¿Curso online o clases presenciales: cuál conviene?",
         paras: [
-          "Las clases presenciales ganan en una sola cosa: la presión social de asistir. Todo lo demás favorece al online. Una academia presencial típica cuesta entre $200 y $400 USD al mes, avanza al ritmo del grupo (es decir, del alumno más lento), y te da quizás 15 minutos de habla real por clase repartidos entre 10 estudiantes — desglosamos <a href=\"/aprender-ingles/escuelas-de-ingles-cerca-de-mi/\">lo que realmente ofrece una academia presencial</a> hora por hora.",
+          "Las clases presenciales ganan en una sola cosa: la presión social de asistir. Todo lo demás favorece al online. Una academia presencial típica cuesta entre $200 y $400 USD al mes, avanza al ritmo del grupo (es decir, del alumno más lento), y te da quizás 15 minutos de habla real por clase repartidos entre 10 estudiantes (el argumento más fuerte a favor de <a href=\"/aprender-ingles/clases-de-ingles-con-profesor-particular/\">una clase uno a uno con profesor particular</a>) — desglosamos <a href=\"/aprender-ingles/escuelas-de-ingles-cerca-de-mi/\">lo que realmente ofrece una academia presencial</a> hora por hora.",
           "Un curso online estructurado cuesta menos que un solo mes de academia, avanza a tu ritmo, y cada minuto de práctica de habla es tuyo. La desventaja honesta: nadie pasa lista. Si necesitas presión externa para estudiar, combina el curso online con un horario fijo autoimpuesto — mismos días, misma hora.",
         ],
       },
@@ -106,7 +106,7 @@ export const mainCopy = {
       {
         h2: "¿Cuánto tiempo toma completar un curso de inglés?",
         paras: [
-          "Con 30 minutos diarios, un principiante típico alcanza nivel conversacional (B1 del marco CEFR) en 4 a 6 meses con un curso estructurado. Una academia presencial con 3 horas semanales suele tomar 12 a 18 meses para el mismo nivel — no porque enseñe peor, sino porque son menos horas efectivas de práctica individual.",
+          "Con 30 minutos diarios, un principiante típico alcanza nivel conversacional (B1 del marco CEFR) en 4 a 6 meses con un curso estructurado. Una academia presencial con 3 horas semanales suele tomar 12 a 18 meses para el mismo nivel — no porque enseñe peor, sino porque son menos horas efectivas de práctica individual. Si tienes una fecha límite, <a href=\"/aprender-ingles/curso-intensivo-de-ingles/\">un formato intensivo comprime el calendario</a> — no las horas.",
         ],
       },
     ],

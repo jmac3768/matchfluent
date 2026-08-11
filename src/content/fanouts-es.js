@@ -1024,7 +1024,7 @@ export const fanoutCopy = {
       {
         h2: "¿Cómo hacer un intensivo en casa que funcione?",
         paras: [
-          "El intensivo casero de 2 semanas: 2–3 horas diarias divididas en bloques — una lección estructurada de curso por la mañana (Rocket English como columna: audio interactivo con reconocimiento de voz), 30–60 minutos de input a tu nivel al mediodía (podcast, serie con subtítulos en inglés), y 30 minutos de producción por la tarde (conversación con IA o intercambio, más 10 minutos de shadowing). La regla de oro va al final: antes de empezar el intensivo, decide tu rutina de mantenimiento — los 30 minutos diarios que seguirán cuando termine, idealmente con <a href=\"/aprender-ingles/inmersion-en-ingles/\">la inmersión por capas</a>. Sin esa segunda parte, el intensivo es un pico que baja; con ella, es una rampa de lanzamiento.",
+          "El intensivo casero de 2 semanas: 2–3 horas diarias divididas en bloques — una lección estructurada de curso por la mañana (Rocket English como columna: audio interactivo con reconocimiento de voz), 30–60 minutos de input a tu nivel al mediodía (podcast, serie con subtítulos en inglés), y 30 minutos de producción por la tarde (<a href=\"/aprender-ingles/mejor-ia-para-aprender-ingles-gratis/\">conversación con una IA gratuita</a> o intercambio, más 10 minutos de shadowing). La regla de oro va al final: antes de empezar el intensivo, decide tu rutina de mantenimiento — los 30 minutos diarios que seguirán cuando termine, idealmente con <a href=\"/aprender-ingles/inmersion-en-ingles/\">la inmersión por capas</a>. Sin esa segunda parte, el intensivo es un pico que baja; con ella, es una rampa de lanzamiento.",
         ],
       },
     ],

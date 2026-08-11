@@ -150,7 +150,7 @@ export const mainCopy = {
           items: [
             "<strong>Train the missing sounds first (weeks 1–2):</strong> learn the ~20 English sounds Spanish lacks with minimal pairs (ship/sheep, full/fool) before they fossilize.",
             "<strong>Cash in your cognates (ongoing):</strong> build vocabulary through cognate patterns (-tion/-ción, -ty/-dad) — but learn each one's English pronunciation out loud; cognates are free to read and treacherous to say.",
-            "<strong>Speak daily with feedback (ongoing):</strong> 20–30 minutes with voice-recognition practice like Rocket English attacks the pronunciation gap directly and privately.",
+            "<strong>Speak daily with feedback (ongoing):</strong> 20–30 minutes with voice-recognition practice like Rocket English attacks the pronunciation gap directly and privately — far cheaper per hour than a teacher, and <a href=\"/learning-english/english-tutor-vs-course/\">the cost math between the two</a> is not close.",
             "<strong>Tune your ear to compressed English (from week 3):</strong> <a href=\"/learning-english/what-is-comprehensible-input/\">daily listening at your level</a>, prioritizing natural connected speech over slow classroom audio.",
           ],
         },
@@ -203,8 +203,8 @@ export const mainCopy = {
           ordered: true,
           items: [
             "<strong>Minimal pairs (5 min):</strong> drill confusable word pairs — ship/sheep, bat/bet — listening first, then producing them until the difference is physical.",
-            "<strong>Shadowing (5–10 min):</strong> play native audio and speak over it in real time, copying rhythm and stress. The single best drill for connected speech, and step two of <a href=\"/learning-english/learning-english-speaking-fluently/\">the practical steps to speaking fluently</a>.",
-            "<strong>Voice-recognition lessons (20 min):</strong> speak full phrases and get scored — Rocket English's recognition flags what a polite human listener never would.",
+            "<strong>Shadowing (5–10 min):</strong> play native audio and speak over it in real time, copying rhythm and stress. The single best drill for connected speech, and step two of <a href=\"/learning-english/learning-english-speaking-fluently/\">the practical steps to speaking fluently</a>. Narrated books make unusually good shadowing material — <a href=\"/learning-english/learning-english-audiobook/\">studying with audiobooks</a> covers how to pick the level.",
+            "<strong>Voice-recognition lessons (20 min):</strong> speak full phrases and get scored — Rocket English's recognition flags what a polite human listener never would. It doubles as rehearsal for <a href=\"/learning-english/toefl-preparation-guide/\">TOEFL's microphone-recorded speaking section</a>, where nobody reacts to you at all.",
             "<strong>Record yourself (weekly):</strong> one minute, same text each time. Comparing month-old recordings is the most honest progress meter that exists.",
           ],
         },
@@ -369,7 +369,7 @@ export const mainCopy = {
       {
         h2: "How do you stop translating in your head?",
         paras: [
-          "Mental translation is a habit, not a life sentence — it fades when phrases become automatic units. Three drills accelerate that: learn in chunks ('I was wondering if...', 'It depends on...') so whole phrase-blocks retrieve as one piece instead of being assembled word by word; narrate your day in simple English directly, without composing in your language first — start with 30-second bursts; and rehearse high-frequency situations (introducing yourself, describing your job) until those scripts run on autopilot, freeing attention for the unpredictable parts.",
+          "Mental translation is a habit, not a life sentence — it fades when phrases become automatic units. Three drills accelerate that: learn in chunks ('I was wondering if...', 'It depends on...') so whole phrase-blocks retrieve as one piece instead of being assembled word by word; narrate your day in simple English directly, without composing in your language first — start with 30-second bursts; and rehearse high-frequency situations (introducing yourself, describing your job — <a href=\"/lessons/english-for-software-engineers/\">standup and client-call phrases if you write software</a>) until those scripts run on autopilot, freeing attention for the unpredictable parts.",
           "Expect the translation habit to weaken gradually over 2–3 months of daily production — it disappears from your most-practiced topics first, which is exactly why you rehearse the situations you actually face.",
         ],
       },
@@ -480,13 +480,13 @@ export const mainCopy = {
         h2: "Which English learning method works best?",
         paras: [
           "No single method wins, because each trains a different part of the skill. Comprehensible input (<a href=\"/learning-english/what-is-comprehensible-input/\">what Krashen's theory actually claims</a>) builds understanding and passive vocabulary; spaced repetition locks that vocabulary into long-term memory; shadowing trains pronunciation and rhythm; active recall makes review actually stick; and production — speaking and writing — converts all of it into communication. Stuck learners almost always over-invest in one method (usually input: series, podcasts, reading) and under-invest in production.",
-          "The minimum viable combination: 60–70% input at your level, 20–30% <a href=\"/learning-english/improve-spoken-english/\">daily speaking practice</a>, and spaced review of new vocabulary. In that ratio, each method covers the others' blind spot.",
+          "The minimum viable combination: 60–70% input at your level, 20–30% <a href=\"/learning-english/improve-spoken-english/\">daily speaking practice</a>, and spaced review of new vocabulary — <a href=\"/learning-english/best-free-english-learning-app/\">a free app handles that last part perfectly well</a>. In that ratio, each method covers the others' blind spot.",
         ],
       },
       {
         h2: "What do CEFR levels actually mean for your studying?",
         paras: [
-          "The CEFR framework (A1 to C2) isn't just certification vocabulary — it's the tool that makes 'comprehensible input' actionable. A1–A2 means set phrases and survival English; B1–B2 means independence — conversing, working, watching series; C1–C2 means mastery of nuance. Most jobs requiring English want B1–B2, and zero-to-B1 represents roughly 350–400 hours of effective study. We spell out <a href=\"/learning-english/cefr-levels-explained/\">what you can actually do at each level</a>, because knowing yours tells you which material sits in your 80–90% comprehension zone — the input that actually teaches — and which is aspirational noise.",
+          "The CEFR framework (A1 to C2) isn't just certification vocabulary — it's the tool that makes 'comprehensible input' actionable. A1–A2 means set phrases and survival English; B1–B2 means independence — conversing, working, watching series; C1–C2 means mastery of nuance. Most jobs requiring English want B1–B2, and zero-to-B1 represents roughly 350–400 hours of effective study — which is why <a href=\"/learning-english/learn-english-in-30-days/\">a single month cannot deliver fluency</a>, whatever the ads promise. We spell out <a href=\"/learning-english/cefr-levels-explained/\">what you can actually do at each level</a>, because knowing yours tells you which material sits in your 80–90% comprehension zone — the input that actually teaches — and which is aspirational noise.",
         ],
       },
     ],
@@ -534,7 +534,7 @@ export const mainCopy = {
       {
         h2: "When is a tutor worth the money — and when is it premature?",
         paras: [
-          "A tutor's value scales with what you bring — we compare <a href=\"/learning-english/english-tutor-vs-course/\">what each option is actually best at</a>. At intermediate (B1+), every hour of corrected conversation is gold: fixing fossilized errors, building naturalness, rehearsing interviews — things only a human listener provides. At beginner level, most of the hour goes to basic grammar and vocabulary explanations that a $100–150 one-time course teaches equally well; the arithmetic is brutal — 20 tutor hours at $20 is $400 to cover what the course covers entirely.",
+          "A tutor's value scales with what you bring — we compare <a href=\"/learning-english/english-tutor-vs-course/\">what each option is actually best at</a>. At intermediate (B1+), every hour of corrected conversation is gold: fixing fossilized errors, building naturalness, rehearsing interviews — things only a human listener provides, which is why <a href=\"/learning-english/ielts-preparation-guide/\">IELTS prep leans on mock speaking interviews</a>. At beginner level, most of the hour goes to basic grammar and vocabulary explanations that a $100–150 one-time course teaches equally well; the arithmetic is brutal — 20 tutor hours at $20 is $400 to cover what the course covers entirely.",
           "The efficient sequence: <a href=\"/learning-english/best-english-speaking-course/\">a structured speaking course</a> to B1 (4–6 months), then a tutor once or twice weekly to convert that base into polished conversation.",
         ],
       },
