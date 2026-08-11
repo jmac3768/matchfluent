@@ -163,14 +163,14 @@ export const mainCopy = {
       {
         h2: "¿Los audiolibros sirven para aprender inglés?",
         paras: [
-          "Los audiolibros entrenan el oído mejor que casi cualquier otro recurso pasivo — escuchas pronunciación real, entonación y ritmo durante horas. Funcionan mejor a partir del nivel A2, con audiolibros de graded readers que incluyen el texto para leer y escuchar a la vez.",
-          "Su límite es el mismo de todo material pasivo: escuchar 100 horas de audiolibros no te hace capaz de responder. Para quienes aprenden bien escuchando, el audio interactivo de Rocket English es el paso natural — mismo formato de audio, pero con pausas donde tú hablas y un reconocimiento de voz que te corrige.",
+          "Los audiolibros entrenan el oído mejor que casi cualquier otro recurso pasivo — escuchas pronunciación real, entonación y ritmo durante horas. Funcionan mejor a partir del nivel A2, con audiolibros de graded readers que incluyen el texto para leer y escuchar a la vez; reunimos <a href=\"/aprender-ingles/audiolibros-para-aprender-ingles-gratis/\">dónde conseguir audiolibros gratis y legales</a>.",
+          "Su límite es el mismo de todo material pasivo: escuchar 100 horas de audiolibros no te hace capaz de responder, así que conviene <a href=\"/aprender-ingles/aprender-ingles-escuchando/\">armar una dieta de escucha que avance</a> en lugar de acumular horas. Para quienes aprenden bien escuchando, el audio interactivo de Rocket English es el paso natural — mismo formato de audio, pero con pausas donde tú hablas y un reconocimiento de voz que te corrige.",
         ],
       },
       {
         h2: "¿Libros en PDF gratis: valen la pena?",
         paras: [
-          "Hay material legítimo gratuito — bibliotecas públicas digitales, el Proyecto Gutenberg para clásicos en inglés, y los materiales abiertos del British Council. Los PDF piratas de libros comerciales, además del problema legal, suelen ser ediciones viejas sin los audios que acompañan al libro físico, que es justo la parte que más necesitas.",
+          "Hay material legítimo gratuito — bibliotecas públicas digitales, el Proyecto Gutenberg para clásicos en inglés, y los materiales abiertos del British Council; detallamos <a href=\"/aprender-ingles/libros-para-aprender-ingles-desde-cero-pdf/\">qué PDFs gratuitos y legales valen la pena</a>. Los PDF piratas de libros comerciales, además del problema legal, suelen ser ediciones viejas sin los audios que acompañan al libro físico, que es justo la parte que más necesitas.",
         ],
       },
     ],
@@ -202,7 +202,7 @@ export const mainCopy = {
     sections: [
       {
         h2: "¿Cuáles son los mejores podcasts para aprender inglés?",
-        paras: ["Nuestra selección por nivel y estilo:"],
+        paras: ["Nuestra selección por nivel y estilo, y <a href=\"/aprender-ingles/podcasts-para-aprender-ingles-spotify/\">cómo encontrarlos todos en Spotify</a>:"],
         list: {
           ordered: true,
           items: [
@@ -219,14 +219,14 @@ export const mainCopy = {
       {
         h2: "¿Se puede aprender inglés solo escuchando podcasts?",
         paras: [
-          "Los podcasts desarrollan comprensión auditiva, vocabulario en contexto y familiaridad con la velocidad real del inglés — tres cosas que ningún libro logra. Lo que no desarrollan es producción: puedes entender el 90% de un episodio y seguir sin poder formular una respuesta de tres frases, porque entender y producir usan procesos mentales distintos.",
+          "Los podcasts desarrollan comprensión auditiva, vocabulario en contexto y familiaridad con la velocidad real del inglés — tres cosas que ningún libro logra — aunque eso no llega al extremo de <a href=\"/aprender-ingles/aprender-ingles-mientras-duermes/\">escuchar inglés mientras duermes</a>, que no funciona. Lo que no desarrollan es producción: puedes entender el 90% de un episodio y seguir sin poder formular una respuesta de tres frases, porque entender y producir usan procesos mentales distintos.",
           "La regla práctica: los podcasts son perfectos para entrenar el oído. Para entrenar la boca, necesitas algo que te haga hablar en voz alta y te corrija — un intercambio de conversación, un tutor, o un curso interactivo.",
         ],
       },
       {
         h2: "¿Cómo usar podcasts para avanzar más rápido?",
         paras: [
-          "Tres técnicas convierten la escucha pasiva en estudio activo. Primero, escucha cada episodio dos veces: una para la idea general, otra pausando en frases nuevas. Segundo, practica shadowing — repite en voz alta encima del audio imitando ritmo y entonación durante 5 minutos por sesión. Tercero, elige podcasts a tu nivel real: si entiendes menos del 70%, baja de nivel; la incomprensión total no enseña nada.",
+          "Tres técnicas convierten la escucha pasiva en estudio activo. Primero, escucha cada episodio dos veces: una para la idea general, otra pausando en frases nuevas, algo mucho más fácil con <a href=\"/aprender-ingles/audios-para-aprender-ingles-gratis/\">audios gratuitos con transcripción</a>. Segundo, practica shadowing — repite en voz alta encima del audio imitando ritmo y entonación durante 5 minutos por sesión. Tercero, elige podcasts a tu nivel real: si entiendes menos del 70%, baja de nivel; la incomprensión total no enseña nada.",
         ],
       },
     ],
@@ -274,7 +274,7 @@ export const mainCopy = {
         h2: "¿Ver series en inglés realmente enseña?",
         paras: [
           "Ver series es exposición, no instrucción — y la diferencia importa. La exposición refuerza lo que ya sabes: consolidas vocabulario, afinas el oído, absorbes expresiones. Pero no construye lo que no tienes; un principiante viendo Breaking Bad sin base entiende el 15% y adquiere casi nada, por debajo del umbral de 'input comprensible' (~80% de comprensión) donde ocurre el aprendizaje.",
-          "Con una base de gramática y 1,500–2,000 palabras, las series se convierten en un acelerador potente. Sin ella, son subtítulos en español con ruido de fondo en inglés.",
+          "Con una base de gramática y 1,500–2,000 palabras, las series se convierten en un acelerador potente, igual que <a href=\"/aprender-ingles/peliculas-para-aprender-ingles-netflix/\">las películas de Netflix con el inglés más claro</a>. Sin ella, son subtítulos en español con ruido de fondo en inglés.",
         ],
       },
       {
@@ -292,7 +292,7 @@ export const mainCopy = {
       {
         h2: "¿Y la música y las canciones en inglés?",
         paras: [
-          "Las canciones son la mejor herramienta de pronunciación pasiva que existe: la melodía fija el ritmo y el linking (cómo se conectan las palabras) mejor que cualquier explicación. Su límite es el vocabulario — las letras usan lenguaje poético y gramática rota que no siempre sirve para conversar. Úsalas para el oído y la pronunciación, no como fuente principal de vocabulario.",
+          "Las canciones son la mejor herramienta de pronunciación pasiva que existe, y explicamos <a href=\"/aprender-ingles/musica-para-aprender-ingles/\">qué enseña la música que ningún otro método</a>: la melodía fija el ritmo y el linking (cómo se conectan las palabras) mejor que cualquier explicación. Su límite es el vocabulario — las letras usan lenguaje poético y gramática rota que no siempre sirve para conversar. Empieza por <a href=\"/aprender-ingles/canciones-para-aprender-ingles-subtituladas/\">canciones con la dicción más clara</a> y úsalas para el oído y la pronunciación, no como fuente principal de vocabulario.",
         ],
       },
     ],
@@ -342,20 +342,20 @@ export const mainCopy = {
       {
         h2: "¿Dónde falla la IA como profesor?",
         paras: [
-          "La IA no tiene plan. Un buen curso decide qué necesitas aprender esta semana, en qué orden, y cuándo repasar lo de hace un mes; ChatGPT solo responde a lo que tú le pides — y un principiante no sabe qué pedir. El resultado típico es práctica dispersa: mucha actividad, poco progreso medible.",
+          "La IA no tiene plan. Un buen curso decide qué necesitas aprender esta semana, en qué orden, y cuándo repasar lo de hace un mes; ChatGPT solo responde a lo que tú le pides — y un principiante no sabe qué pedir. El resultado típico es práctica dispersa: mucha actividad, poco progreso medible, en lugar de <a href=\"/aprender-ingles/hablar-ingles-con-fluidez/\">práctica de habla con corrección real</a>.",
           "Además, la retroalimentación de pronunciación por voz sigue siendo imprecisa comparada con sistemas de reconocimiento entrenados para evaluar acento, y la IA tiende a ser demasiado amable: te entiende aunque hables mal, cosa que un desconocido en inglés no hará.",
         ],
       },
       {
         h2: "¿Cómo combinar un curso estructurado con ChatGPT?",
         paras: [
-          "La rutina que recomendamos toma 30–40 minutos diarios: haz tu lección de Rocket English (20–30 minutos de audio interactivo con reconocimiento de voz), y remata con 10 minutos de conversación con ChatGPT usando el vocabulario exacto de esa lección — pídele que converse contigo usando esas frases y te corrija. El curso pone el orden y la pronunciación; la IA pone las repeticiones ilimitadas.",
+          "La rutina que recomendamos toma 30–40 minutos diarios: haz tu lección de Rocket English (20–30 minutos de audio interactivo con reconocimiento de voz), y remata con 10 minutos de conversación con ChatGPT usando el vocabulario exacto de esa lección — pídele que converse contigo usando esas frases y te corrija — recopilamos <a href=\"/aprender-ingles/aprender-ingles-con-chatgpt/\">los prompts que de verdad funcionan</a>. El curso pone el orden y la pronunciación; la IA pone las repeticiones ilimitadas.",
         ],
       },
       {
         h2: "¿Cuál es la mejor IA para aprender inglés gratis?",
         paras: [
-          "ChatGPT (versión gratuita) es la opción más completa para conversación escrita y corrección; su modo de voz gratuito tiene límites de uso pero sirve para práctica corta. Claude destaca en explicaciones de matices gramaticales, y Gemini se integra bien si vives en el ecosistema de Google. La diferencia entre ellas es menor que la diferencia entre usarlas con plan o sin plan.",
+          "ChatGPT (versión gratuita) es la opción más completa para conversación escrita y corrección; su modo de voz gratuito tiene límites de uso pero sirve para práctica corta. Claude destaca en explicaciones de matices gramaticales, y Gemini se integra bien si vives en el ecosistema de Google. Comparamos <a href=\"/aprender-ingles/mejor-ia-para-aprender-ingles-gratis/\">cuál IA gratuita conviene según lo que necesites</a>, aunque la diferencia entre ellas es menor que la diferencia entre usarlas con plan o sin plan.",
         ],
       },
     ],
@@ -440,7 +440,7 @@ export const mainCopy = {
     sections: [
       {
         h2: "¿Por dónde se empieza a aprender inglés desde cero?",
-        paras: ["El orden importa más de lo que parece. La secuencia probada para las primeras 12 semanas:"],
+        paras: ["El orden importa más de lo que parece. La secuencia probada para las primeras 12 semanas, con <a href=\"/aprender-ingles/aprender-ingles-desde-cero-paso-a-paso/\">los seis pasos en detalle</a>:"],
         list: {
           ordered: true,
           items: [
@@ -454,7 +454,7 @@ export const mainCopy = {
       {
         h2: "¿Cuánto tiempo toma aprender inglés desde cero?",
         paras: [
-          "Con 30 minutos diarios consistentes, un hispanohablante típico alcanza nivel básico funcional (A2) en 3–4 meses y nivel conversacional (B1) en 6–9 meses. Los hispanohablantes tienen ventaja real: miles de cognados compartidos (información/information, hospital/hospital) y un alfabeto común recortan el camino frente a hablantes de otros idiomas.",
+          "Con 30 minutos diarios consistentes, un hispanohablante típico — incluidos <a href=\"/aprender-ingles/aprender-ingles-para-adultos-principiantes/\">los adultos que empiezan de cero</a> — alcanza nivel básico funcional (A2) en 3–4 meses y nivel conversacional (B1) en 6–9 meses. Los hispanohablantes tienen ventaja real: miles de cognados compartidos (información/information, hospital/hospital) y un alfabeto común recortan el camino frente a hablantes de otros idiomas.",
           "Desconfía de promesas de 'inglés fluido en 30 días' — no existen atajos de esa escala. Sí existe la diferencia entre un año bien invertido y cinco años de empezar y abandonar.",
         ],
       },
@@ -467,7 +467,7 @@ export const mainCopy = {
       {
         h2: "¿Qué herramientas necesita realmente un principiante?",
         paras: [
-          "Menos de las que crees: un curso estructurado que ordene el camino y te haga hablar (Rocket English es nuestra recomendación por su audio interactivo con reconocimiento de voz y pago único), un cuaderno de frases — no de palabras sueltas — y una fuente de audio a tu nivel para el trayecto diario. Todo lo demás — series, música, ChatGPT — suma cuando ya hay una base de 2–3 meses.",
+          "Menos de las que crees: un curso estructurado que ordene el camino y te haga hablar (Rocket English es nuestra recomendación por su audio interactivo con reconocimiento de voz y pago único), un cuaderno de frases — no de palabras sueltas — y una fuente de audio a tu nivel para el trayecto diario. Si el presupuesto es cero, <a href=\"/aprender-ingles/aprender-ingles-basico-gratis/\">un plan gratuito de 90 días</a> cubre esa base. Todo lo demás — series, música, ChatGPT — suma cuando ya hay una base de 2–3 meses.",
         ],
       },
     ],
@@ -511,14 +511,14 @@ export const mainCopy = {
       {
         h2: "¿Cómo se pierde el miedo a hablar inglés?",
         paras: [
-          "El miedo a hablar se reduce con exposición gradual, no con valentía repentina. La escalera que funciona: primero habla solo — lee en voz alta, narra tu día, repite frases con un curso de audio; cero público, cero riesgo. Luego habla con máquinas — el reconocimiento de voz de Rocket English o el modo de voz de ChatGPT te escuchan y corrigen sin juzgar. Después conversaciones de bajo riesgo — intercambios de idiomas donde la otra persona también se equivoca. Al final, las situaciones reales que hoy te asustan.",
+          "El miedo a hablar se reduce con exposición gradual, no con valentía repentina, y detallamos <a href=\"/aprender-ingles/perder-el-miedo-a-hablar-ingles/\">cómo perder el miedo peldaño a peldaño</a>. La escalera que funciona: primero habla solo — lee en voz alta, narra tu día, repite frases con un curso de audio; cero público, cero riesgo. Luego habla con máquinas — el reconocimiento de voz de Rocket English o el modo de voz de ChatGPT te escuchan y corrigen sin juzgar. Después conversaciones de bajo riesgo — intercambios de idiomas donde la otra persona también se equivoca. Al final, las situaciones reales que hoy te asustan.",
           "Cada peldaño reduce la carga emocional del siguiente. El error clásico es intentar saltar del estudio silencioso directo a la conversación real — de ahí el pánico.",
         ],
       },
       {
         h2: "¿Cuánto hay que practicar para hablar con fluidez?",
         paras: [
-          "La referencia realista: 20–30 minutos diarios de práctica de habla — no de estudio general — producen mejora notable en 4–6 semanas y fluidez conversacional en 4–6 meses partiendo de un nivel intermedio bajo. La palabra clave es diario: la fluidez es memoria muscular de la boca y del cerebro, y la memoria muscular se construye con frecuencia, no con intensidad. Tres horas el domingo rinden menos que 25 minutos cada día.",
+          "La referencia realista: 20–30 minutos diarios de práctica de habla — no de estudio general — producen mejora notable en 4–6 semanas y fluidez conversacional en 4–6 meses partiendo de un nivel intermedio bajo. La palabra clave es diario, que es justo lo que consigue <a href=\"/aprender-ingles/inmersion-en-ingles/\">rodearte de inglés todos los días</a>: la fluidez es memoria muscular de la boca y del cerebro, y la memoria muscular se construye con frecuencia, no con intensidad. Tres horas el domingo rinden menos que 25 minutos cada día; aquí tienes <a href=\"/aprender-ingles/practica-de-conversacion-en-ingles/\">dónde conseguir práctica de conversación real</a>.",
         ],
       },
       {
@@ -564,14 +564,14 @@ export const mainCopy = {
       {
         h2: "¿Qué método para aprender inglés funciona mejor?",
         paras: [
-          "Ningún método gana en todo, porque cada uno entrena una pieza distinta del idioma. El input comprensible (la teoría de Stephen Krashen) construye comprensión y vocabulario pasivo; la repetición espaciada fija ese vocabulario en memoria de largo plazo; el shadowing entrena pronunciación y ritmo; y la práctica de producción — hablar y escribir — convierte todo lo anterior en comunicación real. Los estudiantes estancados casi siempre sobreinvierten en un método (típicamente input: series, podcasts, lectura) y subinvierten en producción.",
-          "La combinación mínima que funciona: 60–70% input a tu nivel, 20–30% práctica de habla diaria, y repaso espaciado del vocabulario nuevo. En esa proporción, cada método cubre el punto ciego de los otros.",
+          "Ningún método gana en todo, porque cada uno entrena una pieza distinta del idioma. El input comprensible (<a href=\"/aprender-ingles/que-es-el-input-comprensible/\">qué dice exactamente la teoría de Stephen Krashen</a>) construye comprensión y vocabulario pasivo; la repetición espaciada fija ese vocabulario en memoria de largo plazo; el shadowing entrena pronunciación y ritmo; y la práctica de producción — hablar y escribir — convierte todo lo anterior en comunicación real. Los estudiantes estancados casi siempre sobreinvierten en un método (típicamente input: series, podcasts, lectura) y subinvierten en producción.",
+          "La combinación mínima que funciona: 60–70% input a tu nivel — <a href=\"/aprender-ingles/leer-en-ingles/\">construir vocabulario leyendo</a> es la vía más eficiente —, 20–30% práctica de habla diaria, y repaso espaciado del vocabulario nuevo. En esa proporción, cada método cubre el punto ciego de los otros.",
         ],
       },
       {
         h2: "¿Cómo saber mi nivel: qué significan A1, B1, C2?",
         paras: [
-          "El marco CEFR (Marco Común Europeo de Referencia) divide el dominio del idioma en seis niveles: A1 y A2 (básico — frases hechas, presente simple, sobrevivir como turista), B1 y B2 (independiente — conversar, trabajar, ver series sin subtítulos con esfuerzo), C1 y C2 (dominio — matices, humor, negociación). La mayoría de los empleos que piden inglés buscan B1–B2, y llegar de cero a B1 toma típicamente entre 350 y 400 horas de estudio efectivo. Saber tu nivel importa porque define qué material es 'comprensible' para ti — la base de todo lo demás.",
+          "El marco CEFR (Marco Común Europeo de Referencia) divide el dominio del idioma en seis niveles: A1 y A2 (básico — frases hechas, presente simple, sobrevivir como turista), B1 y B2 (independiente — conversar, trabajar, ver series sin subtítulos con esfuerzo), C1 y C2 (dominio — matices, humor, negociación). La mayoría de los empleos que piden inglés buscan B1–B2, y llegar de cero a B1 toma típicamente entre 350 y 400 horas de estudio efectivo. Desglosamos <a href=\"/aprender-ingles/niveles-de-ingles-cefr/\">qué sabes hacer en cada nivel</a>, porque saber el tuyo define qué material es 'comprensible' para ti — la base de todo lo demás.",
         ],
       },
     ],
@@ -619,8 +619,8 @@ export const mainCopy = {
       {
         h2: "¿Cuándo vale la pena pagar un tutor de inglés?",
         paras: [
-          "Un tutor rinde en proporción a lo que ya sabes. Con nivel intermedio (B1+), cada hora de conversación con corrección es oro: puliendo errores fosilizados, ganando naturalidad, preparando entrevistas. Con nivel principiante, la mayor parte de la hora se va en explicaciones de gramática básica y vocabulario que un curso de $100–150 USD de pago único te enseña igual de bien — la aritmética no perdona: 20 horas de tutor a $20 son $400 para cubrir lo que el curso cubre completo.",
-          "La secuencia eficiente: curso estructurado hasta B1 (4–6 meses), y de ahí tutor 1–2 veces por semana para convertir esa base en conversación pulida.",
+          "Un tutor rinde en proporción a lo que ya sabes, y analizamos aparte <a href=\"/aprender-ingles/clases-de-ingles-con-profesor-particular/\">cuándo conviene un profesor particular</a>. Con nivel intermedio (B1+), <a href=\"/aprender-ingles/practica-de-conversacion-en-ingles/\">cada hora de conversación con corrección</a> es oro: puliendo errores fosilizados, ganando naturalidad, preparando entrevistas. Con nivel principiante, la mayor parte de la hora se va en explicaciones de gramática básica y vocabulario que un curso de $100–150 USD de pago único te enseña igual de bien — la aritmética no perdona: 20 horas de tutor a $20 son $400 para cubrir lo que el curso cubre completo.",
+          "La secuencia eficiente: curso estructurado hasta B1 (<a href=\"/aprender-ingles/niveles-de-ingles-cefr/\">cuánto toma cada salto de nivel</a>), y de ahí tutor 1–2 veces por semana para convertir esa base en conversación pulida.",
         ],
       },
       {
@@ -663,7 +663,7 @@ export const mainCopy = {
           ordered: true,
           items: [
             "<strong>Cambia tus dispositivos al inglés</strong> — teléfono, computadora, redes sociales. Es vocabulario de interfaz repetido cientos de veces al día, gratis.",
-            "<strong>Convierte tu entretenimiento</strong> — series con subtítulos en inglés, música en inglés con letra a mano, YouTube de tus temas favoritos en inglés. No agregas horas de estudio; reconviertes horas que ya gastas.",
+            "<strong>Convierte tu entretenimiento</strong> — <a href=\"/aprender-ingles/series-de-netflix-para-aprender-ingles/\">series con subtítulos en inglés</a>, música en inglés con letra a mano, YouTube de tus temas favoritos en inglés. No agregas horas de estudio; reconviertes horas que ya gastas.",
             "<strong>Piensa en inglés en momentos fijos</strong> — narra mentalmente tu rutina de la mañana o tu trayecto en inglés; cuando encuentres un hueco de vocabulario, anótalo.",
             "<strong>Ancla todo con una lección estructurada diaria</strong> — 20–30 minutos de curso que decida qué aprendes esta semana; el resto de la inmersión refuerza lo que la lección introduce.",
           ],
@@ -672,14 +672,14 @@ export const mainCopy = {
       {
         h2: "¿La inmersión funciona sin estructura?",
         paras: [
-          "No, y el mecanismo es conocido: la exposición solo enseña dentro del rango que ya casi entiendes (input comprensible, ~80–90% de comprensión). Un principiante inmerso en contenido nativo entiende 10–20% y su cerebro descarta el resto como ruido — por eso hay inmigrantes con 20 años en EEUU y un inglés estancado, y estudiantes que nunca salieron de su país hablando con fluidez. La diferencia nunca es la geografía; es la estructura de la práctica.",
+          "No, y el mecanismo es conocido: la exposición solo enseña dentro del rango que ya casi entiendes (<a href=\"/aprender-ingles/que-es-el-input-comprensible/\">input comprensible</a>, ~80–90% de comprensión). Un principiante inmerso en contenido nativo entiende 10–20% y su cerebro descarta el resto como ruido — por eso hay inmigrantes con 20 años en EEUU y un inglés estancado, y estudiantes que nunca salieron de su país hablando con fluidez. La diferencia nunca es la geografía; es la estructura de la práctica.",
           "La inmersión multiplica lo que el estudio siembra. Sin siembra, no hay nada que multiplicar.",
         ],
       },
       {
         h2: "¿Cuántas horas de inmersión se necesitan para notar el cambio?",
         paras: [
-          "Con el sistema de capas anterior — 2–4 horas diarias de contacto, ancladas en 30 minutos de lección estructurada — la comprensión auditiva mejora de forma notable en 6–8 semanas, y la sensación de 'pensar en inglés' en momentos cotidianos aparece típicamente entre el segundo y el cuarto mes. El progreso es más rápido que con estudio aislado porque cada palabra nueva reaparece el mismo día en tu serie, tu música o tu teléfono.",
+          "Con el sistema de capas anterior — 2–4 horas diarias de contacto, ancladas en 30 minutos de lección estructurada — la comprensión auditiva mejora de forma notable en 6–8 semanas, y la sensación de 'pensar en inglés' en momentos cotidianos aparece típicamente entre el segundo y el cuarto mes. Si quieres comprimirlo, <a href=\"/aprender-ingles/curso-intensivo-de-ingles/\">un intensivo de dos semanas en casa</a> acelera esa curva. El progreso es más rápido que con estudio aislado porque cada palabra nueva reaparece el mismo día en tu serie, tu música o tu teléfono.",
         ],
       },
     ],
@@ -712,20 +712,20 @@ export const mainCopy = {
       {
         h2: "¿Cómo empezar a leer en inglés para principiantes?",
         paras: [
-          "Empieza con graded readers — libros adaptados por nivel de las editoriales Oxford Bookworms, Penguin Readers o Cambridge English Readers. Un graded reader de nivel A2 usa las 1,000 palabras más frecuentes del inglés y cuenta historias reales (desde Sherlock Holmes hasta biografías) sin frustrar. La regla del 90%: si entiendes 9 de cada 10 palabras de una página, el libro es tu nivel; si necesitas el diccionario en cada línea, baja un nivel sin vergüenza — la fluidez de lectura se construye leyendo mucho material fácil, no descifrando material difícil.",
+          "Empieza con graded readers — libros adaptados por nivel de las editoriales Oxford Bookworms, Penguin Readers o Cambridge English Readers, varios disponibles como <a href=\"/aprender-ingles/libros-para-aprender-ingles-desde-cero-pdf/\">graded readers en PDF gratis</a>. Un graded reader de nivel A2 usa las 1,000 palabras más frecuentes del inglés y cuenta historias reales (desde Sherlock Holmes hasta biografías) sin frustrar. La regla del 90%: si entiendes 9 de cada 10 palabras de una página, el libro es tu nivel; si necesitas el diccionario en cada línea, baja un nivel sin vergüenza — la fluidez de lectura se construye leyendo mucho material fácil, no descifrando material difícil.",
         ],
       },
       {
         h2: "¿Qué tan rápido crece el vocabulario leyendo?",
         paras: [
-          "Los números de la investigación en adquisición léxica son consistentes: leyendo 15–20 minutos diarios a tu nivel, absorbes entre 1,000 y 1,500 palabras nuevas al año — sin memorizar listas, porque el contexto hace el trabajo de fijación. Para comparar: las apps de vocabulario típicas enseñan 300–500 palabras al año con más esfuerzo consciente. La lectura gana por volumen: cada página son 250–300 palabras de exposición con gramática real incluida.",
+          "Los números de la investigación en adquisición léxica son consistentes: leyendo 15–20 minutos diarios a tu nivel, absorbes entre 1,000 y 1,500 palabras nuevas al año — sin memorizar listas, porque el contexto hace el trabajo de fijación. Para comparar: las apps de vocabulario típicas enseñan 300–500 palabras al año con más esfuerzo consciente. La lectura gana por volumen: cada página son 250–300 palabras de exposición con gramática real incluida, y rinde aún más si aprovechas <a href=\"/aprender-ingles/audiolibros-para-aprender-ingles-gratis/\">leer y escuchar a la vez</a>.",
           "El multiplicador es releer: la segunda pasada de un libro fija el vocabulario que la primera solo presentó.",
         ],
       },
       {
         h2: "¿Qué NO te enseña la lectura?",
         paras: [
-          "La lectura tiene un punto ciego serio para hispanohablantes: la pronunciación inglesa no se deduce de la escritura ('though', 'through' y 'tough' no riman), así que el lector silencioso inventa pronunciaciones con fonética española — y esas pronunciaciones inventadas se fosilizan. La vacuna es simple: acompaña la lectura con audio desde el inicio. Los graded readers con audiolibro incluido resuelven la mitad; una práctica de habla con retroalimentación — como el reconocimiento de voz de Rocket English — resuelve la otra mitad, porque te obliga a decir en voz alta lo que llevas meses leyendo.",
+          "La lectura tiene un punto ciego serio para hispanohablantes: la pronunciación inglesa no se deduce de la escritura ('though', 'through' y 'tough' no riman), así que el lector silencioso inventa pronunciaciones con fonética española — y esas pronunciaciones inventadas se fosilizan. La vacuna es simple: <a href=\"/aprender-ingles/aprender-ingles-escuchando/\">entrenar el oído en paralelo</a>, acompañando la lectura con audio desde el inicio. Los graded readers con audiolibro incluido resuelven la mitad; una práctica de habla con retroalimentación — como el reconocimiento de voz de Rocket English — resuelve la otra mitad, porque te obliga a decir en voz alta lo que llevas meses leyendo.",
         ],
       },
     ],
