@@ -10,6 +10,10 @@
  *
  * /404/ is excluded from the distribution: nothing links to it by design,
  * so a crawler never reaches it and its zero would skew the minimum.
+ *
+ * Self-links do not count. Screaming Frog's "Unique Inlinks" does count
+ * them, so pages the footer links to from every page including themselves
+ * (/sobre-nosotros/, /como-evaluamos/) read one lower here than in a crawl.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -43,7 +47,9 @@ const normalize = (href) => {
 };
 
 const pages = new Set(htmlFiles.map(toPath));
-const hrefRe = /href="([^"]+)"/g;
+// Anchors only. A bare href match also catches <link rel="alternate" hreflang>,
+// which inflated every hreflang-paired page by one against Screaming Frog.
+const hrefRe = /<a\s[^>]*href="([^"]+)"/g;
 
 const inMain = new Map();
 const inFull = new Map();
