@@ -17,6 +17,7 @@ import TrustBar from "../components/astro/TrustBar.astro";
 import FAQSection from "../components/astro/FAQSection.astro";
 import AffiliateCTA from "../components/astro/AffiliateCTA.astro";
 import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import FanoutList from "../components/astro/FanoutList.astro";
 import Quiz from "../components/react/Quiz.jsx";
 import Section from "../components/astro/Section.astro";
 import { lastUpdatedLabel } from "../lib/data.js";
@@ -32,6 +33,9 @@ const {
   intercept, // affiliate intercept text (from data)
   practicePhrases = [], // only when hasPronunciation === true
   relatedLinks = [],
+  fanouts = [], // this pillar's own children (empty on fanout pages)
+  extraLinks = [], // rotated fill, merged into FanoutList on commercial pillars
+  commercial = false, // moves FanoutList to the foot and merges RelatedLinks into it
   page = {},
   showQuiz = true,
   showTable = true,
@@ -71,6 +75,8 @@ const finalCtaLabel =
 
     <article class="mt-6">
       {copy.entity && <p class="text-lg text-navy-700 leading-relaxed mb-8">{copy.entity}</p>}
+
+      {!commercial && <FanoutList {lang} {fanouts} currentPath={path} />}
 
       {firstSections.map((section) => <Section {section} />)}
 
@@ -116,6 +122,12 @@ const finalCtaLabel =
       />
     </article>
 
-    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+    {
+      commercial ? (
+        <FanoutList {lang} {fanouts} {extraLinks} currentPath={path} />
+      ) : (
+        <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+      )
+    }
   </main>
 </BaseLayout>

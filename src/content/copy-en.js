@@ -15,7 +15,7 @@ export const mainCopy = {
       {
         h2: "What is the best app to learn English in 2025?",
         paras: [
-          "The ranking depends on your goal, but if the goal is speaking, it barely changes. Here's where each app lands after comparing speaking practice, curriculum, real audio, and pricing:",
+          "The ranking depends on your goal, but if the goal is speaking, it barely changes — and <a href=\"/learning-english/fastest-way-to-learn-english/\">what actually sets your pace</a> matters more than which app you pick. Here's where each app lands after comparing speaking practice, curriculum, real audio, and pricing:",
         ],
         list: {
           ordered: true,
@@ -31,7 +31,7 @@ export const mainCopy = {
         h2: "Why don't most apps teach you to speak?",
         paras: [
           "Most language apps are optimized for retention metrics, not fluency: matching exercises, streaks, and hearts keep the app open, but they don't train your mouth. Speaking English is a motor skill plus fast retrieval under pressure — it develops by saying sentences out loud with time pressure, something a multiple-choice tap never asks of you.",
-          "That's how someone ends up with a 500-day streak and total freeze when a customer speaks to them. It isn't a discipline problem; the tool trains recognition, not production.",
+          "That's how someone ends up with a 500-day streak and total freeze when a customer speaks to them. It isn't a discipline problem; the tool trains recognition, not production, which is exactly <a href=\"/learning-english/how-to-speak-english-fluently/\">why recognition never becomes speech</a>.",
         ],
       },
       {
@@ -44,7 +44,7 @@ export const mainCopy = {
       {
         h2: "Are free apps worth using at all?",
         paras: [
-          "Yes — and it's worth saying plainly: free apps are the best way to start today without spending anything. Duolingo gives you vocabulary and habit; BBC Learning English gives you an ear. Where they stop being enough is the jump from understanding sentences to producing them — typically between CEFR levels A2 and B1. That's the point where a structured course with real speaking practice stops being a luxury and becomes the shortcut.",
+          "Yes — and it's worth saying plainly: free apps are the best way to start today without spending anything, and we ranked <a href=\"/learning-english/best-free-english-learning-app/\">which free apps are actually worth your time</a>. Duolingo gives you vocabulary and habit; BBC Learning English gives you an ear. Where they stop being enough is the jump from understanding sentences to producing them — typically between CEFR levels A2 and B1. That's the point where a structured course with real speaking practice stops being a luxury and becomes the shortcut.",
         ],
       },
     ],
@@ -82,7 +82,7 @@ export const mainCopy = {
           items: [
             "<strong>English Grammar in Use (Raymond Murphy)</strong> — the world's most-used grammar reference: 145 one-page units with exercises on the facing page. Get the edition matching your level.",
             "<strong>English for Everyone (DK)</strong> — a four-level visual course ideal for self-study; it explains with diagrams instead of dense paragraphs.",
-            "<strong>Oxford Bookworms / Penguin Readers graded readers</strong> — real stories adapted by level (A1 to C1); reading at your true level is the fastest way to absorb vocabulary in context.",
+            "<strong>Oxford Bookworms / Penguin Readers graded readers</strong> — real stories adapted by level (A1 to C1); reading at your true level is the fastest way to absorb vocabulary in context, which is the whole case for <a href=\"/learning-english/learning-english-through-story/\">learning English through stories</a>.",
             "<strong>Vocabulary in Use (Cambridge)</strong> — vocabulary organized by topic with exercises; far better than memorizing word lists.",
           ],
         },
@@ -90,14 +90,14 @@ export const mainCopy = {
       {
         h2: "Can you learn English from books alone?",
         paras: [
-          "No — and it's worth understanding why. A book can teach you every rule of English, but reading about pronunciation is like reading about swimming: information doesn't become skill until you practice it physically. Book-only learners routinely reach B2 reading with A1 speaking — they follow full articles and freeze ordering a coffee.",
+          "No — and it's worth understanding why. A book can teach you every rule of English, but reading about pronunciation is like reading about swimming: information doesn't become skill until you practice it physically, and print never teaches <a href=\"/learning-english/learning-english-phonetics/\">the sounds spelling will not give you</a>. Book-only learners routinely reach B2 reading with A1 speaking — they follow full articles and freeze ordering a coffee.",
           "The fix isn't dropping books; it's closing the loop: every structure you learn on paper, say out loud the same day in audio practice.",
       ],
       },
       {
         h2: "Do audiobooks work for learning English?",
         paras: [
-          "Audiobooks train your ear better than almost any passive resource — hours of real pronunciation, intonation, and rhythm. They work best from A2 upward, using graded readers with audio so you can read and listen simultaneously.",
+          "Audiobooks train your ear better than almost any passive resource — hours of real pronunciation, intonation, and rhythm. They work best from A2 upward, using graded readers with audio so you can read and listen simultaneously — we break down <a href=\"/learning-english/learning-english-audiobook/\">which audiobooks fit which level</a>.",
           "Their limit is the same as all passive input: 100 hours of audiobooks won't make you able to answer back. If you learn well by listening, interactive audio is the natural upgrade — same format, but with pauses where you speak and voice recognition that corrects you. That's precisely the Rocket English model.",
         ],
       },
@@ -132,13 +132,13 @@ export const mainCopy = {
         h2: "What advantages do Spanish speakers have in English?",
         paras: [
           "Three real ones. Cognates: 30–40% of English academic and professional vocabulary has a recognizable Spanish sibling — information/información, hospital/hospital, decision/decisión — meaning you start with thousands of near-free words. Alphabet and reading: no new script to learn, unlike half the world's learners. And structural familiarity: subject-verb-object order matches Spanish most of the time, so basic sentence building transfers.",
-          "The practical consequence: Spanish speakers typically reach reading comprehension faster than almost any other language group. The gap opens elsewhere.",
+          "The practical consequence: Spanish speakers typically reach reading comprehension faster than almost any other language group, which makes <a href=\"/learning-english/best-books-for-learning-english/\">reading at your level</a> unusually productive. The gap opens elsewhere.",
         ],
       },
       {
         h2: "Where do Spanish speakers actually struggle?",
         paras: [
-          "The struggle points are so consistent they're practically a checklist. Pronunciation: English has roughly 44 sounds to Spanish's 24 — short vowels (ship/sheep), the schwa, final consonant clusters, and 'th' simply don't exist in Spanish and need explicit ear-and-mouth training. Listening speed: native English compresses unstressed syllables ('want to' → 'wanna'), which Spanish, with its even syllable timing, never prepared you for. And phrasal verbs: 'get up, get over, get along' have no Spanish parallel and resist translation.",
+          "The struggle points are so consistent they're practically a checklist. Pronunciation: English has roughly 44 sounds to Spanish's 24 — short vowels (ship/sheep), the schwa, final consonant clusters, and 'th' simply don't exist in Spanish and need explicit ear-and-mouth training — we cover <a href=\"/learning-english/learning-english-phonetics/\">the sounds Spanish does not have</a> one by one. Listening speed: native English compresses unstressed syllables ('want to' → 'wanna'), which Spanish, with its even syllable timing, never prepared you for. And phrasal verbs: 'get up, get over, get along' have no Spanish parallel and resist translation.",
           "None of these yield to grammar study. All three yield to daily audio practice with feedback — which is why speaking-first tools outperform textbooks for this specific learner profile.",
         ],
       },
@@ -150,8 +150,8 @@ export const mainCopy = {
           items: [
             "<strong>Train the missing sounds first (weeks 1–2):</strong> learn the ~20 English sounds Spanish lacks with minimal pairs (ship/sheep, full/fool) before they fossilize.",
             "<strong>Cash in your cognates (ongoing):</strong> build vocabulary through cognate patterns (-tion/-ción, -ty/-dad) — but learn each one's English pronunciation out loud; cognates are free to read and treacherous to say.",
-            "<strong>Speak daily with feedback (ongoing):</strong> 20–30 minutes with voice-recognition practice like Rocket English attacks the pronunciation gap directly and privately.",
-            "<strong>Tune your ear to compressed English (from week 3):</strong> daily listening at your level, prioritizing natural connected speech over slow classroom audio.",
+            "<strong>Speak daily with feedback (ongoing):</strong> 20–30 minutes with voice-recognition practice like Rocket English attacks the pronunciation gap directly and privately — far cheaper per hour than a teacher, and <a href=\"/learning-english/english-tutor-vs-course/\">the cost math between the two</a> is not close.",
+            "<strong>Tune your ear to compressed English (from week 3):</strong> <a href=\"/learning-english/what-is-comprehensible-input/\">daily listening at your level</a>, prioritizing natural connected speech over slow classroom audio.",
           ],
         },
       },
@@ -185,14 +185,14 @@ export const mainCopy = {
       {
         h2: "Do you need to sound American to speak good English?",
         paras: [
-          "No — and the linguistics is unambiguous: intelligibility and nativeness are different axes. Millions of executives, doctors, and engineers operate entirely in English with clearly non-native accents, because what communication requires is clarity — the right sounds in the right places at a rhythm listeners can parse. Chasing native-ness past that point buys social polish, not communication.",
+          "No — and the linguistics is unambiguous: intelligibility and nativeness are different axes. Millions of executives, doctors, and engineers operate entirely in English with clearly non-native accents, because what communication requires is clarity — the right sounds in the right places at a rhythm listeners can parse. Chasing native-ness past that point buys social polish, not communication; the goal is <a href=\"/learning-english/how-to-speak-english-fluently/\">being understood the first time</a>.",
           "This reframe matters practically: 'sound American' is an anxiety-generating, multi-year goal; 'stop being asked to repeat yourself' is achievable in months of targeted work.",
         ],
       },
       {
         h2: "Which sounds actually cause misunderstandings?",
         paras: [
-          "A short list does most of the damage. Vowel length and quality: ship/sheep, full/fool — many languages have one vowel where English has two, and swapping them changes words. Final consonants: dropping or softening them ('card' → 'car') deletes grammar (played → play). Word stress: English identifies words by stress pattern; stressing PHOtograph as phoTOgraph can defeat a listener entirely. And the schwa — the lazy 'uh' in unstressed syllables — is what makes English rhythm sound like English.",
+          "A short list does most of the damage — we cover <a href=\"/learning-english/learning-english-phonetics/\">the sounds that cause the most trouble</a> in full. Vowel length and quality: ship/sheep, full/fool — many languages have one vowel where English has two, and swapping them changes words. Final consonants: dropping or softening them ('card' → 'car') deletes grammar (played → play). Word stress: English identifies words by stress pattern; stressing PHOtograph as phoTOgraph can defeat a listener entirely. And the schwa — the lazy 'uh' in unstressed syllables — is what makes English rhythm sound like English.",
           "The efficient path is diagnostic: find your five worst offenders (voice recognition or one session with a tutor reveals them fast) and drill those daily, instead of practicing everything vaguely.",
         ],
       },
@@ -203,8 +203,8 @@ export const mainCopy = {
           ordered: true,
           items: [
             "<strong>Minimal pairs (5 min):</strong> drill confusable word pairs — ship/sheep, bat/bet — listening first, then producing them until the difference is physical.",
-            "<strong>Shadowing (5–10 min):</strong> play native audio and speak over it in real time, copying rhythm and stress. The single best drill for connected speech.",
-            "<strong>Voice-recognition lessons (20 min):</strong> speak full phrases and get scored — Rocket English's recognition flags what a polite human listener never would.",
+            "<strong>Shadowing (5–10 min):</strong> play native audio and speak over it in real time, copying rhythm and stress. The single best drill for connected speech, and step two of <a href=\"/learning-english/learning-english-speaking-fluently/\">the practical steps to speaking fluently</a>. Narrated books make unusually good shadowing material — <a href=\"/learning-english/learning-english-audiobook/\">studying with audiobooks</a> covers how to pick the level.",
+            "<strong>Voice-recognition lessons (20 min):</strong> speak full phrases and get scored — Rocket English's recognition flags what a polite human listener never would. It doubles as rehearsal for <a href=\"/learning-english/toefl-preparation-guide/\">TOEFL's microphone-recorded speaking section</a>, where nobody reacts to you at all.",
             "<strong>Record yourself (weekly):</strong> one minute, same text each time. Comparing month-old recordings is the most honest progress meter that exists.",
           ],
         },
@@ -244,7 +244,7 @@ export const mainCopy = {
           items: [
             "<strong>Judgment-free conversation</strong> — practice by text or voice without the fear of embarrassing yourself; for the majority of learners who report speaking anxiety, this removes the main barrier.",
             "<strong>Instant correction with explanations</strong> — paste anything you've written and get every error corrected and explained.",
-            "<strong>Vocabulary on demand</strong> — ask for the 30 most useful phrases for your exact job, with examples.",
+            "<strong>Vocabulary on demand</strong> — ask for the 30 most useful phrases for your exact job, with examples; for developers we already wrote <a href=\"/lessons/english-for-software-engineers/\">the phrases for standups and client calls</a>.",
             "<strong>Situation simulation</strong> — 'act as a job interviewer and ask me questions one at a time' is a free interview simulator.",
           ],
         },
@@ -252,14 +252,14 @@ export const mainCopy = {
       {
         h2: "Where does AI fail as a teacher?",
         paras: [
-          "AI has no plan. A good course decides what you need this week, in what order, and when to review last month's material; ChatGPT only answers what you ask — and beginners don't know what to ask. The typical result is scattered practice: lots of activity, little measurable progress.",
+          "AI has no plan — unlike <a href=\"/learning-english/best-english-speaking-course/\">a course that decides what you learn this week</a>. A good course decides what you need this week, in what order, and when to review last month's material; ChatGPT only answers what you ask — and beginners don't know what to ask. The typical result is scattered practice: lots of activity, little measurable progress.",
           "Two more honest limits: AI voice modes are imprecise pronunciation judges compared to purpose-built speech recognition, and AI is too kind — it understands you even when you're wrong, which a stranger in an interview will not.",
         ],
       },
       {
         h2: "How do you combine a course with ChatGPT?",
         paras: [
-          "The routine we recommend takes 30–40 minutes a day: do your Rocket English lesson (20–30 minutes of interactive audio with voice recognition), then spend 10 minutes in conversation with ChatGPT using that exact lesson's vocabulary — ask it to converse with you using those phrases and correct you. The course provides order and pronunciation feedback; the AI provides unlimited reps.",
+          "The routine we recommend takes 30–40 minutes a day: do your Rocket English lesson (20–30 minutes of interactive audio with voice recognition), then spend 10 minutes in conversation with ChatGPT using that exact lesson's vocabulary — ask it to converse with you using those phrases and correct you. The course provides order and pronunciation feedback; the AI provides unlimited reps. Pair it with <a href=\"/learning-english/improve-spoken-english/\">the speaking drills that move fastest</a>.",
         ],
       },
       {
@@ -298,14 +298,14 @@ export const mainCopy = {
       {
         h2: "What actually determines how fast you learn English?",
         paras: [
-          "Speed is a function of three multipliers, and they're not what most learners optimize. Daily production: minutes per day speaking out loud predicts progress better than total study hours — production forces retrieval, and retrieval is what fluency is. Structure: a curriculum that sequences material and schedules review beats scattered resources by removing the 'what now?' overhead that kills momentum. Comprehensible immersion: surrounding yourself with English you 80–90% understand recycles everything the curriculum introduces, multiplying retention for free.",
+          "Speed is a function of three multipliers, and they're not what most learners optimize. Daily production: minutes per day speaking out loud predicts progress better than total study hours — production forces retrieval, and retrieval is what fluency is — <a href=\"/learning-english/how-to-speak-english-fluently/\">daily production out loud</a> is the single biggest lever. Structure: a curriculum that sequences material and schedules review beats scattered resources by removing the 'what now?' overhead that kills momentum. Comprehensible immersion: surrounding yourself with English you 80–90% understand recycles everything the curriculum introduces, multiplying retention for free.",
           "What doesn't move speed much: passive video hours, grammar depth beyond your level, app streaks, and switching tools every month — the four places most 'fast' learners actually spend their time.",
         ],
       },
       {
         h2: "Can you really learn English in 30 days?",
         paras: [
-          "You can't reach fluency in 30 days — that claim sells courses, not results. What 30 focused days CAN deliver is real and worth wanting: survival English (introductions, ordering, directions, ~300 core words) from zero, or a visible jump in confidence and listening if you're intermediate. The honest math: conversational level (CEFR B1) represents 350–400 hours of effective study; at a committed hour a day, that's roughly a year — at 30 daily minutes, closer to two.",
+          "You can't reach fluency in 30 days — that claim sells courses, not results, though <a href=\"/learning-english/learn-english-in-30-days/\">what 30 focused days can honestly deliver</a> is still worth having. What 30 focused days CAN deliver is real and worth wanting: survival English (introductions, ordering, directions, ~300 core words) from zero, or a visible jump in confidence and listening if you're intermediate. The honest math: conversational level (CEFR B1) represents 350–400 hours of effective study; at a committed hour a day, that's roughly a year — at 30 daily minutes, closer to two.",
           "The trap isn't optimism, it's the cycle it creates: sprint 30 days, miss 'fluent', conclude you're bad at languages, quit. The learners who get fast results are the ones who stopped restarting.",
         ],
       },
@@ -315,7 +315,7 @@ export const mainCopy = {
         list: {
           ordered: true,
           items: [
-            "<strong>Structured lesson, out loud (20–30 min):</strong> an interactive audio lesson where you speak and get scored — this is the engine. Rocket English's voice-recognition lessons are built exactly for this slot.",
+            "<strong>Structured lesson, out loud (20–30 min):</strong> an interactive audio lesson where you speak and get scored — this is the engine. Rocket English's voice-recognition lessons are built exactly for this slot; see <a href=\"/learning-english/how-to-learn-english-quickly/\">the week-by-week fast plan</a>.",
             "<strong>Active listening (15–30 min):</strong> podcast or series at your level, ideally recycling recent vocabulary; commute time counts.",
             "<strong>Production sprint (5–10 min):</strong> speak for one minute straight on a topic, or converse with ChatGPT using today's phrases. The gaps you hit become tomorrow's study list.",
             "<strong>Weekly reality check:</strong> one recorded minute of free speech. Progress you can hear beats any streak counter.",
@@ -369,7 +369,7 @@ export const mainCopy = {
       {
         h2: "How do you stop translating in your head?",
         paras: [
-          "Mental translation is a habit, not a life sentence — it fades when phrases become automatic units. Three drills accelerate that: learn in chunks ('I was wondering if...', 'It depends on...') so whole phrase-blocks retrieve as one piece instead of being assembled word by word; narrate your day in simple English directly, without composing in your language first — start with 30-second bursts; and rehearse high-frequency situations (introducing yourself, describing your job) until those scripts run on autopilot, freeing attention for the unpredictable parts.",
+          "Mental translation is a habit, not a life sentence — it fades when phrases become automatic units. Three drills accelerate that: learn in chunks ('I was wondering if...', 'It depends on...') so whole phrase-blocks retrieve as one piece instead of being assembled word by word; narrate your day in simple English directly, without composing in your language first — start with 30-second bursts; and rehearse high-frequency situations (introducing yourself, describing your job — <a href=\"/lessons/english-for-software-engineers/\">standup and client-call phrases if you write software</a>) until those scripts run on autopilot, freeing attention for the unpredictable parts.",
           "Expect the translation habit to weaken gradually over 2–3 months of daily production — it disappears from your most-practiced topics first, which is exactly why you rehearse the situations you actually face.",
         ],
       },
@@ -379,9 +379,9 @@ export const mainCopy = {
         list: {
           ordered: true,
           items: [
-            "<strong>Interactive speaking lesson (20 min):</strong> audio lessons where you respond out loud and voice recognition scores you — the Rocket English core loop. This is the non-negotiable slot.",
+            "<strong>Interactive speaking lesson (20 min):</strong> audio lessons where you respond out loud and voice recognition scores you — the Rocket English core loop, and what separates <a href=\"/learning-english/best-english-speaking-course/\">a course built around talk time</a> from a video course. This is the non-negotiable slot.",
             "<strong>Shadowing (5–10 min):</strong> speak over native audio in real time, copying rhythm and intonation. Trains your mouth at native speed without composing anything.",
-            "<strong>One-minute monologue (1–2 min):</strong> pick a topic, speak 60 seconds without stopping. Fillers allowed; stopping isn't. Yesterday's gaps are today's study list.",
+            "<strong>One-minute monologue (1–2 min):</strong> pick a topic, speak 60 seconds without stopping. Fillers allowed; stopping isn't. Yesterday's gaps are today's study list — it is one of <a href=\"/learning-english/improve-spoken-english/\">the drills that work fastest</a>.",
             "<strong>Low-stakes conversation (10 min, 3×/week):</strong> ChatGPT voice mode or a language-exchange partner — apply the automated phrases against an unpredictable interlocutor.",
           ],
         },
@@ -389,7 +389,7 @@ export const mainCopy = {
       {
         h2: "How long until I speak English confidently?",
         paras: [
-          "From an intermediate-passive base (understand well, speak poorly — the most common profile), 20–30 minutes of daily production yields noticeably smoother speech in 4–6 weeks and genuine conversational confidence in 4–6 months. The curve front-loads: the first weeks feel transformative because you're converting existing knowledge, not learning new material. Confidence follows the same curve as competence with a short delay — the freeze fades a few weeks after the fluency that removes its cause.",
+          "From an intermediate-passive base (understand well, speak poorly — the most common profile), 20–30 minutes of daily production yields noticeably smoother speech in 4–6 weeks and genuine conversational confidence in 4–6 months. The curve front-loads: the first weeks feel transformative because you're converting existing knowledge, not learning new material. It helps to see <a href=\"/learning-english/english-learning-methods/\">how the methods fit together</a>. Confidence follows the same curve as competence with a short delay — the freeze fades a few weeks after the fluency that removes its cause.",
         ],
       },
     ],
@@ -425,8 +425,8 @@ export const mainCopy = {
         list: {
           ordered: true,
           items: [
-            "<strong>TOEFL iBT</strong> (~$200–250 USD) — the US academic standard: fully computer-based, American English, speaking answers recorded to a microphone. Scores 0–120; most universities want 80–100. Valid 2 years.",
-            "<strong>IELTS</strong> (~$220–250 USD) — the UK/Australia/Canada standard and the immigration favorite: speaking test is a live human interview. Band 0–9; universities typically want 6.5–7. Valid 2 years.",
+            "<strong>TOEFL iBT</strong> (~$200–250 USD) — the US academic standard: fully computer-based, American English, speaking answers recorded to a microphone. Scores 0–120; most universities want 80–100. Valid 2 years — see <a href=\"/learning-english/toefl-preparation-guide/\">what TOEFL prep should target first</a>.",
+            "<strong>IELTS</strong> (~$220–250 USD) — the UK/Australia/Canada standard and the immigration favorite: speaking test is a live human interview. Band 0–9; universities typically want 6.5–7. Valid 2 years — see <a href=\"/learning-english/ielts-preparation-guide/\">how IELTS actually works</a>.",
             "<strong>Cambridge B2 First / C1 Advanced</strong> (~$180–220 USD) — level-specific exams whose certificates never expire; strong in Europe and for lifetime proof of level.",
             "<strong>CELPIP</strong> (~CAD $280) — Canadian immigration specifically: Canadian English, fully computer-based, accepted by IRCC alongside IELTS.",
           ],
@@ -442,7 +442,7 @@ export const mainCopy = {
       {
         h2: "How should you sequence exam preparation?",
         paras: [
-          "Two phases, in order. Foundation (2–4 months if your speaking lags): daily out-loud practice with feedback — an interactive course like Rocket English — plus daily listening at increasing speed. This moves the scores that are hardest to move. Format drilling (the final 4–8 weeks): official practice tests under real timing, the specific task types (TOEFL's 'summarize the lecture', IELTS' Part 2 monologue), and scoring-rubric awareness. Format drilling converts existing English into points efficiently — but it can't create English that isn't there, which is why cramming format for six months plateaus.",
+          "Two phases, in order, and it helps to know <a href=\"/learning-english/cefr-levels-explained/\">the CEFR level each band maps to</a>. Foundation (2–4 months if your speaking lags): daily out-loud practice with feedback — an interactive course like Rocket English — plus daily listening at increasing speed. This moves the scores that are hardest to move. Format drilling (the final 4–8 weeks): official practice tests under real timing, the specific task types (TOEFL's 'summarize the lecture', IELTS' Part 2 monologue), and scoring-rubric awareness. Format drilling converts existing English into points efficiently — but it can't create English that isn't there, which is why cramming format for six months plateaus.",
         ],
       },
     ],
@@ -479,14 +479,14 @@ export const mainCopy = {
       {
         h2: "Which English learning method works best?",
         paras: [
-          "No single method wins, because each trains a different part of the skill. Comprehensible input (Stephen Krashen's acquisition theory) builds understanding and passive vocabulary; spaced repetition locks that vocabulary into long-term memory; shadowing trains pronunciation and rhythm; active recall makes review actually stick; and production — speaking and writing — converts all of it into communication. Stuck learners almost always over-invest in one method (usually input: series, podcasts, reading) and under-invest in production.",
-          "The minimum viable combination: 60–70% input at your level, 20–30% daily speaking practice, and spaced review of new vocabulary. In that ratio, each method covers the others' blind spot.",
+          "No single method wins, because each trains a different part of the skill. Comprehensible input (<a href=\"/learning-english/what-is-comprehensible-input/\">what Krashen's theory actually claims</a>) builds understanding and passive vocabulary; spaced repetition locks that vocabulary into long-term memory; shadowing trains pronunciation and rhythm; active recall makes review actually stick; and production — speaking and writing — converts all of it into communication. Stuck learners almost always over-invest in one method (usually input: series, podcasts, reading) and under-invest in production.",
+          "The minimum viable combination: 60–70% input at your level, 20–30% <a href=\"/learning-english/improve-spoken-english/\">daily speaking practice</a>, and spaced review of new vocabulary — <a href=\"/learning-english/best-free-english-learning-app/\">a free app handles that last part perfectly well</a>. In that ratio, each method covers the others' blind spot.",
         ],
       },
       {
         h2: "What do CEFR levels actually mean for your studying?",
         paras: [
-          "The CEFR framework (A1 to C2) isn't just certification vocabulary — it's the tool that makes 'comprehensible input' actionable. A1–A2 means set phrases and survival English; B1–B2 means independence — conversing, working, watching series; C1–C2 means mastery of nuance. Most jobs requiring English want B1–B2, and zero-to-B1 represents roughly 350–400 hours of effective study. Knowing your level tells you which material sits in your 80–90% comprehension zone — the input that actually teaches — and which is aspirational noise.",
+          "The CEFR framework (A1 to C2) isn't just certification vocabulary — it's the tool that makes 'comprehensible input' actionable. A1–A2 means set phrases and survival English; B1–B2 means independence — conversing, working, watching series; C1–C2 means mastery of nuance. Most jobs requiring English want B1–B2, and zero-to-B1 represents roughly 350–400 hours of effective study — which is why <a href=\"/learning-english/learn-english-in-30-days/\">a single month cannot deliver fluency</a>, whatever the ads promise. We spell out <a href=\"/learning-english/cefr-levels-explained/\">what you can actually do at each level</a>, because knowing yours tells you which material sits in your 80–90% comprehension zone — the input that actually teaches — and which is aspirational noise.",
         ],
       },
     ],
@@ -534,14 +534,14 @@ export const mainCopy = {
       {
         h2: "When is a tutor worth the money — and when is it premature?",
         paras: [
-          "A tutor's value scales with what you bring. At intermediate (B1+), every hour of corrected conversation is gold: fixing fossilized errors, building naturalness, rehearsing interviews — things only a human listener provides. At beginner level, most of the hour goes to basic grammar and vocabulary explanations that a $100–150 one-time course teaches equally well; the arithmetic is brutal — 20 tutor hours at $20 is $400 to cover what the course covers entirely.",
-          "The efficient sequence: structured course to B1 (4–6 months), then a tutor once or twice weekly to convert that base into polished conversation.",
+          "A tutor's value scales with what you bring — we compare <a href=\"/learning-english/english-tutor-vs-course/\">what each option is actually best at</a>. At intermediate (B1+), every hour of corrected conversation is gold: fixing fossilized errors, building naturalness, rehearsing interviews — things only a human listener provides, which is why <a href=\"/learning-english/ielts-preparation-guide/\">IELTS prep leans on mock speaking interviews</a>. At beginner level, most of the hour goes to basic grammar and vocabulary explanations that a $100–150 one-time course teaches equally well; the arithmetic is brutal — 20 tutor hours at $20 is $400 to cover what the course covers entirely.",
+          "The efficient sequence: <a href=\"/learning-english/best-english-speaking-course/\">a structured speaking course</a> to B1 (4–6 months), then a tutor once or twice weekly to convert that base into polished conversation.",
         ],
       },
       {
         h2: "How do you pick a good tutor once you're ready?",
         paras: [
-          "Three filters separate the good ones: experience with learners from your language background (your errors are predictable to a tutor who's seen them a hundred times); a cheap or free trial lesson (all three platforms offer them — use two or three before committing); and a talk ratio where YOU speak 70%+ of the session — if the tutor monologues, you're paying for an expensive podcast. Bonus filter: good tutors assign production homework between sessions, not just 'see you next week.'",
+          "Three filters separate the good ones: experience with learners from your language background (your errors are predictable to a tutor who's seen them a hundred times); a cheap or free trial lesson (all three platforms offer them — use two or three before committing); and a talk ratio where YOU speak 70%+ of the session — if the tutor monologues, you're paying for an expensive podcast. Bonus filter: good tutors assign production homework between sessions, not just 'see you next week.' The aim is <a href=\"/learning-english/learning-english-speaking-fluently/\">polished, confident conversation</a>.",
         ],
       },
     ],

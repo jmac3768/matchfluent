@@ -3,8 +3,10 @@
  * keyword-clusters-2b.json (Layer 2b) and exposes the page lists that
  * drive every getStaticPaths() in the site.
  */
-import layer1 from "../data/keyword-clusters.json";
-import layer2b from "../data/keyword-clusters-2b.json";
+// Import attributes keep this module loadable by bare node (data.test.mjs)
+// as well as by Vite during the Astro build.
+import layer1 from "../data/keyword-clusters.json" with { type: "json" };
+import layer2b from "../data/keyword-clusters-2b.json" with { type: "json" };
 import { BRAND } from "../config/site.js";
 
 export const esClusters = [...layer1.es, ...layer2b.es];
@@ -44,6 +46,18 @@ function buildSiloRoutes(pages, prefix) {
 
 export const esRoutes = () => buildSiloRoutes(esMainPages, "/aprender-ingles");
 export const enRoutes = () => buildSiloRoutes(enMainPages, "/learning-english");
+
+const mainSlugs = new Set([...esMainPages, ...enMainPages].map((p) => p.slug));
+
+/**
+ * A pillar's own fanout children, for its on-page table of contents.
+ * Drops fanouts whose slug is also a main page (e.g.
+ * /learning-english/learning-english-with-ai) — buildSiloRoutes resolves
+ * those in favor of the main entry, so they are sibling pillars, not children.
+ */
+export function ownFanouts(page) {
+  return (page?.fanouts || []).filter((f) => !mainSlugs.has(f.slug));
+}
 
 /**
  * Reciprocal hreflang pairs — ES and EN pages that cover the same topic.
@@ -90,24 +104,98 @@ export function breadcrumbsFor({ slug, title, lang, parent, hubPath, hubName }) 
   return crumbs;
 }
 
-/** Internal linking rules from site-architecture.json. */
-export const internalLinks = {
-  es: [
-    { path: "/aprender-ingles/aprender-ingles-desde-cero", label: "Aprender inglés desde cero: guía paso a paso" },
-    { path: "/aprender-ingles/duolingo-vs-rocket-languages", label: "Duolingo vs Rocket Languages: comparación honesta" },
-    { path: "/aprender-ingles/mejor-app-para-aprender-ingles", label: "La mejor app para aprender inglés en 2025" },
-  ],
-  esp: [
-    { path: "/aprender-ingles", label: "Todas las guías para aprender inglés" },
-    { path: "/aprender-ingles/aprender-ingles-desde-cero", label: "Aprender inglés desde cero: guía paso a paso" },
-    { path: "/aprender-ingles/cursos-para-aprender-ingles", label: "Los mejores cursos de inglés online" },
-  ],
-  en: [
-    { path: "/learning-english/best-app-to-learn-english", label: "Best app to learn English: honest comparison" },
-    { path: "/learning-english/learning-english-with-ai", label: "Learning English with AI: what actually works" },
-    { path: "/learning-english/for-spanish-speakers", label: "Learning English for Spanish speakers" },
-  ],
-};
+/**
+ * Every internally linkable page, flattened, with its silo and the pillar
+ * that heads its cluster. Main pages claim their slugs first so a fanout
+ * that collides with one (e.g. /learning-english/learning-english-with-ai)
+ * stays a pillar, matching buildSiloRoutes.
+ */
+function buildRegistry() {
+  const entries = [];
+  const claimed = new Set();
+
+  // `family` keeps the job-specific lessons out of the general-guide
+  // rotation: "inglés para meseros" is not a neighbour of "leer en inglés".
+  const addPillar = (page, silo, family) => {
+    if (claimed.has(page.slug)) return;
+    claimed.add(page.slug);
+    entries.push({ slug: page.slug, label: page.h1, silo, parent: null, family });
+  };
+
+  for (const page of esMainPages) addPillar(page, "es", "main");
+  for (const page of espLessons) addPillar(page, "es", "esp");
+  for (const page of enMainPages) addPillar(page, "en", "main");
+  for (const page of careerLessons) addPillar(page, "en", "lesson");
+
+  for (const [silo, pages] of [
+    ["es", esMainPages],
+    ["en", enMainPages],
+  ]) {
+    for (const page of pages) {
+      for (const fanout of page.fanouts || []) {
+        if (claimed.has(fanout.slug)) continue;
+        claimed.add(fanout.slug);
+        entries.push({ slug: fanout.slug, label: fanout.h1, silo, parent: page.slug, family: "main" });
+      }
+    }
+  }
+
+  return entries;
+}
+
+const REGISTRY = buildRegistry();
+const REGISTRY_BY_SLUG = new Map(REGISTRY.map((entry, index) => [entry.slug, { ...entry, index }]));
+
+/** Which silo a path belongs to. ESP lessons live under /aprender-ingles/esp/. */
+function siloOf(slug) {
+  if (slug.startsWith("/aprender-ingles")) return "es";
+  if (slug.startsWith("/learning-english") || slug.startsWith("/lessons")) return "en";
+  return null;
+}
+
+/** Deterministic rotation: same page, same build, same output. */
+const rotate = (list, by) =>
+  list.length ? list.slice(by % list.length).concat(list.slice(0, by % list.length)) : list;
+
+/**
+ * Related links for one page, chosen by topical distance rather than a
+ * fixed site-wide list. Candidates are tiered, each tier rotated by the
+ * page's registry index so no single page absorbs everything, then slots
+ * fill from tier 1 down:
+ *
+ *   1. same cluster — the parent pillar first, then sibling fanouts
+ *   2. sibling pillars — other cluster heads of the same family
+ *   3. everything else in the silo
+ *
+ * A pillar's own fanouts are excluded: FanoutList already lists them.
+ * Cross-silo pairs never enter the pool, so ES pages cannot link to EN.
+ */
+export function relatedLinksFor(slug, limit = 3) {
+  const self = REGISTRY_BY_SLUG.get(slug);
+  const silo = self ? self.silo : siloOf(slug);
+  if (!silo) return [];
+
+  const clusterHead = self ? self.parent || self.slug : slug;
+  const family = self ? self.family : "main";
+  const index = self ? self.index : 0;
+  const ownFanoutSlugs = new Set(REGISTRY.filter((e) => e.parent === slug).map((e) => e.slug));
+
+  const pool = REGISTRY.filter(
+    (e) => e.silo === silo && e.slug !== slug && !ownFanoutSlugs.has(e.slug)
+  );
+
+  const parent = pool.filter((e) => e.slug === clusterHead);
+  const siblings = pool.filter((e) => e.parent === clusterHead);
+  const pillars = pool.filter(
+    (e) => e.parent === null && e.slug !== clusterHead && e.family === family
+  );
+  const chosen = new Set([...parent, ...siblings, ...pillars].map((e) => e.slug));
+  const rest = pool.filter((e) => !chosen.has(e.slug));
+
+  return [...parent, ...rotate(siblings, index), ...rotate(pillars, index), ...rotate(rest, index)]
+    .slice(0, limit)
+    .map((e) => ({ path: e.slug, label: e.label }));
+}
 
 export const SITE_URL = BRAND.url;
 

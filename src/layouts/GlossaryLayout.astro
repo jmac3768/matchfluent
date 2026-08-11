@@ -14,6 +14,7 @@ import GlossaryList from "../components/astro/GlossaryList.astro";
 import FAQSection from "../components/astro/FAQSection.astro";
 import Section from "../components/astro/Section.astro";
 import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import FanoutList from "../components/astro/FanoutList.astro";
 import { buildAffiliateUrl } from "../config/site.js";
 import { lastUpdatedLabel } from "../lib/data.js";
 
@@ -27,6 +28,9 @@ const {
   copy,
   glossaryTerms = [],
   relatedLinks = [],
+  fanouts = [],
+  extraLinks = [],
+  commercial = false,
   page = {},
 } = Astro.props;
 
@@ -59,6 +63,8 @@ const contextualCta =
     <article class="mt-6">
       {copy.entity && <p class="text-lg text-navy-700 leading-relaxed mb-8">{copy.entity}</p>}
 
+      {!commercial && <FanoutList {lang} {fanouts} currentPath={path} />}
+
       {(copy.sections || []).map((section) => <Section {section} />)}
 
       <GlossaryList {lang} terms={glossaryTerms} pagePath={path} />
@@ -79,6 +85,12 @@ const contextualCta =
       <FAQSection {lang} faq={copy.faq} />
     </article>
 
-    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+    {
+      commercial ? (
+        <FanoutList {lang} {fanouts} {extraLinks} currentPath={path} />
+      ) : (
+        <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+      )
+    }
   </main>
 </BaseLayout>

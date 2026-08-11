@@ -9,7 +9,7 @@ import LessonLayout from "../../layouts/LessonLayout.astro";
 import LessonPhraseList from "../../components/astro/LessonPhraseList.astro";
 import CertificateMockup from "../../components/astro/CertificateMockup.astro";
 import PronounceButton from "../../components/react/PronounceButton.jsx";
-import { careerLessons, internalLinks, makeTitle } from "../../lib/data.js";
+import { careerLessons, makeTitle, relatedLinksFor } from "../../lib/data.js";
 import { lessonIntros } from "../../content/copy-en.js";
 
 export function getStaticPaths() {
@@ -48,7 +48,7 @@ const intercept =
   intro={intro.intro}
   closing={intro.closing}
   {intercept}
-  relatedLinks={internalLinks.en}
+  relatedLinks={relatedLinksFor(lesson.slug)}
   page={lesson}
 >
   <h2 class="font-sans text-2xl font-bold text-navy-700 mb-2">{intro.phrasesHeading}</h2>

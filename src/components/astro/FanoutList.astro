@@ -1,0 +1,47 @@
+---
+/**
+ * A pillar's own fanout children, as an on-page table of contents.
+ * Generated from the cluster data, so a fanout added there appears here
+ * without anyone editing prose.
+ *
+ * On commercial pillars this block sits at the foot and also absorbs the
+ * related-links slot (extraLinks), so two link modules never stack in the
+ * same region. Informational pillars render it near the top with no
+ * extraLinks, and keep RelatedLinks at the foot.
+ */
+const { lang = "en", fanouts = [], extraLinks = [], currentPath = "" } = Astro.props;
+
+const merged = extraLinks.length > 0;
+const heading = merged
+  ? lang === "es"
+    ? "Sigue explorando"
+    : "Keep exploring"
+  : lang === "es"
+    ? "Guías detalladas de este tema"
+    : "Deeper guides on this topic";
+
+const items = [
+  ...fanouts.map((f) => ({ path: f.slug, label: f.h1 })),
+  ...extraLinks,
+].filter((item) => item.path !== currentPath);
+---
+
+{
+  items.length > 0 && (
+    <nav class="my-8 rounded-xl border border-border bg-surface p-5" aria-label={heading}>
+      <h2 class="font-sans text-lg font-bold text-navy-700 mb-3">{heading}</h2>
+      <ul class="list-disc space-y-2 pl-5 text-text-secondary">
+        {items.map((item) => (
+          <li>
+            <a
+              href={`${item.path}/`}
+              class="text-teal-700 underline underline-offset-2 hover:text-teal-800"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}

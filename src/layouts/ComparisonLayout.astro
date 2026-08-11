@@ -15,6 +15,7 @@ import TrustBar from "../components/astro/TrustBar.astro";
 import FAQSection from "../components/astro/FAQSection.astro";
 import AffiliateCTA from "../components/astro/AffiliateCTA.astro";
 import RelatedLinks from "../components/astro/RelatedLinks.astro";
+import FanoutList from "../components/astro/FanoutList.astro";
 import Section from "../components/astro/Section.astro";
 import Quiz from "../components/react/Quiz.jsx";
 import { lastUpdatedLabel } from "../lib/data.js";
@@ -29,6 +30,9 @@ const {
   copy,
   intercept,
   relatedLinks = [],
+  fanouts = [],
+  extraLinks = [],
+  commercial = false,
   page = {},
 } = Astro.props;
 
@@ -64,6 +68,8 @@ const methodologyHref = lang === "es" ? "/como-evaluamos/" : "/how-we-review/";
     <article class="mt-6">
       {copy.entity && <p class="text-lg text-navy-700 leading-relaxed mb-8">{copy.entity}</p>}
 
+      {!commercial && <FanoutList {lang} {fanouts} currentPath={path} />}
+
       {firstSection.map((section) => <Section {section} />)}
 
       <ComparisonTable {lang} takeaway={copy.tableTakeaway} />
@@ -98,6 +104,12 @@ const methodologyHref = lang === "es" ? "/como-evaluamos/" : "/how-we-review/";
       </p>
     </article>
 
-    <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+    {
+      commercial ? (
+        <FanoutList {lang} {fanouts} {extraLinks} currentPath={path} />
+      ) : (
+        <RelatedLinks {lang} links={relatedLinks} currentPath={path} />
+      )
+    }
   </main>
 </BaseLayout>
