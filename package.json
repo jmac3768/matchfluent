@@ -8,7 +8,8 @@
     "build": "node scripts/generate-llms.mjs && astro build",
     "preview": "npm run build && wrangler dev",
     "astro": "astro",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "link-report": "npm run build && node scripts/link-report.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "11",
