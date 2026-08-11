@@ -2,3 +2,6 @@ node_modules/
 dist/
 .env
 .dev.vars
+
+# Screaming Frog exports, dropped in the repo root by hand
+/*.csv
