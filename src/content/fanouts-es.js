@@ -13,13 +13,13 @@ export const fanoutCopy = {
       {
         h2: "¿Qué apps gratuitas valen la pena en 2025?",
         paras: [
-          "Tres apps gratuitas cubren funciones distintas y se complementan: Duolingo convierte el estudio en hábito con sesiones de 5–10 minutos; BBC Learning English ofrece audio y video con guiones reales por nivel, gratis y sin anuncios; y Anki fija el vocabulario con repetición espaciada — repasas cada palabra justo antes de olvidarla. Usadas juntas, forman un plan gratuito legítimo de 20–30 minutos diarios.",
+          "Tres apps gratuitas cubren funciones distintas y se complementan: Duolingo convierte el estudio en hábito con sesiones de 5–10 minutos; BBC Learning English ofrece audio y video con guiones reales por nivel, gratis y sin anuncios — y se complementa bien con <a href=\"/aprender-ingles/mejores-podcasts-para-aprender-ingles/\">los mejores podcasts para entrenar el oído</a>; y Anki fija el vocabulario con repetición espaciada — repasas cada palabra justo antes de olvidarla. Usadas juntas, forman un plan gratuito legítimo de 20–30 minutos diarios.",
         ],
       },
       {
         h2: "¿Cuál es el límite de las apps gratuitas?",
         paras: [
-          "Todas las apps gratuitas comparten el mismo techo: entrenan reconocimiento (leer, escuchar, emparejar) pero casi nada de producción hablada. Puedes acumular meses de rachas y seguir sin poder responder una pregunta simple en voz alta. Cuando llegues a ese punto — típicamente entre A2 y B1 — el paso eficiente es un curso con práctica de habla y retroalimentación, como Rocket English con su reconocimiento de voz.",
+          "Todas las apps gratuitas comparten el mismo techo: entrenan reconocimiento (leer, escuchar, emparejar) pero casi nada de producción hablada. Puedes acumular meses de rachas y seguir sin poder responder una pregunta simple en voz alta — vale la pena saber <a href=\"/aprender-ingles/duolingo-sirve-para-aprender-ingles/\">hasta dónde llega Duolingo de verdad</a>. Cuando llegues a ese punto — típicamente entre A2 y B1 — el paso eficiente es un curso con práctica de habla y retroalimentación, como Rocket English con su reconocimiento de voz.",
         ],
       },
     ],
@@ -48,7 +48,7 @@ export const fanoutCopy = {
       {
         h2: "¿Qué app de inglés funciona mejor en Android?",
         paras: [
-          "En Android no hay apps de inglés de segunda: Rocket English, Duolingo, Babbel y Anki tienen versiones Android al nivel de las de iPhone. La ventaja práctica de Android es AnkiDroid — la versión Android de Anki es gratuita, mientras que en iPhone cuesta ~$25 USD. Para práctica de habla, la app de Rocket English usa el micrófono del teléfono para su reconocimiento de voz y permite descargar lecciones completas, convirtiendo cualquier trayecto en sesión de estudio.",
+          "En Android no hay apps de inglés de segunda: Rocket English, Duolingo, Babbel y Anki tienen versiones Android al nivel de las de iPhone. La ventaja práctica de Android es AnkiDroid — la versión Android de Anki es gratuita, mientras que en iPhone cuesta ~$25 USD, y encaja en <a href=\"/aprender-ingles/aplicaciones-para-aprender-ingles-gratis/\">el panorama completo de apps gratuitas</a>. Para práctica de habla, la app de Rocket English usa el micrófono del teléfono para su reconocimiento de voz y permite descargar lecciones completas, así que puedes <a href=\"/aprender-ingles/app-para-aprender-ingles-sin-internet/\">estudiar sin conexión en los trayectos</a>.",
         ],
       },
       {
@@ -83,13 +83,13 @@ export const fanoutCopy = {
       {
         h2: "¿Qué apps funcionan sin conexión de verdad?",
         paras: [
-          "El modo offline real — no promesas de marketing — lo ofrecen pocas: Rocket English descarga lecciones de audio completas (el reconocimiento de voz requiere conexión, pero el audio y los ejercicios no); Anki guarda todos tus mazos de vocabulario en el teléfono; y los podcasts descargados por Spotify o cualquier gestor funcionan siempre. Duolingo reserva el modo offline para Super (de pago) y solo en lecciones ya visitadas.",
+          "El modo offline real — no promesas de marketing — lo ofrecen pocas: Rocket English descarga lecciones de audio completas (el reconocimiento de voz requiere conexión, pero el audio y los ejercicios no); Anki guarda todos tus mazos de vocabulario en el teléfono, y <a href=\"/aprender-ingles/mejor-aplicacion-para-aprender-ingles-android/\">AnkiDroid en Android</a> es además gratuito; y los podcasts descargados por Spotify o cualquier gestor funcionan siempre. Duolingo reserva el modo offline para Super (de pago) y solo en lecciones ya visitadas.",
         ],
       },
       {
         h2: "¿Cómo estudiar inglés en zonas con mala conexión?",
         paras: [
-          "El plan offline eficiente se prepara con wifi y se ejecuta sin él: descarga 3–5 lecciones de audio de tu curso, un par de episodios de podcast a tu nivel, y sincroniza tu mazo de Anki. Con eso tienes 30–45 minutos diarios de estudio completo — lección estructurada, escucha y repaso — sin gastar un MB. La práctica en voz alta no necesita conexión: repite las frases de la lección imitando el audio descargado.",
+          "El plan offline eficiente se prepara con wifi y se ejecuta sin él: descarga 3–5 lecciones de audio de tu curso, un par de <a href=\"/aprender-ingles/podcasts-para-aprender-ingles-spotify/\">episodios descargables en Spotify</a> a tu nivel, y sincroniza tu mazo de Anki. Con eso tienes 30–45 minutos diarios de estudio completo — lección estructurada, escucha y repaso — sin gastar un MB. La práctica en voz alta no necesita conexión: repite las frases de la lección imitando el audio descargado.",
         ],
       },
     ],
@@ -118,13 +118,13 @@ export const fanoutCopy = {
       {
         h2: "¿Dónde hay clases de inglés gratis de calidad?",
         paras: [
-          "Tres fuentes concentran lo mejor de lo gratuito: BBC Learning English organiza cursos reales por nivel (Lower Intermediate, Intermediate...) con video, audio y ejercicios; VOA Learning English enseña con noticias leídas ~30% más lento y transcripción completa; y las universidades publican cursos de inglés en Coursera y edX que puedes auditar gratis. Todo esto es instrucción legítima — no versiones recortadas de pago.",
+          "Tres fuentes concentran lo mejor de lo gratuito: BBC Learning English organiza cursos reales por nivel (Lower Intermediate, Intermediate...) con video, audio y ejercicios; VOA Learning English enseña con noticias leídas ~30% más lento y transcripción completa — parte de <a href=\"/aprender-ingles/audios-para-aprender-ingles-gratis/\">los audios gratuitos con transcripción</a> que recomendamos; y las universidades publican cursos de inglés en Coursera y edX que puedes auditar gratis. Todo esto es instrucción legítima — no versiones recortadas de pago.",
         ],
       },
       {
         h2: "¿Qué no te dan las clases gratuitas?",
         paras: [
-          "Dos cosas, y son las que más mueven el nivel: retroalimentación de tu pronunciación (nadie te escucha en un curso grabado) y una ruta personalizada que decida qué sigue según tus huecos. Por eso el patrón típico del autodidacta gratuito es comprensión decente con habla congelada. Cuando confirmes que vas en serio, un curso interactivo con reconocimiento de voz como Rocket English cubre exactamente esos dos vacíos por un pago único.",
+          "Dos cosas, y son las que más mueven el nivel: retroalimentación de tu pronunciación (nadie te escucha en un curso grabado, a diferencia de <a href=\"/aprender-ingles/preply-italki-cambly-comparacion/\">un tutor que sí te escucha</a>) y una ruta personalizada que decida qué sigue según tus huecos. Tampoco dan constancia formal, aunque existen <a href=\"/aprender-ingles/cursos-de-ingles-gratis-con-certificado/\">los cursos gratis que sí dan certificado</a>. Por eso el patrón típico del autodidacta gratuito es comprensión decente con habla congelada. Cuando confirmes que vas en serio, un curso interactivo con reconocimiento de voz como Rocket English cubre exactamente esos dos vacíos por un pago único.",
         ],
       },
     ],
@@ -159,7 +159,7 @@ export const fanoutCopy = {
       {
         h2: "¿Cuándo conviene presencial y cuándo online?",
         paras: [
-          "Presencial conviene si has abandonado cursos online por falta de disciplina, si aprendes mejor con personas delante, o si tu empleador lo paga. Online conviene en los demás casos: cuesta menos que un mes de academia (Rocket English: pago único ~$150 USD, acceso de por vida), practicas habla todos los días — no dos veces por semana — y estudias a las 6 AM o las 11 PM según tu vida real. El híbrido sensato: curso online diario más un intercambio de conversación semanal para el componente humano.",
+          "Presencial conviene si has abandonado cursos online por falta de disciplina, si aprendes mejor con personas delante, o si tu empleador lo paga. Online conviene en los demás casos, empezando por <a href=\"/aprender-ingles/clases-de-ingles-online-gratis/\">las opciones online gratuitas</a>: cuesta menos que un mes de academia (Rocket English: pago único ~$150 USD, acceso de por vida), practicas habla todos los días — no dos veces por semana — y estudias a las 6 AM o las 11 PM según tu vida real. El híbrido sensato: curso online diario más un intercambio de conversación semanal para el componente humano.",
         ],
       },
     ],
@@ -194,7 +194,7 @@ export const fanoutCopy = {
       {
         h2: "¿Cuánto vale un certificado de curso online?",
         paras: [
-          "Menos de lo que promete el marketing: para los empleadores, un certificado de curso online pesa poco frente a dos minutos de conversación en inglés en la entrevista. Los certificados que sí abren puertas son los exámenes estandarizados — TOEFL, IELTS, Cambridge — que cuestan $200–250 USD y miden nivel real. La estrategia eficiente: usa cursos (gratis o pagados) para construir el nivel, y certifica con un examen estandarizado solo cuando un empleo o visa concreto lo pida.",
+          "Menos de lo que promete el marketing: para los empleadores, un certificado de curso online pesa poco frente a dos minutos de conversación en inglés en la entrevista — lo mismo vale para el diploma de <a href=\"/aprender-ingles/escuelas-de-ingles-cerca-de-mi/\">una academia presencial</a>. Los certificados que sí abren puertas son los exámenes estandarizados — TOEFL, IELTS, Cambridge — que cuestan $200–250 USD y miden tu nivel real contra <a href=\"/aprender-ingles/niveles-de-ingles-cefr/\">los niveles del marco CEFR</a>. La estrategia eficiente: usa cursos (gratis o pagados) para construir el nivel, y certifica con un examen estandarizado solo cuando un empleo o visa concreto lo pida.",
         ],
       },
     ],
@@ -643,13 +643,13 @@ export const fanoutCopy = {
       {
         h2: "¿Qué alternativa elegir según lo que te falta?",
         paras: [
-          "Diagnóstico antes de receta. Si entiendes pero no hablas — el caso más común entre exusuarios de Duolingo — necesitas práctica de producción: Rocket English (audio interactivo con reconocimiento de voz, pago único ~$150 USD) es la alternativa directa. Si te falta estructura y prefieres pagar mensual, Babbel (~$180 USD/año) ofrece lecciones de 15 minutos con progresión clara. Si tu problema es retener vocabulario, Anki con repetición espaciada es gratis en Android. Y si lo que quieres es hablar con humanos, italki conecta con tutores desde ~$8–10 USD/hora.",
+          "Diagnóstico antes de receta. Si entiendes pero no hablas — el caso más común entre exusuarios de Duolingo, y la señal de que <a href=\"/aprender-ingles/duolingo-sirve-para-aprender-ingles/\">llegaste a su techo</a> — necesitas práctica de producción: Rocket English (audio interactivo con reconocimiento de voz, pago único ~$150 USD) es la alternativa directa. Si te falta estructura y prefieres pagar mensual, Babbel (~$180 USD/año) ofrece lecciones de 15 minutos con progresión clara. Si tu problema es retener vocabulario, Anki con repetición espaciada es gratis en Android. Y si lo que quieres es hablar con humanos, italki conecta con tutores desde ~$8–10 USD/hora.",
         ],
       },
       {
         h2: "¿Cambiar de app o cambiar de método?",
         paras: [
-          "La pregunta honesta: si Duolingo no te llevó a hablar, otra app de ejercicios de pantalla tampoco lo hará — el problema no era la marca sino el tipo de práctica. Cambiar de Duolingo a otra app de emparejar palabras es cambiar de sabor, no de método. El salto que produce resultados distintos es hacia herramientas que te hagan producir: hablar con reconocimiento de voz, conversar con tutores o IA, escribir con corrección. Elige la alternativa por el músculo que entrena, no por la novedad.",
+          "La pregunta honesta: si Duolingo no te llevó a hablar, otra app de ejercicios de pantalla tampoco lo hará — el problema no era la marca sino <a href=\"/aprender-ingles/practica-de-conversacion-en-ingles/\">el tipo de práctica que sí produce conversación</a>. Cambiar de Duolingo a otra app de emparejar palabras es cambiar de sabor, no de método. El salto que produce resultados distintos es hacia herramientas que te hagan producir: hablar con reconocimiento de voz, conversar con tutores o IA, escribir con corrección. Elige la alternativa por el músculo que entrena, no por la novedad.",
         ],
       },
     ],
@@ -678,13 +678,13 @@ export const fanoutCopy = {
       {
         h2: "¿Qué logra Duolingo de verdad?",
         paras: [
-          "Tres logros medibles y honestos: construye las primeras 1,000–2,000 palabras de vocabulario con menos fricción que ningún método, crea hábito diario mejor que cualquier competidor (las rachas funcionan psicológicamente), y elimina el miedo inicial — tocar el inglés 10 minutos al día sin riesgo de vergüenza es una puerta de entrada legítima. Para un principiante absoluto que no sabe si va en serio, empezar con Duolingo es una decisión correcta.",
+          "Tres logros medibles y honestos: construye las primeras 1,000–2,000 palabras de vocabulario con menos fricción que ningún método — mejor que <a href=\"/aprender-ingles/aplicaciones-para-aprender-ingles-gratis/\">otras apps gratuitas que lo complementan</a> —, crea hábito diario mejor que cualquier competidor (las rachas funcionan psicológicamente), y elimina el miedo inicial — tocar el inglés 10 minutos al día sin riesgo de vergüenza es una puerta de entrada legítima. Para un principiante absoluto que no sabe si va en serio, empezar con Duolingo es una decisión correcta.",
         ],
       },
       {
         h2: "¿Cómo saber si ya alcanzaste su techo?",
         paras: [
-          "Las señales del techo son consistentes: llevas meses de racha pero te congelas cuando alguien te habla en inglés; los ejercicios se sienten fáciles pero una serie sin subtítulos sigue siendo imposible; reconoces cientos de palabras que no puedes usar en una frase propia. Ese desnivel — reconocimiento alto, producción baja — es el diseño del producto, no tu fracaso. El paso siguiente es práctica de producción: un curso de audio interactivo donde hables en voz alta con corrección, como Rocket English, convierte ese vocabulario dormido en conversación.",
+          "Las señales del techo son consistentes: llevas meses de racha pero te congelas cuando alguien te habla en inglés; los ejercicios se sienten fáciles pero una serie sin subtítulos sigue siendo imposible; reconoces cientos de palabras que no puedes usar en una frase propia. Ese desnivel — reconocimiento alto, producción baja — es el diseño del producto, no tu fracaso, y define <a href=\"/aprender-ingles/alternativas-a-duolingo-para-aprender-ingles/\">qué alternativa elegir según tu punto ciego</a>. El paso siguiente es práctica de producción: un curso de audio interactivo donde hables en voz alta con corrección, como Rocket English, convierte ese vocabulario dormido en conversación.",
         ],
       },
     ],

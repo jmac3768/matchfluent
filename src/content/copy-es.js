@@ -20,7 +20,7 @@ export const mainCopy = {
       {
         h2: "¿Cuál es la mejor app para aprender inglés en 2025?",
         paras: [
-          "La mejor app depende de tu objetivo, pero el ranking cambia poco cuando el objetivo es hablar. Estas son nuestras posiciones después de comparar práctica de habla, currículum, audio real y modelo de precio:",
+          "La mejor app depende de tu objetivo, pero el ranking cambia poco cuando el objetivo es hablar — y cambia aún menos según el sistema operativo, aunque vale la pena ver <a href=\"/aprender-ingles/mejor-aplicacion-para-aprender-ingles-android/\">cuál rinde mejor en Android</a>. Estas son nuestras posiciones después de comparar práctica de habla, currículum, audio real y modelo de precio:",
         ],
         list: {
           ordered: true,
@@ -49,7 +49,7 @@ export const mainCopy = {
       {
         h2: "¿Las apps gratuitas sirven para algo?",
         paras: [
-          "Sí, y conviene decirlo sin rodeos: las apps gratuitas son la mejor forma de empezar hoy mismo sin gastar un peso. Duolingo te da vocabulario y hábito; BBC Learning English te da oído. El punto donde dejan de servir es cuando necesitas pasar de entender frases a producirlas — típicamente entre el nivel A2 y B1 del marco CEFR. Ahí es donde un curso estructurado con práctica de habla deja de ser un lujo y se vuelve el camino corto.",
+          "Sí, y conviene decirlo sin rodeos: las apps gratuitas son la mejor forma de empezar hoy mismo sin gastar un peso, y <a href=\"/aprender-ingles/aplicaciones-para-aprender-ingles-gratis/\">comparamos las mejores apps gratuitas una por una</a>. Duolingo te da vocabulario y hábito; BBC Learning English te da oído; y varias <a href=\"/aprender-ingles/app-para-aprender-ingles-sin-internet/\">siguen funcionando sin conexión</a> si tu plan de datos es limitado. El punto donde dejan de servir es cuando necesitas pasar de entender frases a producirlas — típicamente entre el nivel A2 y B1 del marco CEFR. Ahí es donde un curso estructurado con práctica de habla deja de ser un lujo y se vuelve el camino corto.",
         ],
       },
     ],
@@ -86,7 +86,7 @@ export const mainCopy = {
       {
         h2: "¿Curso online o clases presenciales: cuál conviene?",
         paras: [
-          "Las clases presenciales ganan en una sola cosa: la presión social de asistir. Todo lo demás favorece al online. Una academia presencial típica cuesta entre $200 y $400 USD al mes, avanza al ritmo del grupo (es decir, del alumno más lento), y te da quizás 15 minutos de habla real por clase repartidos entre 10 estudiantes.",
+          "Las clases presenciales ganan en una sola cosa: la presión social de asistir. Todo lo demás favorece al online. Una academia presencial típica cuesta entre $200 y $400 USD al mes, avanza al ritmo del grupo (es decir, del alumno más lento), y te da quizás 15 minutos de habla real por clase repartidos entre 10 estudiantes — desglosamos <a href=\"/aprender-ingles/escuelas-de-ingles-cerca-de-mi/\">lo que realmente ofrece una academia presencial</a> hora por hora.",
           "Un curso online estructurado cuesta menos que un solo mes de academia, avanza a tu ritmo, y cada minuto de práctica de habla es tuyo. La desventaja honesta: nadie pasa lista. Si necesitas presión externa para estudiar, combina el curso online con un horario fijo autoimpuesto — mismos días, misma hora.",
         ],
       },
@@ -100,7 +100,7 @@ export const mainCopy = {
       {
         h2: "¿Y las clases de inglés gratis?",
         paras: [
-          "Los recursos gratuitos — YouTube, apps, cursos abiertos de universidades — son excelentes complementos y un punto de partida legítimo si el presupuesto es cero. Su límite es estructural: no hay ruta, no hay retroalimentación de pronunciación, y el material rara vez pasa del nivel intermedio. Úsalos para empezar hoy; invierte en estructura cuando confirmes que vas en serio.",
+          "Los recursos gratuitos — YouTube, apps, cursos abiertos de universidades — son excelentes complementos y un punto de partida legítimo si el presupuesto es cero: reunimos <a href=\"/aprender-ingles/clases-de-ingles-online-gratis/\">dónde encontrar clases gratis que valgan la pena</a> y, si necesitas un comprobante, <a href=\"/aprender-ingles/cursos-de-ingles-gratis-con-certificado/\">los cursos gratuitos que sí entregan certificado</a>. Su límite es estructural: no hay ruta, no hay retroalimentación de pronunciación, y el material rara vez pasa del nivel intermedio. Úsalos para empezar hoy; invierte en estructura cuando confirmes que vas en serio.",
         ],
       },
       {
@@ -395,8 +395,8 @@ export const mainCopy = {
       {
         h2: "¿Duolingo sirve para llegar a un nivel avanzado?",
         paras: [
-          "No — y no es opinión nuestra, es el diseño del producto. El curso de inglés de Duolingo cubre material hasta un nivel B1 aproximado, y sus ejercicios de emparejar y traducir entrenan reconocimiento, no producción espontánea. El patrón clásico: usuarios con rachas de 300+ días que entienden bastante y se congelan al hablar.",
-          "Duolingo es donde empiezas. El error no es usarlo; es quedarse esperando que el nivel avanzado llegue por acumulación de rachas.",
+          "No — y no es opinión nuestra, es el diseño del producto. El curso de inglés de Duolingo cubre material hasta un nivel B1 aproximado, y sus ejercicios de emparejar y traducir entrenan reconocimiento, no producción espontánea. Analizamos aparte <a href=\"/aprender-ingles/duolingo-sirve-para-aprender-ingles/\">qué logra Duolingo de verdad</a>, porque el patrón clásico es conocido: usuarios con rachas de 300+ días que entienden bastante y se congelan al hablar.",
+          "Duolingo es donde empiezas. El error no es usarlo; es quedarse esperando que el nivel avanzado llegue por acumulación de rachas — llegado ese punto, conviene decidir <a href=\"/aprender-ingles/alternativas-a-duolingo-para-aprender-ingles/\">qué alternativa elegir según lo que te falta</a>.",
         ],
       },
       {
@@ -408,7 +408,7 @@ export const mainCopy = {
       {
         h2: "¿Se pueden usar los dos juntos?",
         paras: [
-          "Sí, y es una combinación sensata: Duolingo como calentamiento diario de 10 minutos para vocabulario y hábito, Rocket como la sesión seria de 20–30 minutos donde practicas hablar. Si tu tiempo es limitado, prioriza la sesión de habla — es la que mueve tu nivel.",
+          "Sí, y es una combinación sensata: Duolingo como calentamiento diario de 10 minutos para vocabulario y hábito, Rocket como la sesión seria de 20–30 minutos donde practicas hablar. Si tu tiempo es limitado, prioriza la sesión de habla — es la que mueve tu nivel, y aquí tienes <a href=\"/aprender-ingles/practica-de-conversacion-en-ingles/\">dónde practicar conversación según tu nivel</a>.",
         ],
       },
     ],
