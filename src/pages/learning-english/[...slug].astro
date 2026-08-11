@@ -8,7 +8,7 @@
 import ClusterLayout from "../../layouts/ClusterLayout.astro";
 import ComparisonLayout from "../../layouts/ComparisonLayout.astro";
 import GlossaryLayout from "../../layouts/GlossaryLayout.astro";
-import { enRoutes, internalLinks, makeTitle } from "../../lib/data.js";
+import { enRoutes, internalLinks, makeTitle, ownFanouts } from "../../lib/data.js";
 import { mainCopy } from "../../content/copy-en.js";
 import { fanoutCopy } from "../../content/fanouts-en.js";
 
@@ -42,6 +42,11 @@ const practicePhrases =
     ? page.practicePhrases.map((p) => ({ en: p.en || p.phrase, es: p.es, context: p.context }))
     : [];
 const relatedLinks = internalLinks.en;
+// Fanout pages have no children of their own; only pillars list a ToC.
+const fanouts = isFanout ? [] : ownFanouts(page);
+const commercial = !isFanout && page.commercial === true;
+// Commercial pillars merge the related-links slot into FanoutList.
+const extraLinks = commercial ? internalLinks.en.slice(0, 2) : [];
 
 const layoutProps = {
   lang,
@@ -53,6 +58,9 @@ const layoutProps = {
   copy,
   intercept,
   relatedLinks,
+  fanouts,
+  extraLinks,
+  commercial,
   page,
 };
 

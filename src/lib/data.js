@@ -45,6 +45,18 @@ function buildSiloRoutes(pages, prefix) {
 export const esRoutes = () => buildSiloRoutes(esMainPages, "/aprender-ingles");
 export const enRoutes = () => buildSiloRoutes(enMainPages, "/learning-english");
 
+const mainSlugs = new Set([...esMainPages, ...enMainPages].map((p) => p.slug));
+
+/**
+ * A pillar's own fanout children, for its on-page table of contents.
+ * Drops fanouts whose slug is also a main page (e.g.
+ * /learning-english/learning-english-with-ai) — buildSiloRoutes resolves
+ * those in favor of the main entry, so they are sibling pillars, not children.
+ */
+export function ownFanouts(page) {
+  return (page?.fanouts || []).filter((f) => !mainSlugs.has(f.slug));
+}
+
 /**
  * Reciprocal hreflang pairs — ES and EN pages that cover the same topic.
  * x-default points at the homepage (handled in SEOHead).
