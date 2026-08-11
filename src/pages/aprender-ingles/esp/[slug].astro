@@ -7,7 +7,7 @@
  */
 import LessonLayout from "../../../layouts/LessonLayout.astro";
 import LessonPhraseList from "../../../components/astro/LessonPhraseList.astro";
-import { espLessons, internalLinks, makeTitle } from "../../../lib/data.js";
+import { espLessons, makeTitle, relatedLinksFor } from "../../../lib/data.js";
 import { espIntros } from "../../../content/copy-es.js";
 
 export function getStaticPaths() {
@@ -45,7 +45,7 @@ const phrasesHeading = "Las frases, con pronunciación";
   intro={intro.intro}
   closing={intro.closing}
   intercept={lesson.affiliateIntercept}
-  relatedLinks={internalLinks.esp}
+  relatedLinks={relatedLinksFor(lesson.slug)}
   page={lesson}
 >
   <h2 class="font-sans text-2xl font-bold text-navy-700 mb-2">{phrasesHeading}</h2>
