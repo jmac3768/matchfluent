@@ -237,7 +237,7 @@ export const fanoutCopy = {
       {
         h2: "What should you deliberately skip to go faster?",
         paras: [
-          "Speed is also subtraction. Skip grammar beyond your level — mastering conditionals before you can order lunch is inverted effort; grammar sticks when it explains what you already say. Skip tool-shopping — switching apps monthly resets progress; pick a curriculum and exhaust it. Skip passive-only hours — background podcasts while working feel like studying and teach almost nothing; 20 attentive minutes beat 8 ignored hours. And skip perfectionism — learners who speak badly every day overtake learners who prepare silently for the day they'll speak well. That day arrives through the bad speaking.",
+          "Speed is also subtraction. Skip grammar beyond your level — mastering conditionals before you can order lunch is inverted effort; grammar sticks when it explains what you already say. Skip tool-shopping — switching apps monthly resets progress, so <a href=\"/learning-english/best-free-english-learning-app/\">pick one free app and stay put</a>, or pick a curriculum and exhaust it. Skip passive-only hours — background podcasts while working feel like studying and teach almost nothing; 20 attentive minutes beat 8 ignored hours. And skip perfectionism — learners who speak badly every day overtake learners who prepare silently for the day they'll speak well. That day arrives through the bad speaking.",
         ],
       },
     ],
@@ -272,7 +272,7 @@ export const fanoutCopy = {
       {
         h2: "Self-paced course, tutor, or app: which fits you?",
         paras: [
-          "Match the format to your level and budget. Self-paced with voice recognition (Rocket English, ~$150 one-time): the volume play — unlimited private reps, pronunciation scoring, no scheduling; the right foundation-builder and the only option that doesn't bill per hour. Live tutors (italki $8–30/hour): the polish play — real human unpredictability and correction; brilliant from B1, expensive as a way to learn basics. Conversation apps and AI (free–$): the supplement — infinite low-stakes practice, weak pronunciation judgment. The efficient stack in order: course for the base, AI for daily reps, tutor for polish.",
+          "Match the format to your level and budget. Self-paced with voice recognition (Rocket English, ~$150 one-time): the volume play — unlimited private reps, pronunciation scoring, no scheduling; the right foundation-builder and the only option that doesn't bill per hour. Live tutors (italki $8–30/hour): the polish play — real human unpredictability and correction; brilliant from B1, expensive as a way to learn basics. Conversation apps and AI (free–$): the supplement — infinite low-stakes practice, weak pronunciation judgment. The efficient stack in order: course for the base, AI for daily reps, tutor for polish — we put <a href=\"/learning-english/english-tutor-vs-course/\">tutor and course side by side</a> if you can only fund one.",
         ],
       },
     ],

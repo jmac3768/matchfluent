@@ -244,7 +244,7 @@ export const mainCopy = {
           items: [
             "<strong>Judgment-free conversation</strong> — practice by text or voice without the fear of embarrassing yourself; for the majority of learners who report speaking anxiety, this removes the main barrier.",
             "<strong>Instant correction with explanations</strong> — paste anything you've written and get every error corrected and explained.",
-            "<strong>Vocabulary on demand</strong> — ask for the 30 most useful phrases for your exact job, with examples.",
+            "<strong>Vocabulary on demand</strong> — ask for the 30 most useful phrases for your exact job, with examples; for developers we already wrote <a href=\"/lessons/english-for-software-engineers/\">the phrases for standups and client calls</a>.",
             "<strong>Situation simulation</strong> — 'act as a job interviewer and ask me questions one at a time' is a free interview simulator.",
           ],
         },

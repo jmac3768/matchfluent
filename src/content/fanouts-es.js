@@ -839,7 +839,7 @@ export const fanoutCopy = {
             "<strong>Habla solo (semanas 1–2):</strong> lee en voz alta, narra tu rutina, repite frases de audio. Cero público — puro acondicionamiento de boca y oído.",
             "<strong>Habla con máquinas (semanas 2–6):</strong> el reconocimiento de voz de Rocket English te corrige la pronunciación sin juicio, y el modo de voz de ChatGPT conversa contigo con paciencia infinita. Aquí se acumula el grueso de las repeticiones.",
             "<strong>Conversación de bajo riesgo (mes 2–3):</strong> intercambios de idiomas (Tandem, HelloTalk) donde la otra persona también comete errores en tu idioma — la simetría desarma la vergüenza.",
-            "<strong>Situaciones reales (mes 3+):</strong> la llamada, la entrevista, el cliente. Llegas con cientos de repeticiones encima; el miedo ya no decide.",
+            "<strong>Situaciones reales (mes 3+):</strong> la llamada, la entrevista, el cliente. Llegas con cientos de repeticiones encima; el miedo ya no decide. Si quieres acelerar este peldaño, <a href=\"/aprender-ingles/curso-intensivo-de-ingles/\">un intensivo concentrado</a> comprime semanas de exposición en días.",
           ],
         },
       },
@@ -869,7 +869,7 @@ export const fanoutCopy = {
       {
         h2: "¿Dónde practicar conversación según tu nivel?",
         paras: [
-          "El criterio es doble: nivel de inglés y nivel de ansiedad. Principiante o con miedo alto: práctica privada — las lecciones interactivas de Rocket English te hacen hablar frase por frase con corrección de pronunciación y sin público, y el modo de voz de ChatGPT conversa a tu ritmo. Nivel básico consolidado: intercambios de idiomas (Tandem, HelloTalk) — gratis, humanos, y simétricos: el otro también aprende. Nivel intermedio en adelante: tutores de italki desde ~$8–10 USD/hora para conversación corregida, el formato que más pule por hora invertida.",
+          "El criterio es doble: nivel de inglés y nivel de ansiedad. Principiante o con miedo alto: práctica privada — las lecciones interactivas de Rocket English te hacen hablar frase por frase con corrección de pronunciación y sin público, y el modo de voz de ChatGPT conversa a tu ritmo. Nivel básico consolidado: intercambios de idiomas (Tandem, HelloTalk) — gratis, humanos, y simétricos: el otro también aprende. Nivel intermedio en adelante: tutores de italki desde ~$8–10 USD/hora para conversación corregida, el formato que más pule por hora invertida — repasamos cuándo compensa <a href=\"/aprender-ingles/clases-de-ingles-con-profesor-particular/\">un tutor particular que corrige</a> y cuándo es prematuro.",
         ],
       },
       {
