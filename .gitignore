@@ -5,3 +5,6 @@ dist/
 
 # Screaming Frog exports, dropped in the repo root by hand
 /*.csv
+
+# Local Claude Code settings
+.claude/
